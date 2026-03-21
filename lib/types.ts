@@ -1,0 +1,31 @@
+export interface Range {
+  slug: string;
+  name: string;
+  trackman: string;
+  toptracer: string;
+  indoor: string;
+  beginnerFriendly: string;
+  dresscode: string;
+  foodBar: string;
+  lighting: string;
+  roof: string;
+  grass: string;
+  phone: string;
+  website: string;
+  address: string;
+  street: string;
+  city: string;
+  county: string;
+  state: string;
+  postalCode: string;
+  rating: number;
+  reviews: number;
+  businessStatus: string;
+  workingHours: string;
+  locationLink: string;
+  description: string;
+  lat: number | null;
+  lng: number | null;
+  techLevel: 'high' | 'low';
+  category: 'indoor' | 'outdoor';
+}
