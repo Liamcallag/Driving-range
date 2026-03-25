@@ -31,7 +31,7 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-40">
           <div className="inline-flex items-center gap-2 text-green-300 text-xs font-semibold uppercase tracking-widest mb-4">
-            <span>⛳</span>
+            <span aria-hidden="true">⛳</span>
             <span>Florida Golf Directory</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
@@ -64,7 +64,7 @@ export default function HomePage() {
       </header>
 
       {/* ── Directory ── */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <DirectoryClient ranges={ranges} />
       </main>
 

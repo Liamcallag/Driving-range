@@ -40,7 +40,7 @@ const reasons = [
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-slate-50">
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+      <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
 
         {/* Header */}
         <div className="mb-10">
@@ -59,7 +59,7 @@ export default function ContactPage() {
               href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(r.subject)}&body=${encodeURIComponent(r.body)}`}
               className="group bg-white border border-slate-200 hover:border-green-300 rounded-xl p-5 shadow-sm hover:shadow-md transition-all"
             >
-              <div className="text-2xl mb-3">{r.icon}</div>
+              <div className="text-2xl mb-3" aria-hidden="true">{r.icon}</div>
               <h2 className="font-semibold text-slate-800 group-hover:text-green-700 transition-colors mb-1">{r.title}</h2>
               <p className="text-sm text-slate-500 leading-relaxed">{r.description}</p>
               <p className="text-xs text-green-700 font-medium mt-3 group-hover:underline">

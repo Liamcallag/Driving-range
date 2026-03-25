@@ -131,7 +131,7 @@ function FeatureItem({ label, value, icon }: { label: string; value: string; ico
         : 'bg-slate-50 border-slate-100 opacity-60'
       }`}
     >
-      <span className="text-xl">{icon}</span>
+      <span className="text-xl" aria-hidden="true">{icon}</span>
       <div>
         <p className="text-xs text-slate-500 font-medium uppercase tracking-wider">{label}</p>
         <p className={`text-sm font-semibold ${isYes ? 'text-emerald-700' : isNo ? 'text-slate-500' : 'text-slate-400'}`}>
@@ -173,7 +173,7 @@ export default async function RangePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10">
+      <main id="main-content" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
           {/* ── Left / main content ── */}
@@ -265,19 +265,19 @@ export default async function RangePage({ params }: PageProps) {
               {range.website && (
                 <a href={range.website} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 w-full bg-green-700 hover:bg-green-800 text-white text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
-                  🌐 Visit Website
+                  <span aria-hidden="true">🌐</span> Visit Website
                 </a>
               )}
               {range.locationLink && (
                 <a href={range.locationLink} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-2 w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
-                  📍 Google Maps
+                  <span aria-hidden="true">📍</span> Google Maps
                 </a>
               )}
               {range.phone && (
                 <a href={`tel:${range.phone}`}
                   className="flex items-center gap-2 w-full border border-slate-200 hover:border-slate-300 text-slate-700 text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
-                  📞 {range.phone}
+                  <span aria-hidden="true">📞</span> {range.phone}
                 </a>
               )}
             </div>
@@ -323,7 +323,7 @@ export default async function RangePage({ params }: PageProps) {
                 href={`mailto:${CONTACT_EMAIL}?subject=${claimSubject}&body=${claimBody}`}
                 className="flex items-center justify-center gap-2 w-full border border-slate-300 hover:border-green-400 hover:bg-green-50 text-slate-600 hover:text-green-700 text-sm font-medium px-4 py-2.5 rounded-lg transition-colors"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                 </svg>
                 Claim this listing

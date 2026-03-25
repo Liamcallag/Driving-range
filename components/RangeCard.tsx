@@ -85,7 +85,7 @@ export default function RangeCard({ range }: RangeCardProps) {
               key={f.label}
               className="text-xs bg-slate-50 text-slate-600 px-2 py-0.5 rounded border border-slate-100"
             >
-              {f.icon} {f.label}
+              <span aria-hidden="true">{f.icon} </span>{f.label}
             </span>
           ))}
         </div>
@@ -94,9 +94,10 @@ export default function RangeCard({ range }: RangeCardProps) {
       {/* View Details */}
       <Link
         href={`/ranges/${range.slug}`}
+        aria-label={`View details for ${range.name}`}
         className="mt-1 text-center text-sm font-medium text-green-700 hover:text-green-800 border border-green-200 hover:border-green-300 rounded-lg py-1.5 transition-colors"
       >
-        View Details →
+        View Details <span aria-hidden="true">→</span>
       </Link>
     </div>
   );

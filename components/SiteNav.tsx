@@ -15,6 +15,7 @@ export default function SiteNav() {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`fixed top-0 inset-x-0 z-50 h-14 flex items-center transition-colors ${
         isHome
           ? 'bg-black/30 backdrop-blur-md border-b border-white/10'
@@ -30,7 +31,7 @@ export default function SiteNav() {
             isHome ? 'text-white' : 'text-green-800'
           }`}
         >
-          <span className="text-lg">⛳</span>
+          <span className="text-lg" aria-hidden="true">⛳</span>
           <span>Florida Driving Ranges</span>
         </Link>
 
@@ -42,6 +43,7 @@ export default function SiteNav() {
               <Link
                 key={href}
                 href={href}
+                aria-current={active ? 'page' : undefined}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                   isHome
                     ? active

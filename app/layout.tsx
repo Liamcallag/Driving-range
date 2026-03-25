@@ -15,6 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-green-800 focus:font-semibold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+        >
+          Skip to main content
+        </a>
         <SiteNav />
         {children}
       </body>

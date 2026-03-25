@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface Review {
   id: string;
@@ -10,10 +10,10 @@ interface Review {
   date: string;
 }
 
-function StarPicker({ value, onChange }: { value: number; onChange: (n: number) => void }) {
+function StarPicker({ id, value, onChange }: { id?: string; value: number; onChange: (n: number) => void }) {
   const [hovered, setHovered] = useState(0);
   return (
-    <div className="flex gap-1">
+    <div id={id} role="group" aria-label="Star rating" className="flex gap-1">
       {[1, 2, 3, 4, 5].map((n) => (
         <button
           key={n}
@@ -41,12 +41,27 @@ function StarDisplay({ rating }: { rating: number }) {
   );
 }
 
+const TOKENS_KEY = 'review_delete_tokens';
+
+function getStoredTokens(): Record<string, string> {
+  try { return JSON.parse(localStorage.getItem(TOKENS_KEY) ?? '{}'); } catch { return {}; }
+}
+
+function saveToken(reviewId: string, token: string) {
+  const tokens = getStoredTokens();
+  tokens[reviewId] = token;
+  localStorage.setItem(TOKENS_KEY, JSON.stringify(tokens));
+}
+
 export default function ReviewSection({ slug }: { slug: string }) {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [showForm, setShowForm] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [deleting, setDeleting] = useState<string | null>(null);
+  const [myTokens, setMyTokens] = useState<Record<string, string>>({});
+  const firstFieldRef = useRef<HTMLInputElement>(null);
 
   const [author, setAuthor] = useState('');
   const [rating, setRating] = useState(0);
@@ -54,6 +69,7 @@ export default function ReviewSection({ slug }: { slug: string }) {
   const [error, setError] = useState('');
 
   useEffect(() => {
+    setMyTokens(getStoredTokens());
     fetch(`/api/reviews/${slug}`)
       .then((r) => r.json())
       .then((data) => {
@@ -78,7 +94,11 @@ export default function ReviewSection({ slug }: { slug: string }) {
         body: JSON.stringify({ author, rating, comment }),
       });
       if (!res.ok) throw new Error('Failed');
-      const newReview: Review = await res.json();
+      const { deleteToken, ...newReview } = await res.json();
+      if (deleteToken) {
+        saveToken(newReview.id, deleteToken);
+        setMyTokens((prev) => ({ ...prev, [newReview.id]: deleteToken }));
+      }
       setReviews((prev) => [newReview, ...prev]);
       setAuthor('');
       setRating(0);
@@ -90,6 +110,22 @@ export default function ReviewSection({ slug }: { slug: string }) {
       setError('Something went wrong. Please try again.');
     } finally {
       setSubmitting(false);
+    }
+  }
+
+  async function handleDelete(id: string) {
+    if (!confirm('Delete this review?')) return;
+    const token = myTokens[id];
+    if (!token) return;
+    setDeleting(id);
+    try {
+      const res = await fetch(`/api/reviews/${slug}?id=${id}&token=${token}`, { method: 'DELETE' });
+      if (!res.ok) throw new Error('Failed');
+      setReviews((prev) => prev.filter((r) => r.id !== id));
+    } catch {
+      alert('Failed to delete review.');
+    } finally {
+      setDeleting(null);
     }
   }
 
@@ -114,7 +150,7 @@ export default function ReviewSection({ slug }: { slug: string }) {
         </div>
         {!showForm && (
           <button
-            onClick={() => setShowForm(true)}
+            onClick={() => { setShowForm(true); setTimeout(() => firstFieldRef.current?.focus(), 0); }}
             className="text-sm font-medium bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg transition-colors"
           >
             Write a Review
@@ -124,19 +160,21 @@ export default function ReviewSection({ slug }: { slug: string }) {
 
       {/* Success message */}
       {success && (
-        <div className="mb-4 px-4 py-3 bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm rounded-lg">
+        <div role="status" aria-live="polite" className="mb-4 px-4 py-3 bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm rounded-lg">
           Thanks for your review!
         </div>
       )}
 
       {/* Review Form */}
       {showForm && (
-        <form onSubmit={handleSubmit} className="mb-6 p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-4">
+        <form onSubmit={handleSubmit} aria-label="Leave a review" className="mb-6 p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-4">
           <h3 className="text-sm font-semibold text-slate-700">Leave a Review</h3>
 
           <div>
-            <label className="block text-xs font-medium text-slate-600 mb-1">Your Name</label>
+            <label htmlFor="review-author" className="block text-xs font-medium text-slate-600 mb-1">Your Name</label>
             <input
+              id="review-author"
+              ref={firstFieldRef}
               type="text"
               value={author}
               onChange={(e) => setAuthor(e.target.value)}
@@ -147,13 +185,14 @@ export default function ReviewSection({ slug }: { slug: string }) {
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-slate-600 mb-1">Rating</label>
-            <StarPicker value={rating} onChange={setRating} />
+            <label htmlFor="review-rating" className="block text-xs font-medium text-slate-600 mb-1">Rating</label>
+            <StarPicker id="review-rating" value={rating} onChange={setRating} />
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-slate-600 mb-1">Comment</label>
+            <label htmlFor="review-comment" className="block text-xs font-medium text-slate-600 mb-1">Comment</label>
             <textarea
+              id="review-comment"
               value={comment}
               onChange={(e) => setComment(e.target.value)}
               placeholder="Share your experience..."
@@ -161,10 +200,10 @@ export default function ReviewSection({ slug }: { slug: string }) {
               maxLength={1000}
               className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
             />
-            <p className="text-xs text-slate-400 text-right mt-0.5">{comment.length}/1000</p>
+            <p className="text-xs text-slate-400 text-right mt-0.5" aria-live="polite">{comment.length}/1000</p>
           </div>
 
-          {error && <p className="text-sm text-red-600">{error}</p>}
+          {error && <p role="alert" className="text-sm text-red-600">{error}</p>}
 
           <div className="flex gap-2">
             <button
@@ -199,9 +238,21 @@ export default function ReviewSection({ slug }: { slug: string }) {
                   <p className="text-sm font-semibold text-slate-800">{review.author}</p>
                   <StarDisplay rating={review.rating} />
                 </div>
-                <time className="text-xs text-slate-400 shrink-0">
-                  {new Date(review.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                </time>
+                <div className="flex items-center gap-2 shrink-0">
+                  <time className="text-xs text-slate-400">
+                    {new Date(review.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                  </time>
+                  {myTokens[review.id] && (
+                    <button
+                      onClick={() => handleDelete(review.id)}
+                      disabled={deleting === review.id}
+                      className="text-xs text-red-400 hover:text-red-600 transition-colors disabled:opacity-40"
+                      aria-label="Delete review"
+                    >
+                      {deleting === review.id ? '…' : '✕'}
+                    </button>
+                  )}
+                </div>
               </div>
               <p className="text-sm text-slate-600 mt-2 leading-relaxed">{review.comment}</p>
             </div>
