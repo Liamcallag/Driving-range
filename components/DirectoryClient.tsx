@@ -144,15 +144,6 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
     searchQuery || filters.category !== 'all' || filters.techLevel !== 'all' ||
     filters.openNow || filters.city || activeAmenityCount > 0;
 
-  const activeChips: { label: string; onRemove: () => void }[] = [
-    ...(searchQuery ? [{ label: `"${searchQuery}"`, onRemove: () => setSearchQuery('') }] : []),
-    ...(filters.category !== 'all' ? [{ label: filters.category === 'indoor' ? 'Indoor' : 'Outdoor', onRemove: () => toggle('category', 'all') }] : []),
-    ...(filters.techLevel !== 'all' ? [{ label: filters.techLevel === 'high' ? 'High-Tech' : 'Traditional', onRemove: () => toggle('techLevel', 'all') }] : []),
-    ...(filters.city ? [{ label: filters.city, onRemove: () => toggle('city', '') }] : []),
-    ...(filters.openNow ? [{ label: 'Open Now', onRemove: () => toggle('openNow', false) }] : []),
-    ...amenities.filter(({ key }) => !!filters[key]).map(({ key, label }) => ({ label, onRemove: () => toggle(key, false) })),
-  ];
-
   const amenities: { key: keyof Filters; label: string; icon: string }[] = [
     { key: 'foodBar', label: 'Food & Bar', icon: '🍺' },
     { key: 'grassTees', label: 'Grass Tees', icon: '🌿' },
@@ -161,6 +152,15 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
     { key: 'roofCover', label: 'Roof / Cover', icon: '🏠' },
     { key: 'trackman', label: 'TrackMan', icon: '📡' },
     { key: 'toptracer', label: 'TopTracer', icon: '🎯' },
+  ];
+
+  const activeChips: { label: string; onRemove: () => void }[] = [
+    ...(searchQuery ? [{ label: `"${searchQuery}"`, onRemove: () => setSearchQuery('') }] : []),
+    ...(filters.category !== 'all' ? [{ label: filters.category === 'indoor' ? 'Indoor' : 'Outdoor', onRemove: () => toggle('category', 'all') }] : []),
+    ...(filters.techLevel !== 'all' ? [{ label: filters.techLevel === 'high' ? 'High-Tech' : 'Traditional', onRemove: () => toggle('techLevel', 'all') }] : []),
+    ...(filters.city ? [{ label: filters.city, onRemove: () => toggle('city', '') }] : []),
+    ...(filters.openNow ? [{ label: 'Open Now', onRemove: () => toggle('openNow', false) }] : []),
+    ...amenities.filter(({ key }) => !!filters[key]).map(({ key, label }) => ({ label, onRemove: () => toggle(key, false) })),
   ];
 
   return (
