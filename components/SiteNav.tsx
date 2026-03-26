@@ -33,10 +33,7 @@ export default function SiteNav() {
             isHome ? 'text-white' : 'text-green-800'
           }`}
         >
-          {/* Crop the whitespace in the PNG by zooming into the logo */}
-          <div className="w-9 h-9 overflow-hidden flex items-center justify-center">
-            <Image src="/images/logo.png" alt="" width={60} height={60} className="scale-[1.45]" aria-hidden="true" />
-          </div>
+          <Image src="/images/logo.png" alt="" width={36} height={36} aria-hidden="true" />
           <span className="text-base sm:text-lg tracking-tight">Florida Driving Ranges</span>
         </Link>
 
