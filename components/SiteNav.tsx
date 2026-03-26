@@ -33,7 +33,7 @@ export default function SiteNav() {
             isHome ? 'text-white' : 'text-green-800'
           }`}
         >
-          <Image src="/images/logo.png" alt="" width={28} height={28} className="rounded-sm" aria-hidden="true" />
+          <Image src="/images/logo.png" alt="" width={84} height={84} className="rounded-sm" aria-hidden="true" />
           <span>Florida Driving Ranges</span>
         </Link>
 
