@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 
 const NAV_LINKS = [
   { href: '/', label: 'Directory' },
+  { href: '/blog', label: 'Blog' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -38,7 +39,7 @@ export default function SiteNav() {
         {/* Nav links */}
         <div className="flex items-center gap-1">
           {NAV_LINKS.map(({ href, label }) => {
-            const active = pathname === href;
+            const active = href === '/' ? pathname === href : pathname.startsWith(href);
             return (
               <Link
                 key={href}

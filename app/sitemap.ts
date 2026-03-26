@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { CITY_PAGES } from '@/lib/cities';
+import { BLOG_POSTS } from '@/lib/blog';
 
 const ranges = rangesData as Range[];
 
@@ -18,6 +19,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
+  }));
+
+  const blogIndexUrl = {
+    url: 'https://floridadrivingranges.com/blog',
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  };
+
+  const blogPostUrls = BLOG_POSTS.map((post) => ({
+    url: `https://floridadrivingranges.com/blog/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
   }));
 
   return [
@@ -39,6 +54,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    blogIndexUrl,
+    ...blogPostUrls,
     ...cityUrls,
     ...rangeUrls,
   ];
