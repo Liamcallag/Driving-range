@@ -171,7 +171,7 @@ export default function ReviewSection({ slug }: { slug: string }) {
           <h3 className="text-sm font-semibold text-slate-700">Leave a Review</h3>
 
           <div>
-            <label htmlFor="review-author" className="block text-xs font-medium text-slate-600 mb-1">Your Name</label>
+            <label htmlFor="review-author" className="block text-xs font-medium text-slate-600 mb-1">Your Name <span className="text-red-400" aria-hidden="true">*</span></label>
             <input
               id="review-author"
               ref={firstFieldRef}
@@ -185,12 +185,12 @@ export default function ReviewSection({ slug }: { slug: string }) {
           </div>
 
           <div>
-            <label htmlFor="review-rating" className="block text-xs font-medium text-slate-600 mb-1">Rating</label>
+            <label htmlFor="review-rating" className="block text-xs font-medium text-slate-600 mb-1">Rating <span className="text-red-400" aria-hidden="true">*</span></label>
             <StarPicker id="review-rating" value={rating} onChange={setRating} />
           </div>
 
           <div>
-            <label htmlFor="review-comment" className="block text-xs font-medium text-slate-600 mb-1">Comment</label>
+            <label htmlFor="review-comment" className="block text-xs font-medium text-slate-600 mb-1">Comment <span className="text-red-400" aria-hidden="true">*</span></label>
             <textarea
               id="review-comment"
               value={comment}
@@ -215,7 +215,7 @@ export default function ReviewSection({ slug }: { slug: string }) {
             </button>
             <button
               type="button"
-              onClick={() => { setShowForm(false); setError(''); }}
+              onClick={() => { setShowForm(false); setError(''); setAuthor(''); setRating(0); setComment(''); }}
               className="px-4 py-2 border border-slate-200 text-slate-600 text-sm font-medium rounded-lg hover:bg-slate-50 transition-colors"
             >
               Cancel

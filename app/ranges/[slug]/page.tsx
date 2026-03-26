@@ -135,7 +135,7 @@ function FeatureItem({ label, value, icon }: { label: string; value: string; ico
       <div>
         <p className="text-xs text-slate-500 font-medium uppercase tracking-wider">{label}</p>
         <p className={`text-sm font-semibold ${isYes ? 'text-emerald-700' : isNo ? 'text-slate-500' : 'text-slate-400'}`}>
-          {isUnknown ? '—' : value}
+          {isUnknown ? 'Not confirmed' : value}
         </p>
       </div>
     </div>

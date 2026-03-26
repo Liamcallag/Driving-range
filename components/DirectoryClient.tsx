@@ -94,6 +94,7 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [showMap, setShowMap] = useState(true);
+  const [sort, setSort] = useState<'default' | 'name-asc' | 'name-desc' | 'city'>('default');
 
   const cities = useMemo(() => getCities(ranges), [ranges]);
 
@@ -118,6 +119,14 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
     });
   }, [ranges, searchQuery, filters]);
 
+  const sorted = useMemo(() => {
+    const copy = [...filtered];
+    if (sort === 'name-asc') copy.sort((a, b) => a.name.localeCompare(b.name));
+    else if (sort === 'name-desc') copy.sort((a, b) => b.name.localeCompare(a.name));
+    else if (sort === 'city') copy.sort((a, b) => a.city.localeCompare(b.city));
+    return copy;
+  }, [filtered, sort]);
+
   function toggle<K extends keyof Filters>(key: K, value: Filters[K]) {
     setFilters((prev) => ({ ...prev, [key]: value }));
   }
@@ -134,6 +143,15 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
   const hasActiveFilters =
     searchQuery || filters.category !== 'all' || filters.techLevel !== 'all' ||
     filters.openNow || filters.city || activeAmenityCount > 0;
+
+  const activeChips: { label: string; onRemove: () => void }[] = [
+    ...(searchQuery ? [{ label: `"${searchQuery}"`, onRemove: () => setSearchQuery('') }] : []),
+    ...(filters.category !== 'all' ? [{ label: filters.category === 'indoor' ? 'Indoor' : 'Outdoor', onRemove: () => toggle('category', 'all') }] : []),
+    ...(filters.techLevel !== 'all' ? [{ label: filters.techLevel === 'high' ? 'High-Tech' : 'Traditional', onRemove: () => toggle('techLevel', 'all') }] : []),
+    ...(filters.city ? [{ label: filters.city, onRemove: () => toggle('city', '') }] : []),
+    ...(filters.openNow ? [{ label: 'Open Now', onRemove: () => toggle('openNow', false) }] : []),
+    ...amenities.filter(({ key }) => !!filters[key]).map(({ key, label }) => ({ label, onRemove: () => toggle(key, false) })),
+  ];
 
   const amenities: { key: keyof Filters; label: string; icon: string }[] = [
     { key: 'foodBar', label: 'Food & Bar', icon: '🍺' },
@@ -201,7 +219,7 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
           </div>
 
           <div>
-            <FilterLabel>Technology</FilterLabel>
+            <FilterLabel>Technology <span className="normal-case tracking-normal font-normal text-slate-300">— TrackMan, TopTracer or simulators</span></FilterLabel>
             <SegmentGroup
               groupLabel="Filter by technology level"
               options={[
@@ -297,6 +315,22 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
         </div>
       </div>
 
+      {/* ── Active filter chips ── */}
+      {activeChips.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-3" aria-label="Active filters">
+          {activeChips.map((chip) => (
+            <span key={chip.label} className="inline-flex items-center gap-1 px-2.5 py-1 bg-green-50 border border-green-200 text-green-800 text-xs font-medium rounded-full">
+              {chip.label}
+              <button onClick={chip.onRemove} aria-label={`Remove filter: ${chip.label}`} className="ml-0.5 hover:text-green-600">
+                <svg className="w-3 h-3" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                  <path d="M18 6 6 18M6 6l12 12" />
+                </svg>
+              </button>
+            </span>
+          ))}
+        </div>
+      )}
+
       {/* ── Results bar ── */}
       <div className="flex items-center justify-between mb-4">
         <p className="text-sm text-slate-500" aria-live="polite" aria-atomic="true">
@@ -307,25 +341,40 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
           )}{' '}
           driving range{filtered.length !== 1 ? 's' : ''}
         </p>
-        <button
-          onClick={() => setShowMap((v) => !v)}
-          className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-sm font-medium border transition-colors ${
-            showMap
-              ? 'bg-green-700 text-white border-green-700'
-              : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
-          }`}
-        >
+        <div className="flex items-center gap-2">
+          <label htmlFor="sort-select" className="text-xs text-slate-400 whitespace-nowrap">Sort by</label>
+          <select
+            id="sort-select"
+            value={sort}
+            onChange={(e) => setSort(e.target.value as typeof sort)}
+            className="h-[34px] pl-2 pr-7 text-sm rounded-lg border border-slate-200 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-green-500 appearance-none"
+            style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 8px center' }}
+          >
+            <option value="default">Default</option>
+            <option value="name-asc">Name A–Z</option>
+            <option value="name-desc">Name Z–A</option>
+            <option value="city">City</option>
+          </select>
+          <button
+            onClick={() => setShowMap((v) => !v)}
+            className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-sm font-medium border transition-colors ${
+              showMap
+                ? 'bg-green-700 text-white border-green-700'
+                : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
+            }`}
+          >
           <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
             <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13 6-3m-6 3V7m6 10 4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
           </svg>
-          {showMap ? 'Hide Map' : 'Show Map'}
-        </button>
+            {showMap ? 'Hide Map' : 'Show Map'}
+          </button>
+        </div>
       </div>
 
       {/* ── Map ── */}
       {showMap && (
         <div className="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm" style={{ height: '480px' }}>
-          <MapComponent ranges={filtered} />
+          <MapComponent ranges={sorted} />
         </div>
       )}
 
@@ -338,7 +387,7 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filtered.map((range) => (
+          {sorted.map((range) => (
             <RangeCard key={range.slug} range={range} />
           ))}
         </div>
