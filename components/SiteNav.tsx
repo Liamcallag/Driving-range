@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const NAV_LINKS = [
@@ -32,7 +33,7 @@ export default function SiteNav() {
             isHome ? 'text-white' : 'text-green-800'
           }`}
         >
-          <span className="text-lg" aria-hidden="true">⛳</span>
+          <Image src="/images/logo.png" alt="" width={28} height={28} className="rounded-sm" aria-hidden="true" />
           <span>Florida Driving Ranges</span>
         </Link>
 
