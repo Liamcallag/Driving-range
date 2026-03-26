@@ -18,7 +18,7 @@ export default function SiteNav() {
   return (
     <nav
       aria-label="Main navigation"
-      className={`fixed top-0 inset-x-0 z-50 h-14 flex items-center transition-colors ${
+      className={`fixed top-0 inset-x-0 z-50 h-16 flex items-center transition-colors ${
         isHome
           ? 'bg-black/30 backdrop-blur-md border-b border-white/10'
           : 'bg-white border-b border-slate-200 shadow-sm'
@@ -29,12 +29,15 @@ export default function SiteNav() {
         {/* Logo */}
         <Link
           href="/"
-          className={`flex items-center gap-2 font-bold text-sm sm:text-base shrink-0 ${
+          className={`flex items-center gap-3 font-bold shrink-0 ${
             isHome ? 'text-white' : 'text-green-800'
           }`}
         >
-          <Image src="/images/logo.png" alt="" width={42} height={42} className="rounded-sm" aria-hidden="true" />
-          <span>Florida Driving Ranges</span>
+          {/* Crop the whitespace in the PNG by zooming into the logo */}
+          <div className="w-9 h-9 overflow-hidden flex items-center justify-center">
+            <Image src="/images/logo.png" alt="" width={60} height={60} className="scale-[1.45]" aria-hidden="true" />
+          </div>
+          <span className="text-base sm:text-lg tracking-tight">Florida Driving Ranges</span>
         </Link>
 
         {/* Nav links */}
@@ -46,7 +49,7 @@ export default function SiteNav() {
                 key={href}
                 href={href}
                 aria-current={active ? 'page' : undefined}
-                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isHome
                     ? active
                       ? 'bg-white/20 text-white'
