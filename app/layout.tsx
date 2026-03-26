@@ -5,6 +5,13 @@ import SiteNav from "@/components/SiteNav";
 export const metadata: Metadata = {
   title: "Florida Driving Ranges — Directory",
   description: "Find driving ranges across Florida. Search by city, filter by indoor/outdoor, high-tech features like TrackMan and TopTracer, and more.",
+  icons: {
+    icon: [
+      { url: '/images/logo.png', sizes: '64x64', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: { url: '/images/logo.png', sizes: '180x180', type: 'image/png' },
+  },
 };
 
 export default function RootLayout({
