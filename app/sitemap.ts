@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
+import { CITY_PAGES } from '@/lib/cities';
 
 const ranges = rangesData as Range[];
 
@@ -10,6 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+  }));
+
+  const cityUrls = CITY_PAGES.map((city) => ({
+    url: `https://floridadrivingranges.com/cities/${city.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
   }));
 
   return [
@@ -31,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    ...cityUrls,
     ...rangeUrls,
   ];
 }

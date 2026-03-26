@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
+import { CITY_PAGES } from '@/lib/cities';
 import DirectoryClient from '@/components/DirectoryClient';
 
 const ranges = rangesData as Range[];
@@ -68,8 +70,28 @@ export default function HomePage() {
         <DirectoryClient ranges={ranges} />
       </main>
 
+      {/* ── Browse by City ── */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 border-t border-slate-200">
+        <h2 className="text-lg font-bold text-slate-800 mb-4">Browse by City</h2>
+        <div className="flex flex-wrap gap-2">
+          {CITY_PAGES.map((city) => {
+            const count = (rangesData as Range[]).filter((r) => r.city === city.name).length;
+            return (
+              <Link
+                key={city.slug}
+                href={`/cities/${city.slug}`}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 hover:border-green-400 hover:bg-green-50 hover:text-green-700 rounded-lg text-sm font-medium text-slate-700 transition-colors shadow-sm"
+              >
+                {city.name}
+                <span className="text-xs text-slate-400 font-normal">{count}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
       {/* ── Footer ── */}
-      <footer className="border-t border-slate-200 mt-10">
+      <footer className="border-t border-slate-200 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
           <p>Florida Driving Ranges Directory · {total} ranges listed statewide</p>
           <p className="mt-1">Data accurate as of 2026 · Hours subject to change</p>
