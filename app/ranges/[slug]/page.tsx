@@ -82,7 +82,7 @@ function buildJsonLd(range: Range, hours: Record<string, string>) {
     range.lighting === 'Yes' && 'Night Lighting',
     range.roof === 'Yes' && 'Covered Bays',
     (range.grass === 'Yes' || range.grass === 'Both') && 'Grass Tees',
-    (range.grass === 'No' || range.grass === 'Both') && 'Mat Tees',
+    (range.grass === 'No' || range.grass === 'Both' || range.grass === 'Unknown' || range.grass === '') && 'Mat Tees',
   ].filter(Boolean);
 
   return {
@@ -157,7 +157,7 @@ export default async function RangePage({ params }: PageProps) {
   const teeItems: { label: string; value: string; icon: string }[] = [];
   if (!isIndoor) {
     if (range.grass === 'Yes' || range.grass === 'Both') teeItems.push({ label: 'Grass Tees', value: 'Yes', icon: '🌿' });
-    if (range.grass === 'No' || range.grass === 'Both') teeItems.push({ label: 'Mats', value: 'Yes', icon: '🟫' });
+    if (range.grass === 'No' || range.grass === 'Both' || range.grass === 'Unknown' || range.grass === '') teeItems.push({ label: 'Mats', value: 'Yes', icon: '🟫' });
   }
 
   const claimSubject = encodeURIComponent(`Claim Listing: ${range.name}`);
