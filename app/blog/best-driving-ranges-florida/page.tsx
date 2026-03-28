@@ -45,7 +45,7 @@ export default function BestDrivingRangesFlorida() {
         </header>
 
         <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/best-ranges-florida.jpg" alt="Golfers practicing at a Florida driving range at golden hour" fill className="object-cover object-bottom" />
+          <Image src="/images/blog/best-ranges-florida.jpg" alt="Golfers practicing at a Florida driving range at golden hour" fill className="object-cover object-center" />
         </div>
 
         {/* Article content */}
