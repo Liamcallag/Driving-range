@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -43,9 +44,8 @@ export default function GrassTeeVsMats() {
           </p>
         </header>
 
-        {/* Image placeholder */}
-        <div className="w-full h-64 bg-gradient-to-br from-green-100 to-emerald-200 rounded-xl flex items-center justify-center text-green-500 text-6xl mb-8" aria-label="Grass vs mat tee comparison image placeholder">
-          🌿
+        <div className="w-full h-72 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/grass-tees.jpg" alt="Golfer swinging on an outdoor grass driving range" fill className="object-cover object-center" />
         </div>
 
         <article className="blog-content">

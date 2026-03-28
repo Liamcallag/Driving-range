@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -43,9 +44,8 @@ export default function HowToPractice() {
           </p>
         </header>
 
-        {/* Image placeholder */}
-        <div className="w-full h-64 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl flex items-center justify-center text-blue-400 text-6xl mb-8" aria-label="Golfer practicing image placeholder">
-          🏌️
+        <div className="w-full h-72 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/how-to-practice.jpg" alt="Golfer hitting at a covered driving range bay" fill className="object-cover object-top" />
         </div>
 
         <article className="blog-content">

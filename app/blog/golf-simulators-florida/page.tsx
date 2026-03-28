@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -43,9 +44,8 @@ export default function GolfSimulatorsFloridaPage() {
           </p>
         </header>
 
-        {/* Image placeholder */}
-        <div className="w-full h-64 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center text-orange-400 text-6xl mb-8" aria-label="Golf simulator image placeholder">
-          🖥️
+        <div className="w-full h-72 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/golf-simulator.png" alt="Indoor golf simulator bay with shot data on screen" fill className="object-cover" />
         </div>
 
         <article className="blog-content">
