@@ -45,7 +45,7 @@ export default function BlogIndexPage() {
           {/* Featured image */}
           {featured.image ? (
             <div className="w-full h-56 relative">
-              <Image src={featured.image} alt={featured.title} fill className="object-cover object-bottom" />
+              <Image src={featured.image} alt={featured.title} fill className="object-cover object-top" />
             </div>
           ) : (
             <div className="w-full h-56 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center text-green-400 text-5xl">
