@@ -3,7 +3,7 @@ import "./globals.css";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Florida Driving Ranges — Directory",
+  title: "Florida Driving Ranges | Find Ranges Near You",
   description: "Find driving ranges across Florida. Search by city, filter by indoor/outdoor, high-tech features like TrackMan and TopTracer, and more.",
   icons: {
     icon: [
