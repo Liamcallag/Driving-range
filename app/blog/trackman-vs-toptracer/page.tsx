@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -43,9 +44,8 @@ export default function TrackmanVsToptracer() {
           </p>
         </header>
 
-        {/* Image placeholder */}
-        <div className="w-full h-64 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center text-purple-400 text-6xl mb-8" aria-label="Golf technology image placeholder">
-          📡
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/trackman-toptracer.png" alt="TrackMan device and screen showing ball tracking data at a driving range bay" fill className="object-cover object-center" />
         </div>
 
         <article className="blog-content">

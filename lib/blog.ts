@@ -16,6 +16,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Locations',
     readTime: 7,
+    image: '/images/blog/best-ranges-florida.jpg',
   },
   {
     slug: 'best-driving-ranges-orlando',
@@ -24,6 +25,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Locations',
     readTime: 6,
+    image: '/images/blog/best-ranges-orlando.png',
   },
   {
     slug: 'best-driving-ranges-naples',
@@ -40,6 +42,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Technology',
     readTime: 6,
+    image: '/images/blog/trackman-toptracer.png',
   },
   {
     slug: 'how-to-practice-at-a-driving-range',
