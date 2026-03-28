@@ -66,6 +66,60 @@ export const CITY_PAGES: CityInfo[] = [
     intro: 'Spring Hill is a large community in Hernando County, just north of Tampa, with a golf culture rooted in its large residential and retirement population. The area\'s driving ranges tend to be community-oriented facilities offering accessible, affordable practice options for local residents. Spring Hill\'s location between Tampa and the Nature Coast means its facilities draw golfers from across the region looking for a relaxed practice environment away from the larger nearby cities.',
     closing: 'Spring Hill\'s community-focused driving ranges offer a relaxed, accessible option for golfers in Hernando County and the broader Nature Coast region. Check the listings above to find a facility near you.',
   },
+  {
+    name: 'Miami',
+    slug: 'miami',
+    intro: 'Miami is one of Florida\'s most dynamic cities, and its golf scene reflects that energy — offering a mix of traditional public ranges and modern entertainment venues spread across the broader metro area. The city\'s warm year-round climate makes it a natural fit for golf, and its diverse population has driven demand for facilities that cater to every level of player, from beginners picking up a club for the first time to serious golfers keeping their games sharp. Miami\'s driving ranges are well-positioned across the city, making it easy to find a practice session wherever you are in the metro.',
+    closing: 'Whether you\'re looking for a high-energy venue or a quiet spot to work on your swing, Miami\'s driving ranges offer solid options across the city. Browse the listings above to find the right fit for your game.',
+  },
+  {
+    name: 'Fort Lauderdale',
+    slug: 'fort-lauderdale',
+    intro: 'Fort Lauderdale\'s driving range scene punches above its weight, with a notable concentration of indoor simulator facilities alongside traditional outdoor options. The city\'s dense, urban layout has driven demand for indoor golf venues where players can practice regardless of Florida\'s afternoon rain showers, and several well-regarded simulator bars and boutique golf studios have established themselves here. Fort Lauderdale sits at the heart of Broward County\'s golf corridor, making it a convenient hub for golfers throughout South Florida.',
+    closing: 'From indoor simulator bays to traditional outdoor ranges, Fort Lauderdale has a solid selection for golfers across South Florida. Use the listings above to find the right venue for your next practice session.',
+  },
+  {
+    name: 'Sarasota',
+    slug: 'sarasota',
+    intro: 'Sarasota is one of Florida\'s most affluent mid-sized cities and has the golf infrastructure to match. The area\'s large seasonal and retirement population sustains a strong demand for quality practice facilities, and its ranges tend to be well-maintained and uncrowded compared to the busier venues found further south. Sarasota\'s location on Florida\'s Gulf Coast gives it some of the best weather in the state, making outdoor practice comfortable for most of the year.',
+    closing: 'Sarasota\'s golf scene is defined by quality and consistency — well-maintained facilities with a relaxed atmosphere that suits serious practice. Check the listings above to find the right range for your game.',
+  },
+  {
+    name: 'West Palm Beach',
+    slug: 'west-palm-beach',
+    intro: 'West Palm Beach anchors the northern end of South Florida\'s golf corridor and draws players from across Palm Beach County. The city and its surrounding communities have a deep golf culture, sustained in part by the region\'s large seasonal population and proximity to some of Florida\'s most prestigious courses. Its driving ranges offer convenient practice options for golfers who want to warm up before a round or maintain their game during extended stays in the area.',
+    closing: 'West Palm Beach\'s golf scene is well-established and growing. Browse the listings above to find a driving range in the area that suits your schedule and practice goals.',
+  },
+  {
+    name: 'Tallahassee',
+    slug: 'tallahassee',
+    intro: 'Tallahassee is the state capital and home to Florida State University, giving it a consistent base of golfers ranging from college players to government workers and local residents. The city\'s driving ranges tend to be traditional, course-affiliated facilities that emphasise genuine practice over entertainment, reflecting the no-nonsense golf culture found in North Florida. Tallahassee\'s cooler winters compared to the rest of Florida can actually make it more comfortable for outdoor practice during the peak of the state\'s dry season.',
+    closing: 'Tallahassee\'s driving ranges offer solid, unpretentious practice options in a city with a genuine appreciation for golf. Use the listings above to find a facility that fits your game.',
+  },
+  {
+    name: 'Clearwater',
+    slug: 'clearwater',
+    intro: 'Clearwater sits on Florida\'s Gulf Coast just west of Tampa and is known as much for its beaches as its golf. The city\'s driving ranges serve a mix of local residents, seasonal visitors, and golfers making their way through the Tampa Bay area. Clearwater\'s compact layout means several well-regarded facilities are clustered close together, making it easy to find a range that fits your schedule and budget. The city also benefits from the broader Tampa Bay golf ecosystem, with facilities catering to every skill level.',
+    closing: 'Clearwater\'s driving ranges offer convenient, quality practice options on Florida\'s Gulf Coast. Browse the listings above to find the right facility for your next session.',
+  },
+  {
+    name: 'St. Petersburg',
+    slug: 'st-petersburg',
+    intro: 'St. Petersburg has transformed in recent years into one of Florida\'s most vibrant cities, and its golf scene has evolved alongside it. The city now offers a mix of traditional municipal golf facilities and modern entertainment-focused venues — including a Topgolf location that has become a popular destination for both golfers and non-golfers alike. St. Pete\'s peninsular geography and waterfront setting give it a distinct character that sets it apart from the rest of the Tampa Bay market.',
+    closing: 'From Topgolf to classic municipal ranges, St. Petersburg has a driving range option for every type of golfer. Check the listings above to find the right fit for your game.',
+  },
+  {
+    name: 'Boca Raton',
+    slug: 'boca-raton',
+    intro: 'Boca Raton is synonymous with upscale South Florida living, and its golf scene reflects that reputation. The city\'s driving ranges and practice facilities tend to be well-maintained and well-equipped, serving an affluent population with high expectations for quality. Several of Boca\'s ranges are affiliated with established golf courses, offering a seamless experience for players who want to practice on the same surfaces they\'ll be playing on. The city\'s location between Miami and Fort Lauderdale also makes it a convenient stop for golfers travelling through South Florida.',
+    closing: 'Boca Raton\'s driving ranges deliver the quality and consistency you\'d expect from one of South Florida\'s premier golf communities. Use the listings above to find the right facility for your game.',
+  },
+  {
+    name: 'Pensacola',
+    slug: 'pensacola',
+    intro: 'Pensacola sits at the western tip of Florida\'s Panhandle and has a golf culture more closely tied to the Gulf Coast and Alabama than to the rest of Florida. The city\'s driving ranges are traditional facilities that serve a local population with a genuine passion for the game, offering accessible practice options without the tourist-oriented gloss found in some of the state\'s larger markets. Pensacola\'s mild Gulf Coast climate makes outdoor practice comfortable for the majority of the year, and the city\'s compact size keeps travel times between facilities short.',
+    closing: 'Pensacola\'s driving ranges offer honest, no-frills practice facilities in a city that takes golf seriously. Browse the listings above to find a range that suits your game.',
+  },
 ];
 
 export function getCityBySlug(slug: string): CityInfo | undefined {
