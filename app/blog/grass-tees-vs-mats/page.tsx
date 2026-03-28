@@ -131,7 +131,7 @@ export default function GrassTeeVsMats() {
 
           <h2>Finding Grass Tees in Florida</h2>
           <p>
-            Many Florida ranges offer both grass and mat options. Our directory notes the surface type where known — look for facilities listed as outdoor with grass tees if this is a priority for your practice sessions.
+            Many Florida ranges offer both grass and mat options. Our site notes the surface type where known — look for facilities listed as outdoor with grass tees if this is a priority for your practice sessions.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -154,7 +154,7 @@ export default function GrassTeeVsMats() {
 
       <footer className="border-t border-slate-200 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
-          <p>Florida Driving Ranges Directory</p>
+          <p>Florida Driving Ranges</p>
           <p className="mt-1">Data accurate as of 2026 · Hours subject to change</p>
         </div>
       </footer>

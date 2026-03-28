@@ -337,7 +337,7 @@ export default async function RangePage({ params }: PageProps) {
       <footer className="border-t border-slate-200 mt-10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-slate-400">
           <Link href="/" className="hover:text-green-700 transition-colors">
-            ← Back to Florida Driving Ranges Directory
+            ← Back to Florida Driving Ranges
           </Link>
         </div>
       </footer>

@@ -102,7 +102,7 @@ export default function BestDrivingRangesNaples() {
 
           <h2>Find a Range in Naples</h2>
           <p>
-            Use our directory to browse all driving ranges in Naples with details on category, tech level, and amenities.
+            Use our site to browse all driving ranges in Naples with details on category, tech level, and amenities.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -125,7 +125,7 @@ export default function BestDrivingRangesNaples() {
 
       <footer className="border-t border-slate-200 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
-          <p>Florida Driving Ranges Directory</p>
+          <p>Florida Driving Ranges</p>
           <p className="mt-1">Data accurate as of 2026 · Hours subject to change</p>
         </div>
       </footer>

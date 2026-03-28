@@ -140,7 +140,7 @@ export default function BestDrivingRangesFlorida() {
 
           <h2>How to Find Ranges Near You</h2>
           <p>
-            Our directory lists driving ranges across Florida with details on category, tech level, amenities, and hours. You can browse by city or search by name.
+            Our site lists driving ranges across Florida with details on category, tech level, amenities, and hours. You can browse by city or search by name.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -163,7 +163,7 @@ export default function BestDrivingRangesFlorida() {
 
       <footer className="border-t border-slate-200 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
-          <p>Florida Driving Ranges Directory</p>
+          <p>Florida Driving Ranges</p>
           <p className="mt-1">Data accurate as of 2026 · Hours subject to change</p>
         </div>
       </footer>

@@ -89,7 +89,7 @@ export default function BestDrivingRangesOrlando() {
 
           <h3>Location Within the Greater Orlando Area</h3>
           <p>
-            Orlando is a large metro area. A range that's convenient from the tourism corridor may be a long drive from Lake Nona or Sanford. Use our directory to filter by city and find options closest to where you are.
+            Orlando is a large metro area. A range that's convenient from the tourism corridor may be a long drive from Lake Nona or Sanford. Use our site to filter by city and find options closest to where you are.
           </p>
 
           <h3>Pricing and Booking</h3>
@@ -108,7 +108,7 @@ export default function BestDrivingRangesOrlando() {
 
           <h2>Finding the Right Range</h2>
           <p>
-            Our directory lists all the driving ranges in and around Orlando with details on category, technology level, amenities, and hours. Browse the full list to find the right fit for your game and schedule.
+            Our site lists all the driving ranges in and around Orlando with details on category, technology level, amenities, and hours. Browse the full list to find the right fit for your game and schedule.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -131,7 +131,7 @@ export default function BestDrivingRangesOrlando() {
 
       <footer className="border-t border-slate-200 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
-          <p>Florida Driving Ranges Directory</p>
+          <p>Florida Driving Ranges</p>
           <p className="mt-1">Data accurate as of 2026 · Hours subject to change</p>
         </div>
       </footer>

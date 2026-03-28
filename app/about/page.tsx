@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About | Florida Driving Ranges',
-  description: 'Learn about the Florida Driving Ranges directory — who we are and how we help golfers find the best practice facilities across Florida.',
+  description: 'Learn about Florida Driving Ranges — who we are and how we help golfers find the best practice facilities across Florida.',
 };
 
 export default function AboutPage() {
@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="mb-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-green-700 mb-2">About us</p>
           <h1 className="text-4xl font-bold text-slate-900 leading-tight mb-4">
-            Florida's Most Complete Driving Range Directory
+            Florida's Most Complete Driving Range Guide
           </h1>
           <p className="text-lg text-slate-500 leading-relaxed">
             We help golfers across Florida find the right place to practice — whether that's a high-tech simulator facility or a classic outdoor grass range.
@@ -28,7 +28,7 @@ export default function AboutPage() {
           <section className="bg-white border border-slate-100 rounded-xl shadow-sm p-6 space-y-4">
             <h2 className="text-lg font-bold text-slate-800">What we do</h2>
             <p>
-              Florida Driving Ranges is an independent directory listing over 260 driving ranges and golf practice facilities across the state. From the Florida Panhandle to the Keys, we've catalogued outdoor ranges, indoor simulator facilities, and everything in between.
+              Florida Driving Ranges lists over 260 driving ranges and golf practice facilities across the state. From the Florida Panhandle to the Keys, we've catalogued outdoor ranges, indoor simulator facilities, and everything in between.
             </p>
             <p>
               Every listing includes location, opening hours, amenities, tee surface type, technology (TrackMan, TopTracer, simulators), and whether food and drinks are available — so you can quickly decide whether a facility fits your needs before you make the trip.
@@ -81,7 +81,7 @@ export default function AboutPage() {
         {/* CTA */}
         <div className="mt-10 flex gap-3">
           <Link href="/" className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-colors">
-            Browse the Directory
+            Browse All Ranges
           </Link>
           <Link href="/contact" className="inline-flex items-center gap-2 border border-slate-200 hover:border-slate-300 text-slate-600 font-medium px-5 py-2.5 rounded-xl text-sm transition-colors bg-white">
             Contact Us

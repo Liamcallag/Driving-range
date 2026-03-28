@@ -34,7 +34,7 @@ export default function HomePage() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-40">
           <div className="inline-flex items-center gap-2 text-green-300 text-xs font-semibold uppercase tracking-widest mb-4">
             <span aria-hidden="true">⛳</span>
-            <span>Florida Golf Directory</span>
+            <span>Florida Golf Guide</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
             Florida Driving Ranges
@@ -93,7 +93,7 @@ export default function HomePage() {
       {/* ── Footer ── */}
       <footer className="border-t border-slate-200 mt-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
-          <p>Florida Driving Ranges Directory · {total} ranges listed statewide</p>
+          <p>Florida Driving Ranges · {total} ranges listed statewide</p>
           <p className="mt-1">Data accurate as of 2026 · Hours subject to change</p>
         </div>
       </footer>
