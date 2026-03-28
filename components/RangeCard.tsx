@@ -19,7 +19,7 @@ export default function RangeCard({ range }: RangeCardProps) {
     if (range.grass === 'Yes' || range.grass === 'Both') {
       teeTags.push({ label: 'Grass Tees', icon: '🌿' });
     }
-    if (range.grass === 'No' || range.grass === 'Both') {
+    if (range.grass === 'No' || range.grass === 'Both' || range.grass === 'Unknown' || range.grass === '') {
       teeTags.push({ label: 'Mats', icon: '🟫' });
     }
   }
