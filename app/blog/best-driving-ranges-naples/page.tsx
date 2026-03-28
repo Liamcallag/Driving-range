@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -43,9 +44,8 @@ export default function BestDrivingRangesNaples() {
           </p>
         </header>
 
-        {/* Image placeholder */}
-        <div className="w-full h-64 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center text-green-400 text-6xl mb-8" aria-label="Naples driving range image placeholder">
-          ⛳
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/best-ranges-naples.jpg" alt="Titleist driver behind a golf ball on a tee at a Naples grass range" fill className="object-cover object-center" />
         </div>
 
         <article className="blog-content">

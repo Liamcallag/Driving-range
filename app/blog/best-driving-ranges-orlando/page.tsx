@@ -45,7 +45,7 @@ export default function BestDrivingRangesOrlando() {
         </header>
 
         <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/best-ranges-orlando.png" alt="Driving range bay with mat, club and bucket of balls looking out at the range" fill className="object-cover object-center" />
+          <Image src="/images/blog/best-ranges-orlando.jpg" alt="Golfer swinging at a Topgolf-style entertainment range in Orlando" fill className="object-cover object-center" />
         </div>
 
         <article className="blog-content">

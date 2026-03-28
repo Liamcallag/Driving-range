@@ -25,7 +25,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Locations',
     readTime: 6,
-    image: '/images/blog/best-ranges-orlando.png',
+    image: '/images/blog/best-ranges-orlando.jpg',
   },
   {
     slug: 'best-driving-ranges-naples',
@@ -34,6 +34,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Locations',
     readTime: 5,
+    image: '/images/blog/best-ranges-naples.jpg',
   },
   {
     slug: 'trackman-vs-toptracer',
