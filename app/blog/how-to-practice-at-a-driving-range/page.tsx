@@ -44,8 +44,8 @@ export default function HowToPractice() {
           </p>
         </header>
 
-        <div className="w-full h-72 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/how-to-practice.jpg" alt="Golfer hitting at a covered driving range bay" fill className="object-cover object-top" />
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/how-to-practice.jpg" alt="Golfer hitting at a covered driving range bay" fill className="object-cover object-bottom" />
         </div>
 
         <article className="blog-content">

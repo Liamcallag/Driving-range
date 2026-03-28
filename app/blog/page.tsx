@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { BLOG_POSTS } from '@/lib/blog';
 
@@ -41,10 +42,16 @@ export default function BlogIndexPage() {
           href={`/blog/${featured.slug}`}
           className="block bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-green-300 transition-all mb-10 overflow-hidden group"
         >
-          {/* Image placeholder */}
-          <div className="w-full h-56 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center text-green-400 text-5xl">
-            ⛳
-          </div>
+          {/* Featured image */}
+          {featured.image ? (
+            <div className="w-full h-56 relative">
+              <Image src={featured.image} alt={featured.title} fill className="object-cover object-bottom" />
+            </div>
+          ) : (
+            <div className="w-full h-56 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center text-green-400 text-5xl">
+              ⛳
+            </div>
+          )}
           <div className="p-6">
             <div className="flex items-center gap-3 mb-3">
               <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${CATEGORY_COLORS[featured.category]}`}>
@@ -71,10 +78,16 @@ export default function BlogIndexPage() {
               href={`/blog/${post.slug}`}
               className="block bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-green-300 transition-all overflow-hidden group"
             >
-              {/* Image placeholder */}
-              <div className="w-full h-36 bg-gradient-to-br from-green-50 to-slate-100 flex items-center justify-center text-green-300 text-4xl">
-                ⛳
-              </div>
+              {/* Post image */}
+              {post.image ? (
+                <div className="w-full h-36 relative">
+                  <Image src={post.image} alt={post.title} fill className="object-cover object-bottom" />
+                </div>
+              ) : (
+                <div className="w-full h-36 bg-gradient-to-br from-green-50 to-slate-100 flex items-center justify-center text-green-300 text-4xl">
+                  ⛳
+                </div>
+              )}
               <div className="p-5">
                 <div className="flex items-center gap-2 mb-2">
                   <span className={`text-xs font-semibold px-2 py-0.5 rounded-full border ${CATEGORY_COLORS[post.category]}`}>

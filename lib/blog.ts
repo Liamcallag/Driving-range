@@ -5,6 +5,7 @@ export interface BlogPost {
   date: string;
   category: 'Locations' | 'Tips' | 'Technology' | 'Guides';
   readTime: number;
+  image?: string;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -47,6 +48,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Tips',
     readTime: 7,
+    image: '/images/blog/how-to-practice.jpg',
   },
   {
     slug: 'grass-tees-vs-mats',
@@ -55,6 +57,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Tips',
     readTime: 5,
+    image: '/images/blog/grass-tees.jpg',
   },
   {
     slug: 'golf-simulators-florida',
@@ -63,6 +66,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-26',
     category: 'Guides',
     readTime: 6,
+    image: '/images/blog/golf-simulator.png',
   },
 ];
 

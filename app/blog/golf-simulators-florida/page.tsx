@@ -44,7 +44,7 @@ export default function GolfSimulatorsFloridaPage() {
           </p>
         </header>
 
-        <div className="w-full h-72 relative rounded-xl overflow-hidden mb-8">
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
           <Image src="/images/blog/golf-simulator.png" alt="Indoor golf simulator bay with shot data on screen" fill className="object-cover" />
         </div>
 

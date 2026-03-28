@@ -44,8 +44,8 @@ export default function GrassTeeVsMats() {
           </p>
         </header>
 
-        <div className="w-full h-72 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/grass-tees.jpg" alt="Golfer swinging on an outdoor grass driving range" fill className="object-cover object-center" />
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/grass-tees.jpg" alt="Golfer swinging on an outdoor grass driving range" fill className="object-cover object-bottom" />
         </div>
 
         <article className="blog-content">
