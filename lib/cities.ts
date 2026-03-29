@@ -120,6 +120,18 @@ export const CITY_PAGES: CityInfo[] = [
     intro: 'Pensacola sits at the western tip of Florida\'s Panhandle and has a golf culture more closely tied to the Gulf Coast and Alabama than to the rest of Florida. The city\'s driving ranges are traditional facilities that serve a local population with a genuine passion for the game, offering accessible practice options without the tourist-oriented gloss found in some of the state\'s larger markets. Pensacola\'s mild Gulf Coast climate makes outdoor practice comfortable for the majority of the year, and the city\'s compact size keeps travel times between facilities short.',
     closing: 'Pensacola\'s driving ranges offer honest, no-frills practice facilities in a city that takes golf seriously. Browse the listings above to find a range that suits your game.',
   },
+  {
+    name: 'Lake Nona',
+    slug: 'lake-nona',
+    intro: 'Lake Nona is one of Orlando\'s fastest-growing communities and has built a reputation as a hub for innovation, active living, and sport. The area\'s affluent, health-conscious population has driven demand for high-quality leisure facilities, and golf is no exception. Lake Nona\'s driving range options cater to residents who want convenient, technology-forward ways to practice the game close to home — without making the longer drive into central Orlando or its surrounding suburbs.',
+    closing: 'Lake Nona\'s golf facilities reflect the area\'s modern, active character. Browse the listings above to find a driving range in the Lake Nona area.',
+  },
+  {
+    name: 'Cape Coral',
+    slug: 'cape-coral',
+    intro: 'Cape Coral is one of Florida\'s largest cities by area, a sprawling waterfront community on the Gulf Coast just across the Caloosahatchee River from Fort Myers. The city\'s large residential population and strong golf culture make it a natural home for quality practice facilities. Cape Coral\'s flat terrain, warm climate, and abundance of open space create ideal conditions for outdoor golf year-round, and its ranges serve a mix of committed local players and seasonal visitors who make Southwest Florida their winter base.',
+    closing: 'Cape Coral\'s driving ranges offer solid practice options in one of Southwest Florida\'s largest and most golf-friendly communities. Browse the listings above to find the right facility for your game.',
+  },
 ];
 
 export function getCityBySlug(slug: string): CityInfo | undefined {
