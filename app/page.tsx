@@ -75,7 +75,7 @@ export default function HomePage() {
         <h2 className="text-lg font-bold text-slate-800 mb-4">Browse by City</h2>
         <div className="flex flex-wrap gap-2">
           {CITY_PAGES.map((city) => {
-            const count = (rangesData as Range[]).filter((r) => r.city === city.name).length;
+            const count = (rangesData as Range[]).filter((r) => city.cities.includes(r.city)).length;
             return (
               <Link
                 key={city.slug}

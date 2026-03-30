@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const city = getCityBySlug(slug);
   if (!city) return { title: 'Not Found' };
 
-  const cityRanges = ranges.filter((r) => r.city === city.name);
+  const cityRanges = ranges.filter((r) => city.cities.includes(r.city));
 
   return {
     title: `Driving Ranges in ${city.name}, FL | Florida Driving Ranges`,
@@ -42,7 +42,7 @@ export default async function CityPage({ params }: PageProps) {
   const city = getCityBySlug(slug);
   if (!city) notFound();
 
-  const cityRanges = ranges.filter((r) => r.city === city.name);
+  const cityRanges = ranges.filter((r) => city.cities.includes(r.city));
   const outdoorCount = cityRanges.filter((r) => r.category === 'outdoor').length;
   const indoorCount = cityRanges.filter((r) => r.category === 'indoor').length;
   const highTechCount = cityRanges.filter((r) => r.techLevel === 'high').length;
