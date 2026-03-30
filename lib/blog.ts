@@ -79,7 +79,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-03-30',
     category: 'Guides',
     readTime: 8,
-    image: '/images/blog/golf-simulator.png',
+    image: '/images/blog/best-indoor-ranges-florida.png',
   },
 ];
 

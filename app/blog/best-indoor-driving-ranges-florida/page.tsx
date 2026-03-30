@@ -45,7 +45,7 @@ export default function BestIndoorDrivingRangesFlorida() {
         </header>
 
         <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/golf-simulator.png" alt="Indoor golf simulator bay with shot data displayed on screen" fill className="object-cover" />
+          <Image src="/images/blog/best-indoor-ranges-florida.png" alt="Indoor golf simulator lounge with multiple bays and seating area" fill className="object-cover" />
         </div>
 
         <article className="blog-content">
