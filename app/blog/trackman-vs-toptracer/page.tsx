@@ -58,7 +58,7 @@ export default function TrackmanVsToptracer() {
             At driving ranges, TrackMan is typically installed in individual bays and displays shot data on a monitor facing the golfer. Many installations also include virtual course simulation, allowing you to "play" famous courses from the range bay. TrackMan's accuracy is exceptional, and its data output is detailed enough to be useful at every level from weekend golfer to tour professional.
           </p>
           <p>
-            TrackMan tends to appear at higher-end facilities — coaching academies, private clubs, and premium practice centres. In Florida, you'll commonly find it at better-equipped independent ranges and at resort facilities in golf-heavy markets like Naples and the Palm Beaches.
+            TrackMan tends to appear at higher-end facilities — coaching academies, private clubs, and premium practice centres. In Florida, you'll commonly find it at better-equipped independent ranges and at resort facilities in golf-heavy markets like <Link href="/cities/naples" className="text-green-700 hover:text-green-800 font-medium">Naples</Link> and the <Link href="/cities/west-palm-beach" className="text-green-700 hover:text-green-800 font-medium">Palm Beaches</Link>.
           </p>
 
           <h2>What Is TopTracer?</h2>
@@ -132,6 +132,7 @@ export default function TrackmanVsToptracer() {
               ← Back to Blog
             </Link>
           </div>
+          <p className="mt-6 text-sm text-slate-500">Browse high-tech ranges by city: <Link href="/cities/orlando" className="text-green-700 hover:text-green-800 font-medium">Orlando</Link> · <Link href="/cities/tampa" className="text-green-700 hover:text-green-800 font-medium">Tampa</Link> · <Link href="/cities/naples" className="text-green-700 hover:text-green-800 font-medium">Naples</Link> · <Link href="/cities/west-palm-beach" className="text-green-700 hover:text-green-800 font-medium">West Palm Beach</Link> · <Link href="/cities/jacksonville" className="text-green-700 hover:text-green-800 font-medium">Jacksonville</Link></p>
 
         </article>
       </main>

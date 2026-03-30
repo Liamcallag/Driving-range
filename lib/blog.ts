@@ -72,6 +72,15 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 6,
     image: '/images/blog/golf-simulator.png',
   },
+  {
+    slug: 'best-indoor-driving-ranges-florida',
+    title: 'Best Indoor Driving Ranges in Florida (2026)',
+    description: 'The best indoor driving ranges and golf simulator facilities in Florida — from TrackMan bays and upscale sim lounges to casual bar-and-golf venues across the state.',
+    date: '2026-03-30',
+    category: 'Guides',
+    readTime: 8,
+    image: '/images/blog/golf-simulator.png',
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

@@ -148,6 +148,7 @@ export default function GrassTeeVsMats() {
               ← Back to Blog
             </Link>
           </div>
+          <p className="mt-6 text-sm text-slate-500">Find outdoor ranges by city: <Link href="/cities/naples" className="text-green-700 hover:text-green-800 font-medium">Naples</Link> · <Link href="/cities/sarasota" className="text-green-700 hover:text-green-800 font-medium">Sarasota</Link> · <Link href="/cities/jacksonville" className="text-green-700 hover:text-green-800 font-medium">Jacksonville</Link> · <Link href="/cities/tampa" className="text-green-700 hover:text-green-800 font-medium">Tampa</Link> · <Link href="/cities/orlando" className="text-green-700 hover:text-green-800 font-medium">Orlando</Link></p>
 
         </article>
       </main>

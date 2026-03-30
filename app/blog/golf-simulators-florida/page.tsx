@@ -156,6 +156,7 @@ export default function GolfSimulatorsFloridaPage() {
               ← Back to Blog
             </Link>
           </div>
+          <p className="mt-6 text-sm text-slate-500">Browse simulator facilities by city: <Link href="/cities/orlando" className="text-green-700 hover:text-green-800 font-medium">Orlando</Link> · <Link href="/cities/tampa" className="text-green-700 hover:text-green-800 font-medium">Tampa</Link> · <Link href="/cities/miami" className="text-green-700 hover:text-green-800 font-medium">Miami</Link> · <Link href="/cities/fort-lauderdale" className="text-green-700 hover:text-green-800 font-medium">Fort Lauderdale</Link> · <Link href="/cities/jacksonville" className="text-green-700 hover:text-green-800 font-medium">Jacksonville</Link></p>
 
         </article>
       </main>
