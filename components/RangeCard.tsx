@@ -51,7 +51,7 @@ export default function RangeCard({ range }: RangeCardProps) {
       <div className="flex flex-wrap gap-1.5 items-center">
         <span
           className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-            isIndoor ? 'bg-blue-100 text-blue-800' : 'bg-green-100 text-green-800'
+            isIndoor ? 'bg-orange-100 text-orange-800' : 'bg-green-100 text-green-800'
           }`}
         >
           {isIndoor ? 'Indoor' : 'Outdoor'}
