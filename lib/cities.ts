@@ -17,9 +17,9 @@ export const CITY_PAGES: CityInfo[] = [
   {
     name: 'Naples',
     slug: 'naples',
-    cities: ['Naples', 'Ave Maria'],
-    intro: 'Naples consistently ranks among Florida\'s top golf destinations, and its driving range offerings reflect the city\'s reputation for quality. From upscale country club practice facilities to accessible public ranges, Naples gives golfers a wide variety of options within a compact area. The region\'s mild winters make it particularly popular with seasonal visitors and snowbirds looking to keep their game sharp, and several facilities offer TrackMan and Toptracer technology alongside premium amenities.',
-    closing: 'Naples offers some of the best practice conditions in Florida, with consistently well-maintained facilities and a golf culture that takes the game seriously. Browse the listings above to find a driving range that matches your game and your schedule.',
+    cities: ['Naples', 'Ave Maria', 'Marco Island', 'Goodland', 'Chokoloskee', 'Copeland'],
+    intro: 'Naples is one of the most golf-dense cities in the United States, with more golf holes per capita than almost anywhere else in the country. The driving ranges here reflect that — well-maintained, professionally staffed, and equipped with premium amenities that match the expectations of the city\'s serious golf population. Public ranges in Naples offer grass tees, covered hitting areas, and in several cases TrackMan or Toptracer ball-tracking technology. Indoor simulator facilities have also grown in the area, giving golfers a climate-controlled option during Naples\' hot summer months. The area draws a large seasonal population from October through April, making it one of Florida\'s busiest golf markets during the winter. If you\'re visiting Naples or a local looking for a consistent place to practice, the options here are among the best in Southwest Florida.',
+    closing: 'Naples driving ranges are held to a high standard by a golf-serious local community and a demanding seasonal population. Whether you\'re after a quick warm-up before a round, a structured practice session, or an indoor simulator experience, you\'ll find quality options here. For more ranges nearby, the Fort Myers area just north of Naples offers additional outdoor and entertainment-focused facilities. Browse the listings above to find the right fit for your game.',
   },
   {
     name: 'Jacksonville',

@@ -81,6 +81,14 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 8,
     image: '/images/blog/best-indoor-ranges-florida.png',
   },
+  {
+    slug: 'best-driving-ranges-fort-lauderdale',
+    title: 'Best Driving Ranges in Fort Lauderdale, FL',
+    description: 'Fort Lauderdale has a strong mix of outdoor ranges and indoor simulator venues across Broward County. Here are the best options for golfers in the Fort Lauderdale area.',
+    date: '2026-04-01',
+    category: 'Locations',
+    readTime: 6,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
