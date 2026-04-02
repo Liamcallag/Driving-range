@@ -35,10 +35,10 @@ export default function BlogIndexPage() {
 
       {/* Hero */}
       <div className="bg-green-900 pt-32 pb-16 px-4">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto text-center">
           <p className="text-green-400 text-xs font-semibold uppercase tracking-widest mb-3">Florida Driving Ranges</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">Blog</h1>
-          <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl">
+          <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl mx-auto">
             Tips, guides, and local knowledge for golfers in Florida.
           </p>
         </div>

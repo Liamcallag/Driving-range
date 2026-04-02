@@ -66,9 +66,13 @@ export default function SiteNav() {
                 href={href}
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  active
-                    ? 'bg-white/20 text-white'
-                    : 'text-white/70 hover:text-white hover:bg-white/10'
+                  solid
+                    ? active
+                      ? 'bg-white/20 text-white'
+                      : 'text-white/70 hover:text-white hover:bg-white/10'
+                    : active
+                      ? 'bg-white/20 text-white'
+                      : 'text-green-300 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {label}
