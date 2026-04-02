@@ -88,6 +88,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-01',
     category: 'Locations',
     readTime: 6,
+    image: '/images/blog/best-ranges-fort-lauderdale.jpg',
   },
 ];
 

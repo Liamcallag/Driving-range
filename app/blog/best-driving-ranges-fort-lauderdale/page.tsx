@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -42,6 +43,10 @@ export default function BestDrivingRangesFortLauderdale() {
             Fort Lauderdale and Broward County have a surprisingly strong golf range scene — a dense mix of traditional outdoor facilities and a growing number of indoor simulator venues that have made the area one of South Florida's best spots to practice year-round.
           </p>
         </header>
+
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/best-ranges-fort-lauderdale.jpg" alt="Golfer finishing a driver swing at a Fort Lauderdale area driving range" fill className="object-cover object-center" />
+        </div>
 
         <article className="blog-content">
 
