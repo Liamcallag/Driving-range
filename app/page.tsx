@@ -23,7 +23,7 @@ export default function HomePage() {
           src="/images/hero-range.jpg"
           alt="Golfer at a driving range"
           fill
-          className="object-cover object-center"
+          className="object-cover object-[35%_center]"
           priority
           sizes="100vw"
         />

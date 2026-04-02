@@ -16,8 +16,16 @@ export default function SiteNav() {
   const pathname = usePathname();
   const isHome = pathname === '/';
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => { setMenuOpen(false); }, [pathname]);
+
+  useEffect(() => {
+    if (!isHome) return;
+    const onScroll = () => setScrolled(window.scrollY > 480);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [isHome]);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -26,13 +34,15 @@ export default function SiteNav() {
     return () => document.removeEventListener('click', handler);
   }, [menuOpen]);
 
+  const solid = !isHome || scrolled;
+
   return (
     <nav
       aria-label="Main navigation"
-      className={`fixed top-0 inset-x-0 z-50 transition-colors ${
-        isHome
-          ? 'bg-black/30 backdrop-blur-md border-b border-white/10'
-          : 'bg-green-900 border-b border-green-800'
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        solid
+          ? 'bg-green-900 border-b border-green-800'
+          : 'bg-black/30 backdrop-blur-md border-b border-white/10'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-16 flex items-center justify-between gap-4">
