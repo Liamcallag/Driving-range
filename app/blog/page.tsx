@@ -32,15 +32,20 @@ export default function BlogIndexPage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
 
-        {/* Header */}
-        <div className="mb-10">
-          <h1 className="text-4xl font-bold text-slate-900 mb-3">Blog</h1>
-          <p className="text-lg text-slate-600 max-w-2xl">
+      {/* Hero */}
+      <div className="bg-green-900 pt-32 pb-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-green-400 text-xs font-semibold uppercase tracking-widest mb-3">Florida Driving Ranges</p>
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">Blog</h1>
+          <p className="text-lg text-green-100/80 leading-relaxed max-w-2xl">
             Tips, guides, and local knowledge for golfers in Florida.
           </p>
         </div>
+      </div>
+
+      <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
+
 
         {/* Grouped sections */}
         <div className="flex flex-col gap-14">
