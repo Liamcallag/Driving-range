@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SiteNav from "@/components/SiteNav";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Florida Driving Ranges | Find Ranges Near You",
@@ -30,6 +31,7 @@ export default function RootLayout({
         </a>
         <SiteNav />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
