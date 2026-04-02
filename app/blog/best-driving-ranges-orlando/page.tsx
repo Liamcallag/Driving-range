@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function BestDrivingRangesOrlando() {
   return (
     <div className="min-h-screen bg-slate-50">
-      <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-6">

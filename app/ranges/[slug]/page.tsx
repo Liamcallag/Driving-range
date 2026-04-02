@@ -173,7 +173,7 @@ export default async function RangePage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main id="main-content" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10">
+      <main id="main-content" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
           {/* ── Left / main content ── */}
