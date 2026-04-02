@@ -22,8 +22,13 @@ const CATEGORY_COLORS: Record<string, string> = {
   Guides: 'bg-orange-50 text-orange-700 border-orange-200',
 };
 
+const CATEGORY_ORDER = ['Locations', 'Guides', 'Technology', 'Tips'];
+
 export default function BlogIndexPage() {
-  const [featured, ...rest] = BLOG_POSTS;
+  const grouped = CATEGORY_ORDER.reduce<Record<string, typeof BLOG_POSTS>>((acc, cat) => {
+    acc[cat] = BLOG_POSTS.filter((p) => p.category === cat);
+    return acc;
+  }, {});
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -37,71 +42,54 @@ export default function BlogIndexPage() {
           </p>
         </div>
 
-        {/* Featured post */}
-        <Link
-          href={`/blog/${featured.slug}`}
-          className="block bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-green-300 transition-all mb-10 overflow-hidden group"
-        >
-          {/* Featured image */}
-          {featured.image ? (
-            <div className="w-full h-56 relative">
-              <Image src={featured.image} alt={featured.title} fill className="object-cover object-top" />
-            </div>
-          ) : (
-            <div className="w-full h-56 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center text-green-400 text-5xl">
-              ⛳
-            </div>
-          )}
-          <div className="p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${CATEGORY_COLORS[featured.category]}`}>
-                {featured.category}
-              </span>
-              <span className="text-xs text-slate-400">{featured.readTime} min read</span>
-              <span className="text-xs text-slate-400">{new Date(featured.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-            </div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-2 group-hover:text-green-700 transition-colors">
-              {featured.title}
-            </h2>
-            <p className="text-slate-600 leading-relaxed">{featured.description}</p>
-            <span className="inline-block mt-4 text-sm font-medium text-green-700 group-hover:text-green-800">
-              Read article →
-            </span>
-          </div>
-        </Link>
+        {/* Grouped sections */}
+        <div className="flex flex-col gap-14">
+          {CATEGORY_ORDER.map((category) => {
+            const posts = grouped[category];
+            if (!posts || posts.length === 0) return null;
 
-        {/* Rest of posts */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {rest.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="block bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-green-300 transition-all overflow-hidden group"
-            >
-              {/* Post image */}
-              {post.image ? (
-                <div className="w-full h-36 relative">
-                  <Image src={post.image} alt={post.title} fill className="object-cover object-bottom" />
-                </div>
-              ) : (
-                <div className="w-full h-36 bg-gradient-to-br from-green-50 to-slate-100 flex items-center justify-center text-green-300 text-4xl">
-                  ⛳
-                </div>
-              )}
-              <div className="p-5">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className={`text-xs font-semibold px-2 py-0.5 rounded-full border ${CATEGORY_COLORS[post.category]}`}>
-                    {post.category}
+            return (
+              <section key={category}>
+                <div className="flex items-center gap-3 mb-6">
+                  <h2 className="text-xl font-bold text-slate-900">{category}</h2>
+                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${CATEGORY_COLORS[category]}`}>
+                    {posts.length} {posts.length === 1 ? 'article' : 'articles'}
                   </span>
-                  <span className="text-xs text-slate-400">{post.readTime} min read</span>
                 </div>
-                <h2 className="font-bold text-slate-900 mb-1.5 group-hover:text-green-700 transition-colors leading-snug">
-                  {post.title}
-                </h2>
-                <p className="text-sm text-slate-500 leading-relaxed line-clamp-3">{post.description}</p>
-              </div>
-            </Link>
-          ))}
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {posts.map((post) => (
+                    <Link
+                      key={post.slug}
+                      href={`/blog/${post.slug}`}
+                      className="block bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-green-300 transition-all overflow-hidden group"
+                    >
+                      {post.image ? (
+                        <div className="w-full h-36 relative">
+                          <Image src={post.image} alt={post.title} fill className="object-cover object-center" />
+                        </div>
+                      ) : (
+                        <div className="w-full h-36 bg-gradient-to-br from-green-50 to-slate-100 flex items-center justify-center text-green-300 text-4xl">
+                          ⛳
+                        </div>
+                      )}
+                      <div className="p-5">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-xs text-slate-400">{post.readTime} min read</span>
+                          <span className="text-xs text-slate-400">·</span>
+                          <span className="text-xs text-slate-400">{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}</span>
+                        </div>
+                        <h3 className="font-bold text-slate-900 mb-1.5 group-hover:text-green-700 transition-colors leading-snug">
+                          {post.title}
+                        </h3>
+                        <p className="text-sm text-slate-500 leading-relaxed line-clamp-3">{post.description}</p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
         </div>
 
       </main>
