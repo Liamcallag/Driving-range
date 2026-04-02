@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 const reasons = [
   {
     icon: '📝',
+    color: 'bg-green-100 text-green-700',
     title: 'Claim your listing',
     description: 'Own a driving range? Claim your listing to update hours, add details, or correct information.',
     subject: 'Claim a Listing',
@@ -16,6 +17,7 @@ const reasons = [
   },
   {
     icon: '🔧',
+    color: 'bg-blue-100 text-blue-700',
     title: 'Report an error',
     description: 'Spotted incorrect hours, a wrong address, or outdated information on a listing?',
     subject: 'Report an Error',
@@ -23,6 +25,7 @@ const reasons = [
   },
   {
     icon: '📍',
+    color: 'bg-orange-100 text-orange-700',
     title: 'Suggest a range',
     description: 'Know a Florida driving range that isn\'t listed? Let us know and we\'ll add it.',
     subject: 'Suggest a Range',
@@ -30,6 +33,7 @@ const reasons = [
   },
   {
     icon: '💬',
+    color: 'bg-purple-100 text-purple-700',
     title: 'General enquiry',
     description: 'Anything else — partnerships, advertising, or general questions about the directory.',
     subject: 'General Enquiry',
@@ -40,29 +44,36 @@ const reasons = [
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-slate-50">
-      <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
 
-        {/* Header */}
-        <div className="mb-10">
-          <p className="text-xs font-semibold uppercase tracking-widest text-green-700 mb-2">Get in touch</p>
-          <h1 className="text-4xl font-bold text-slate-900 leading-tight mb-4">Contact Us</h1>
-          <p className="text-lg text-slate-500 leading-relaxed">
+      {/* Hero */}
+      <div className="bg-green-900 pt-32 pb-16 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green-400 text-xs font-semibold uppercase tracking-widest mb-3">Get in touch</p>
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">
+            Contact Us
+          </h1>
+          <p className="text-lg text-green-100/80 leading-relaxed max-w-xl mx-auto">
             We'd love to hear from you. Choose a reason below and we'll get back to you as soon as possible.
           </p>
         </div>
+      </div>
+
+      <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
 
         {/* Contact cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
           {reasons.map((r) => (
             <a
               key={r.title}
               href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(r.subject)}&body=${encodeURIComponent(r.body)}`}
-              className="group bg-white border border-slate-200 hover:border-green-300 rounded-xl p-5 shadow-sm hover:shadow-md transition-all"
+              className="group bg-white border border-slate-200 hover:border-green-300 rounded-xl p-6 shadow-sm hover:shadow-md transition-all"
             >
-              <div className="text-2xl mb-3" aria-hidden="true">{r.icon}</div>
-              <h2 className="font-semibold text-slate-800 group-hover:text-green-700 transition-colors mb-1">{r.title}</h2>
+              <div className={`w-10 h-10 rounded-lg ${r.color} flex items-center justify-center text-xl mb-4`} aria-hidden="true">
+                {r.icon}
+              </div>
+              <h2 className="font-semibold text-slate-800 group-hover:text-green-700 transition-colors mb-1.5">{r.title}</h2>
               <p className="text-sm text-slate-500 leading-relaxed">{r.description}</p>
-              <p className="text-xs text-green-700 font-medium mt-3 group-hover:underline">
+              <p className="text-xs text-green-700 font-medium mt-4 group-hover:underline">
                 Send email →
               </p>
             </a>
@@ -70,17 +81,24 @@ export default function ContactPage() {
         </div>
 
         {/* Direct email */}
-        <div className="bg-white border border-slate-100 rounded-xl shadow-sm p-6 text-center">
-          <p className="text-sm text-slate-500 mb-1">Prefer to write your own email?</p>
+        <div className="bg-green-900 rounded-xl p-6 text-center">
+          <p className="text-green-100/70 text-sm mb-2">Prefer to write your own email?</p>
           <a
             href={`mailto:${CONTACT_EMAIL}`}
-            className="text-green-700 hover:text-green-800 font-semibold text-base underline underline-offset-2"
+            className="text-white hover:text-green-300 font-semibold text-base underline underline-offset-2 transition-colors"
           >
             {CONTACT_EMAIL}
           </a>
         </div>
 
       </main>
+
+      <footer className="border-t border-slate-200 mt-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-400">
+          <p>Florida Driving Ranges</p>
+          <p className="mt-1">Data accurate as of 2026 · Hours subject to change</p>
+        </div>
+      </footer>
     </div>
   );
 }

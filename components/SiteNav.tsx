@@ -17,10 +17,8 @@ export default function SiteNav() {
   const isHome = pathname === '/';
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Close menu on route change
   useEffect(() => { setMenuOpen(false); }, [pathname]);
 
-  // Close menu on outside click
   useEffect(() => {
     if (!menuOpen) return;
     const handler = () => setMenuOpen(false);
@@ -34,7 +32,7 @@ export default function SiteNav() {
       className={`fixed top-0 inset-x-0 z-50 transition-colors ${
         isHome
           ? 'bg-black/30 backdrop-blur-md border-b border-white/10'
-          : 'bg-white border-b border-slate-200 shadow-sm'
+          : 'bg-green-900 border-b border-green-800'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-16 flex items-center justify-between gap-4">
@@ -42,9 +40,7 @@ export default function SiteNav() {
         {/* Logo */}
         <Link
           href="/"
-          className={`flex items-center gap-3 font-bold shrink-0 ${
-            isHome ? 'text-white' : 'text-green-800'
-          }`}
+          className="flex items-center gap-3 font-bold shrink-0 text-white"
         >
           <Image src="/images/logo.png" alt="" width={36} height={36} aria-hidden="true" />
           <span className="text-base sm:text-lg tracking-tight">Florida Driving Ranges</span>
@@ -60,13 +56,9 @@ export default function SiteNav() {
                 href={href}
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isHome
-                    ? active
-                      ? 'bg-white/20 text-white'
-                      : 'text-white/70 hover:text-white hover:bg-white/10'
-                    : active
-                      ? 'bg-green-50 text-green-700'
-                      : 'text-slate-500 hover:text-slate-800 hover:bg-slate-50'
+                  active
+                    ? 'bg-white/20 text-white'
+                    : 'text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {label}
@@ -82,16 +74,16 @@ export default function SiteNav() {
           aria-expanded={menuOpen}
           onClick={(e) => { e.stopPropagation(); setMenuOpen((o) => !o); }}
         >
-          <span className={`block w-5 h-0.5 transition-all duration-200 ${isHome ? 'bg-white' : 'bg-slate-700'} ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-5 h-0.5 transition-all duration-200 ${isHome ? 'bg-white' : 'bg-slate-700'} ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-5 h-0.5 transition-all duration-200 ${isHome ? 'bg-white' : 'bg-slate-700'} ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </div>
 
       {/* Mobile dropdown */}
       {menuOpen && (
         <div
-          className="sm:hidden bg-white border-t border-slate-100 shadow-lg px-4 py-3 flex flex-col gap-1"
+          className="sm:hidden bg-green-900 border-t border-green-800 px-4 py-3 flex flex-col gap-1"
           onClick={(e) => e.stopPropagation()}
         >
           {NAV_LINKS.map(({ href, label }) => {
@@ -103,8 +95,8 @@ export default function SiteNav() {
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'bg-green-50 text-green-700'
-                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
+                    ? 'bg-white/20 text-white'
+                    : 'text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {label}
