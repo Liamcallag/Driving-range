@@ -14,11 +14,11 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-function createColoredIcon(color: string) {
+function createColoredIcon(bodyColor: string, circleColor: string) {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="24" height="36">
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24C24 5.373 18.627 0 12 0z" fill="${color}" stroke="white" stroke-width="1.5"/>
-      <circle cx="12" cy="12" r="4" fill="white" opacity="0.9"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24C24 5.373 18.627 0 12 0z" fill="${bodyColor}" stroke="white" stroke-width="1.5"/>
+      <circle cx="12" cy="12" r="4" fill="${circleColor}" opacity="0.95"/>
     </svg>
   `;
   return L.divIcon({
@@ -30,13 +30,21 @@ function createColoredIcon(color: string) {
   });
 }
 
-const icons = {
-  indoor:  createColoredIcon('#f97316'),  // orange-500
-  outdoor: createColoredIcon('#16a34a'),  // green-700
+// Body = category colour, circle = tech level colour
+// outdoor=green, indoor=orange | high-tech=purple, traditional=amber, unknown=white
+const icons: Record<string, ReturnType<typeof createColoredIcon>> = {
+  'outdoor-high':    createColoredIcon('#16a34a', '#9333ea'),
+  'outdoor-low':     createColoredIcon('#16a34a', '#d97706'),
+  'outdoor-unknown': createColoredIcon('#16a34a', '#ffffff'),
+  'indoor-high':     createColoredIcon('#f97316', '#9333ea'),
+  'indoor-low':      createColoredIcon('#f97316', '#d97706'),
+  'indoor-unknown':  createColoredIcon('#f97316', '#ffffff'),
 };
 
 function getIcon(range: Range) {
-  return range.category === 'indoor' ? icons.indoor : icons.outdoor;
+  const category = range.category === 'indoor' ? 'indoor' : 'outdoor';
+  const tech = range.techLevel === 'high' ? 'high' : range.techLevel === 'low' ? 'low' : 'unknown';
+  return icons[`${category}-${tech}`];
 }
 
 interface MapComponentProps {
