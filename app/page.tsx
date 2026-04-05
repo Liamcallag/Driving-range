@@ -53,7 +53,7 @@ export default function HomePage() {
               <div key={stat.label} className="flex items-center gap-8">
                 {i > 0 && <div className="w-px h-8 bg-white/20" />}
                 <div>
-                  <div className="text-3xl font-bold text-green-400">{stat.value}</div>
+                  <div className="text-3xl font-bold text-white">{stat.value}</div>
                   <div className="text-white/55 text-xs font-medium tracking-wide mt-0.5">{stat.label}</div>
                 </div>
               </div>

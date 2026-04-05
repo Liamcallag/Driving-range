@@ -41,7 +41,7 @@ export default function SiteNav() {
       aria-label="Main navigation"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         solid
-          ? 'bg-green-900 border-b border-green-800 shadow-sm'
+          ? 'bg-gray-950 border-b border-gray-800 shadow-sm'
           : 'bg-black/30 backdrop-blur-md border-b border-white/10'
       }`}
     >
@@ -93,7 +93,7 @@ export default function SiteNav() {
       {/* Mobile dropdown */}
       {menuOpen && (
         <div
-          className="sm:hidden bg-green-900 border-t border-green-800 px-4 py-3 flex flex-col gap-1"
+          className="sm:hidden bg-gray-950 border-t border-gray-800 px-4 py-3 flex flex-col gap-1"
           onClick={(e) => e.stopPropagation()}
         >
           {NAV_LINKS.map(({ href, label }) => {
