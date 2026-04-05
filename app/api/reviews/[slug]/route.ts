@@ -58,9 +58,8 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ slu
 
 export async function DELETE(req: NextRequest, { params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { searchParams } = new URL(req.url);
-  const id = searchParams.get('id');
-  const token = searchParams.get('token');
+  const body = await req.json().catch(() => ({}));
+  const { id, token } = body;
 
   if (!id || !token) return NextResponse.json({ error: 'Missing id or token' }, { status: 400 });
 

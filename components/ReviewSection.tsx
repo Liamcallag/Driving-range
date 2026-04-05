@@ -119,7 +119,11 @@ export default function ReviewSection({ slug }: { slug: string }) {
     if (!token) return;
     setDeleting(id);
     try {
-      const res = await fetch(`/api/reviews/${slug}?id=${id}&token=${token}`, { method: 'DELETE' });
+      const res = await fetch(`/api/reviews/${slug}`, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, token }),
+      });
       if (!res.ok) throw new Error('Failed');
       setReviews((prev) => prev.filter((r) => r.id !== id));
     } catch {
