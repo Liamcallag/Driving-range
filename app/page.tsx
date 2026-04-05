@@ -46,16 +46,19 @@ export default function HomePage() {
           </p>
 
           {/* Stats bar */}
-          <div className="mt-8 flex flex-wrap gap-6 max-w-2xl">
+          <div className="mt-8 flex flex-wrap items-center gap-8 max-w-2xl">
             {[
               { label: 'Total Ranges', value: total },
               { label: 'Outdoor', value: outdoorCount },
               { label: 'Indoor / Sim', value: indoorCount },
               { label: 'High-Tech', value: highTechCount },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-2xl font-bold text-white">{stat.value}</div>
-                <div className="text-white/60 text-xs mt-0.5">{stat.label}</div>
+            ].map((stat, i) => (
+              <div key={stat.label} className="flex items-center gap-8">
+                {i > 0 && <div className="w-px h-8 bg-white/20" />}
+                <div>
+                  <div className="text-3xl font-bold text-white">{stat.value}</div>
+                  <div className="text-white/55 text-xs font-medium tracking-wide mt-0.5">{stat.label}</div>
+                </div>
               </div>
             ))}
           </div>
