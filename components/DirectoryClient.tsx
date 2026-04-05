@@ -210,11 +210,6 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
               ]}
               value={filters.category}
               onChange={(v) => toggle('category', v)}
-              activeColors={{
-                all: 'bg-blue-600 text-white border-blue-600',
-                outdoor: 'bg-green-700 text-white border-green-700',
-                indoor: 'bg-orange-500 text-white border-orange-500',
-              }}
             />
           </div>
 
