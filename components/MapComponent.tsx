@@ -74,7 +74,7 @@ export default function MapComponent({ ranges, onRangeClick }: MapComponentProps
                 <span
                   className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${
                     range.category === 'indoor'
-                      ? 'bg-blue-100 text-blue-800'
+                      ? 'bg-orange-100 text-orange-800'
                       : 'bg-green-100 text-green-800'
                   }`}
                 >
