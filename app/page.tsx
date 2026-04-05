@@ -32,21 +32,17 @@ export default function HomePage() {
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-40">
-          <div className="hero-animate hero-animate-1 inline-flex items-center gap-2 text-green-300 text-xs font-semibold uppercase tracking-widest mb-4">
-            <span aria-hidden="true">⛳</span>
-            <span>Florida Golf Guide</span>
-          </div>
-          <h1 className="hero-animate hero-animate-2 text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
+          <h1 className="hero-animate hero-animate-1 text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
             Florida Driving Ranges
           </h1>
-          <p className="hero-animate hero-animate-3 text-white/75 text-lg leading-relaxed max-w-2xl">
+          <p className="hero-animate hero-animate-2 text-white/75 text-lg leading-relaxed max-w-2xl">
             Find the perfect driving range across Florida — from high-tech simulators and
             TrackMan bays to scenic outdoor grass ranges. Browse all{' '}
             <span className="font-semibold text-white">{total} ranges</span> statewide.
           </p>
 
           {/* Stats bar */}
-          <div className="hero-animate hero-animate-4 mt-8 flex flex-wrap items-center gap-8 max-w-2xl">
+          <div className="hero-animate hero-animate-3 mt-8 flex flex-wrap items-center gap-8 max-w-2xl">
             {[
               { label: 'Total Ranges', value: total },
               { label: 'Outdoor', value: outdoorCount },
