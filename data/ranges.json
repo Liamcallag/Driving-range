@@ -28,38 +28,8 @@
     "lat": 26.0163109,
     "lng": -81.62745129999999,
     "techLevel": "low",
-    "category": "outdoor"
-  },
-  {
-    "slug": "mike-bender-golf-academy",
-    "name": "Mike Bender Golf Academy",
-    "trackman": "Unknown",
-    "toptracer": "No",
-    "indoor": "No",
-    "beginnerFriendly": "Unknown",
-    "dresscode": "Unknown",
-    "foodBar": "No",
-    "lighting": "No",
-    "roof": "No",
-    "grass": "Unknown",
-    "phone": "+1 407-321-0444",
-    "website": "http://www.mikebender.com/",
-    "address": "600 Shadowmoss Cir, Lake Mary, FL 32746",
-    "street": "600 Shadowmoss Cir",
-    "city": "Lake Mary",
-    "county": "",
-    "state": "Florida",
-    "postalCode": "32746",
-    "rating": 4.2,
-    "reviews": 9,
-    "businessStatus": "OPERATIONAL",
-    "workingHours": "{\"Monday\": [\"8AM-6PM\"], \"Tuesday\": [\"8AM-6PM\"], \"Wednesday\": [\"8AM-6PM\"], \"Thursday\": [\"8AM-6PM\"], \"Friday\": [\"8AM-6PM\"], \"Saturday\": [\"8AM-6PM\"], \"Sunday\": [\"Closed\"]}",
-    "locationLink": "https://www.google.com/maps/place/Mike+Bender+Golf+Academy/@28.7733772,-81.39909709999999,14z/data=!4m8!1m2!2m1!1sMike+Bender+Golf+Academy!3m4!1s0x88e70ccc9525dd65:0x13a48759e952ae47!8m2!3d28.7733772!4d-81.39909709999999",
-    "description": "The Mike Bender Golf Academy in Lake Mary has earned a national reputation, consistently ranking among America's Top 25 Golf Schools. Led by Mike Bender himself, the academy offers one-on-one private lessons, intensive full-swing programs, and elite junior golf training designed to develop players at the collegiate and professional levels. A custom club fitting service uses advanced technology to match equipment precisely to each golfer's swing characteristics. The academy also features an online subscription program, making world-class instruction accessible beyond the physical facility.",
-    "lat": 28.7733772,
-    "lng": -81.39909709999999,
-    "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "orange-county-national-driving-range",
@@ -90,7 +60,8 @@
     "lat": 28.444192299999997,
     "lng": -81.63385749999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "rio-pinar-driving-range",
@@ -121,7 +92,8 @@
     "lat": 28.526357599999997,
     "lng": -81.2635608,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "falcon-watch-golf-driving-range",
@@ -152,7 +124,8 @@
     "lat": 27.701408599999997,
     "lng": -82.3725553,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "calusa-country-club-at-lakewood-ranch",
@@ -183,7 +156,8 @@
     "lat": 27.4387485,
     "lng": -82.3421236,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "glynlea-country-club",
@@ -214,7 +188,8 @@
     "lat": 27.345391,
     "lng": -80.437714,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-classics-country-club",
@@ -245,7 +220,8 @@
     "lat": 26.090936199999998,
     "lng": -81.6975858,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "eagles-edge-toptracer-range",
@@ -276,7 +252,8 @@
     "lat": 28.2630812,
     "lng": -81.6306561,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "space-coast-golf-club-bar-grille",
@@ -307,7 +284,8 @@
     "lat": 28.4257554,
     "lng": -80.6776421,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "legacy-golf-rangepar3",
@@ -338,7 +316,8 @@
     "lat": 30.208683299999997,
     "lng": -85.8413198,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "inlet-golf-range",
@@ -369,7 +348,8 @@
     "lat": 29.1134661,
     "lng": -80.9868268,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "charlotte-harbor-driving-range",
@@ -400,7 +380,8 @@
     "lat": 26.9653535,
     "lng": -82.0613738,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "top-of-the-tee",
@@ -431,7 +412,8 @@
     "lat": 30.0705328,
     "lng": -81.7176262,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "quail-heights-country-club",
@@ -462,7 +444,8 @@
     "lat": 30.169127,
     "lng": -82.675478,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "astor-creek-golf-country-club",
@@ -493,7 +476,8 @@
     "lat": 27.3004915,
     "lng": -80.45841759999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "hackaways-golf-driving-range",
@@ -520,11 +504,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"8AM-6PM\"], \"Tuesday\": [\"8AM-6PM\"], \"Wednesday\": [\"8AM-6PM\"], \"Thursday\": [\"8AM-6PM\"], \"Friday\": [\"8AM-6PM\"], \"Saturday\": [\"8AM-6PM\"], \"Sunday\": [\"8AM-6PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Hackaways+Golf+Driving+Range/@29.029148,-82.1102386,14z/data=!4m8!1m2!2m1!1sHackaways+Golf+Driving+Range!3m4!1s0x88e7d0c158483291:0xc79aa902b9a5bf2e!8m2!3d29.029148!4d-82.1102386",
-    "description": "Hackaways Golf Driving Range in Belleview offers a traditional outdoor range experience with the added appeal of real grass hitting surfaces — a feature many dedicated golfers strongly prefer over mats. The no-frills format keeps the focus squarely on the practice itself, free from the distractions of a larger entertainment complex. Its Marion County location serves a broad region of Central Florida golfers who value authentic turf conditions for ball-striking work. It's a dependable local range that draws repeat visitors precisely because of its simplicity.",
+    "description": "Hackaways Golf Driving Range in Belleview offers a traditional outdoor range experience with the added appeal of real grass hitting surfaces \u2014 a feature many dedicated golfers strongly prefer over mats. The no-frills format keeps the focus squarely on the practice itself, free from the distractions of a larger entertainment complex. Its Marion County location serves a broad region of Central Florida golfers who value authentic turf conditions for ball-striking work. It's a dependable local range that draws repeat visitors precisely because of its simplicity.",
     "lat": 29.029148,
     "lng": -82.1102386,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "belle-glade-municipal-golf-club",
@@ -555,7 +540,8 @@
     "lat": 26.7057081,
     "lng": -80.701425,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "twineagles-club",
@@ -582,11 +568,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "",
     "locationLink": "https://www.google.com/maps/place/TwinEagles+Club/@26.288307,-81.63100299999999,14z/data=!4m8!1m2!2m1!1sTwinEagles+Club!3m4!1s0x88db0469f8982073:0xf14ab078c5247cee!8m2!3d26.288307!4d-81.63100299999999",
-    "description": "TwinEagles Club in Naples is an ultra-exclusive private club spread across 1,115 acres of natural Florida landscape, featuring two championship golf courses with both grass and mat practice options. The club's lifestyle amenities — including world-class dining, personalized service, and a tight-knit membership — make it as much a residential community as a golf destination. The courses wind through preserved wetlands and old-growth cypress, providing some of the most scenic and serene golf experiences in Southwest Florida. It's the definition of a luxury club, where every detail is curated for the enjoyment of its members.",
+    "description": "TwinEagles Club in Naples is an ultra-exclusive private club spread across 1,115 acres of natural Florida landscape, featuring two championship golf courses with both grass and mat practice options. The club's lifestyle amenities \u2014 including world-class dining, personalized service, and a tight-knit membership \u2014 make it as much a residential community as a golf destination. The courses wind through preserved wetlands and old-growth cypress, providing some of the most scenic and serene golf experiences in Southwest Florida. It's the definition of a luxury club, where every detail is curated for the enjoyment of its members.",
     "lat": 26.288307,
     "lng": -81.63100299999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "dean-rileys-golf-center-388-driving-range",
@@ -617,7 +604,8 @@
     "lat": 30.3508206,
     "lng": -85.6458895,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "laplaya-golf-club",
@@ -648,7 +636,8 @@
     "lat": 26.2807154,
     "lng": -81.7786086,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "marriott-golf-academy",
@@ -679,7 +668,8 @@
     "lat": 28.3954772,
     "lng": -81.453605,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "stillwater-golf-and-country-club",
@@ -710,7 +700,8 @@
     "lat": 30.0612227,
     "lng": -81.5572918,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "stirling-park-driving-range",
@@ -741,7 +732,8 @@
     "lat": 28.0417028,
     "lng": -82.7823294,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "blue-cypress-golf-course",
@@ -772,7 +764,8 @@
     "lat": 30.377409099999998,
     "lng": -81.6097499,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "hunters-ridge-golf-country-club",
@@ -803,7 +796,8 @@
     "lat": 26.321837499999997,
     "lng": -81.7458003,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "burnt-pine-golf-club",
@@ -834,7 +828,8 @@
     "lat": 30.400697599999997,
     "lng": -86.3162433,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "adventureland",
@@ -865,38 +860,8 @@
     "lat": 28.770021399999997,
     "lng": -82.294342,
     "techLevel": "low",
-    "category": "outdoor"
-  },
-  {
-    "slug": "julio-nutt-golf-instruction",
-    "name": "Julio Nutt Golf Instruction",
-    "trackman": "No",
-    "toptracer": "No",
-    "indoor": "No",
-    "beginnerFriendly": "Unknown",
-    "dresscode": "Unknown",
-    "foodBar": "Unknown",
-    "lighting": "Unknown",
-    "roof": "Yes",
-    "grass": "",
-    "phone": "+1 305-303-9303",
-    "website": "https://www.julionutt.com/",
-    "address": "1200 Anastasia Ave, Coral Gables, FL 33134",
-    "street": "1200 Anastasia Ave",
-    "city": "Coral Gables",
-    "county": "Country Club Section",
-    "state": "Florida",
-    "postalCode": "33134",
-    "rating": 5,
-    "reviews": 99,
-    "businessStatus": "OPERATIONAL",
-    "workingHours": "{\"Monday\": [\"7AM-7PM\"], \"Tuesday\": [\"7AM-7PM\"], \"Wednesday\": [\"7AM-7PM\"], \"Thursday\": [\"7AM-7PM\"], \"Friday\": [\"7AM-7PM\"], \"Saturday\": [\"7AM-2PM\"], \"Sunday\": [\"7AM-1PM\"]}",
-    "locationLink": "https://www.google.com/maps/place/Julio+Nutt+Golf+Instruction/@25.739296099999997,-80.2800529,14z/data=!4m8!1m2!2m1!1sJulio+Nutt+Golf+Instruction!3m4!1s0x220977e4474ff7cb:0x98f4299d2175f297!8m2!3d25.739296099999997!4d-80.2800529",
-    "description": "Julio Nutt is a Golf Digest-recognized top instructor in Florida with over 20 years of coaching experience, operating out of the Coral Gables area. His instruction draws on direct training methodologies used at the highest levels of the game, with a focus on developing fundamentally sound, repeatable swings. Lessons are tailored to the individual, whether a beginner learning the basics or an experienced golfer seeking to refine a specific aspect of their game. For South Florida players serious about sustained improvement, working with Julio Nutt is a meaningful investment.",
-    "lat": 25.739296099999997,
-    "lng": -80.2800529,
-    "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "unf-driving-range",
@@ -927,7 +892,8 @@
     "lat": 30.2574184,
     "lng": -81.5044341,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "broward-golf-center",
@@ -958,7 +924,8 @@
     "lat": 26.240872099999997,
     "lng": -80.1769829,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "us-1-golf-center-inc",
@@ -989,7 +956,8 @@
     "lat": 28.2754731,
     "lng": -80.6923369,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "us-1-golf",
@@ -1020,7 +988,8 @@
     "lat": 27.503108899999997,
     "lng": -80.3474044,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "the-club-at-hidden-creek",
@@ -1047,11 +1016,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Sunday\": [\"6:30AM-6PM\"], \"Monday\": [\"6:30AM-6PM\"], \"Tuesday\": [\"6:30AM-6PM\"], \"Wednesday\": [\"6:30AM-6PM\"], \"Thursday\": [\"6:30AM-6PM\"], \"Friday\": [\"6:30AM-6PM\"], \"Saturday\": [\"6:30AM-6PM\"]}",
     "locationLink": "https://www.google.com/maps/place/The+Club+at+Hidden+Creek/@30.437728,-86.92445049999999,14z/data=!4m8!1m2!2m1!1sThe+Club+at+Hidden+Creek!3m4!1s0x8890df0daccb4979:0xb7f2e2fc3cf9e0b7!8m2!3d30.437728!4d-86.92445049999999",
-    "description": "The Club at Hidden Creek in Navarre is a public 18-hole championship course designed by Ron Garl, stretching 6,823 yards through lush, rolling Northwest Florida terrain. The course is widely praised for its excellent playing conditions, scenic landscape, and strategic layout that rewards thoughtful shot selection. On-site dining and direct online booking — always at the best available rate — make it a convenient and value-conscious choice for Panhandle golfers. Its reputation for exceptional course conditioning draws players from across the greater Pensacola metro.",
+    "description": "The Club at Hidden Creek in Navarre is a public 18-hole championship course designed by Ron Garl, stretching 6,823 yards through lush, rolling Northwest Florida terrain. The course is widely praised for its excellent playing conditions, scenic landscape, and strategic layout that rewards thoughtful shot selection. On-site dining and direct online booking \u2014 always at the best available rate \u2014 make it a convenient and value-conscious choice for Panhandle golfers. Its reputation for exceptional course conditioning draws players from across the greater Pensacola metro.",
     "lat": 30.437728,
     "lng": -86.92445049999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "terra-ceia-bay-country-club",
@@ -1082,7 +1052,8 @@
     "lat": 27.5389554,
     "lng": -82.5831079,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "southwinds-golf-course",
@@ -1109,11 +1080,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-5:30PM\"], \"Tuesday\": [\"6:30AM-5:30PM\"], \"Wednesday\": [\"6:30AM-5:30PM\"], \"Thursday\": [\"6:30AM-5:30PM\"], \"Friday\": [\"6:30AM-5:30PM\"], \"Saturday\": [\"6:30AM-6:30PM\"], \"Sunday\": [\"6:30AM-5:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Southwinds+Golf+Course/@26.387217099999997,-80.18830349999999,14z/data=!4m8!1m2!2m1!1sSouthwinds+Golf+Course!3m4!1s0x88d9194a6995e505:0xa37a7d362f24d284!8m2!3d26.387217099999997!4d-80.18830349999999",
-    "description": "Southwinds Golf Course in Boca Raton is a Palm Beach County-operated course with a natural setting teeming with wildlife — Canadian geese, otters, and a variety of Florida bird species frequently share the fairways with golfers. On-site dining and a frequent player card program add value for regular visitors. The course provides an affordable, publicly accessible round in an area where golf can often come at a premium price. Its natural surroundings and peaceful atmosphere make for a refreshingly unhurried golf experience in South Florida.",
+    "description": "Southwinds Golf Course in Boca Raton is a Palm Beach County-operated course with a natural setting teeming with wildlife \u2014 Canadian geese, otters, and a variety of Florida bird species frequently share the fairways with golfers. On-site dining and a frequent player card program add value for regular visitors. The course provides an affordable, publicly accessible round in an area where golf can often come at a premium price. Its natural surroundings and peaceful atmosphere make for a refreshingly unhurried golf experience in South Florida.",
     "lat": 26.387217099999997,
     "lng": -80.18830349999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-country-club-of-mount-dora",
@@ -1144,7 +1116,8 @@
     "lat": 28.8282262,
     "lng": -81.6246855,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "pensacola-golf-center",
@@ -1175,7 +1148,8 @@
     "lat": 30.4557215,
     "lng": -87.1802111,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "golf-world-discount-shop-and-driving-range",
@@ -1206,7 +1180,8 @@
     "lat": 26.740854,
     "lng": -81.916004,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "placid-lakes-country-club",
@@ -1237,7 +1212,8 @@
     "lat": 27.260517,
     "lng": -81.399956,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-saints-at-port-st-lucie-golf-course",
@@ -1268,7 +1244,8 @@
     "lat": 27.2639571,
     "lng": -80.30164719999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "coral-isle-golf-center",
@@ -1295,11 +1272,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"8:30AM-5:30PM\"], \"Tuesday\": [\"8:30AM-5:30PM\"], \"Wednesday\": [\"8:30AM-5:30PM\"], \"Thursday\": [\"8:30AM-5:30PM\"], \"Friday\": [\"8:30AM-5:30PM\"], \"Saturday\": [\"8:30AM-5:30PM\"], \"Sunday\": [\"8:30AM-5:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Coral+Isle+Golf+Center/@26.032138699999997,-81.69865519999999,14z/data=!4m8!1m2!2m1!1sCoral+Isle+Golf+Center!3m4!1s0x88dae52e5b85720f:0x92759c7fe80dd7b7!8m2!3d26.032138699999997!4d-81.69865519999999",
-    "description": "Coral Isle Golf Center in Naples offers a dual-surface range — with both grass and mat hitting areas — alongside a full-service pro shop and PGA-trained professional instruction. Scott Moser leads the teaching program, bringing a personalized approach to lessons for golfers across all skill levels. New and used club sales, gift certificates, and golf packages round out the retail and services offering. It's a locally rooted, community-focused range that serves as a dependable practice and equipment resource in Southwest Florida.",
+    "description": "Coral Isle Golf Center in Naples offers a dual-surface range \u2014 with both grass and mat hitting areas \u2014 alongside a full-service pro shop and PGA-trained professional instruction. Scott Moser leads the teaching program, bringing a personalized approach to lessons for golfers across all skill levels. New and used club sales, gift certificates, and golf packages round out the retail and services offering. It's a locally rooted, community-focused range that serves as a dependable practice and equipment resource in Southwest Florida.",
     "lat": 26.032138699999997,
     "lng": -81.69865519999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "cypresswood-golf-and-country-club",
@@ -1330,38 +1308,8 @@
     "lat": 28.014294699999997,
     "lng": -81.6486899,
     "techLevel": "low",
-    "category": "outdoor"
-  },
-  {
-    "slug": "brad-myers-pga-golf-lessons-bradenton-sarasota-lwr",
-    "name": "Brad Myers, PGA | Golf Lessons | Bradenton | Sarasota | LWR",
-    "trackman": "Yes",
-    "toptracer": "No",
-    "indoor": "No",
-    "beginnerFriendly": "Yes",
-    "dresscode": "No",
-    "foodBar": "No",
-    "lighting": "",
-    "roof": "",
-    "grass": "",
-    "phone": "+1 832-515-7625",
-    "website": "https://bradmyerspga.com/",
-    "address": "8000 Stone Harbour Loop, Bradenton, FL 34212",
-    "street": "8000 Stone Harbour Loop",
-    "city": "Bradenton",
-    "county": "",
-    "state": "Florida",
-    "postalCode": "34212",
-    "rating": 5,
-    "reviews": 138,
-    "businessStatus": "OPERATIONAL",
-    "workingHours": "{\"Monday\": [\"8AM-5PM\"], \"Tuesday\": [\"8AM-5PM\"], \"Wednesday\": [\"8AM-5PM\"], \"Thursday\": [\"8AM-5PM\"], \"Friday\": [\"8AM-5PM\"], \"Saturday\": [\"8AM-5PM\"], \"Sunday\": [\"Closed\"]}",
-    "locationLink": "https://www.google.com/maps/place/Brad+Myers%2C+PGA+%7C+Golf+Lessons+%7C+Bradenton+%7C+Sarasota+%7C+LWR/@27.494609999999998,-82.459054,14z/data=!4m8!1m2!2m1!1sBrad+Myers%2C+PGA+%7C+Golf+Lessons+%7C+Bradenton+%7C+Sarasota+%7C+LWR!3m4!1s0x88c34791ecd0595b:0x73161cf8123083cc!8m2!3d27.494609999999998!4d-82.459054",
-    "description": "Brad Myers, PGA, is a highly rated golf instructor serving the Sarasota, Bradenton, and Lakewood Ranch areas with a focus on building more consistent and repeatable swings through TrackMan-assisted analysis. His lessons are tailored to the individual, with group classes available for adults and seniors seeking a social and instructional experience. The use of launch monitor data allows Brad to provide objective, measurable feedback that accelerates improvement beyond what feel-based instruction can offer. For golfers in the Suncoast area looking for systematic game improvement, Brad Myers brings professional-level coaching within reach.",
-    "lat": 27.494609999999998,
-    "lng": -82.459054,
-    "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "gator-lakes-golf-course",
@@ -1392,7 +1340,8 @@
     "lat": 30.4361963,
     "lng": -86.6849055,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "mission-valley-golf-country-club",
@@ -1423,7 +1372,8 @@
     "lat": 27.1548908,
     "lng": -82.4464809,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "zenwoods-golf-club",
@@ -1454,7 +1404,8 @@
     "lat": 28.860686899999997,
     "lng": -82.2732382,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "westside-golf-center",
@@ -1485,7 +1436,8 @@
     "lat": 30.275586999999998,
     "lng": -81.82717889999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "lake-bess-golf-club",
@@ -1516,7 +1468,8 @@
     "lat": 27.970933799999997,
     "lng": -81.643738,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "royal-poinciana-golf-club",
@@ -1547,7 +1500,8 @@
     "lat": 26.1965228,
     "lng": -81.7795811,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "blackwater-golf-club",
@@ -1574,11 +1528,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Sunday\": [\"7AM-9PM\"], \"Monday\": [\"7AM-9PM\"], \"Tuesday\": [\"7AM-9PM\"], \"Wednesday\": [\"7AM-7PM\"], \"Thursday\": [\"7AM-9PM\"], \"Friday\": [\"7AM-11PM\"], \"Saturday\": [\"7AM-11PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Blackwater+Golf+Club/@30.7325305,-86.6204448,14z/data=!4m8!1m2!2m1!1sBlackwater+Golf+Club!3m4!1s0x88910d775abf1081:0xe270b351b8c482a!8m2!3d30.7325305!4d-86.6204448",
-    "description": "Blackwater Golf Club in Crestview — formerly Foxwood Country Club — has been comprehensively renovated and reopened as a fully public 18-hole championship course with a Toptracer-equipped driving range and lighted practice facilities. The redesigned course brings fresh energy to Northwest Florida golf, offering a competitive layout that welcomes players of all skill levels. Toptracer technology on the range adds interactive game options and accurate ball-tracking to practice sessions. It's a revitalized local gem that gives Okaloosa County golfers a quality venue with modern amenities.",
+    "description": "Blackwater Golf Club in Crestview \u2014 formerly Foxwood Country Club \u2014 has been comprehensively renovated and reopened as a fully public 18-hole championship course with a Toptracer-equipped driving range and lighted practice facilities. The redesigned course brings fresh energy to Northwest Florida golf, offering a competitive layout that welcomes players of all skill levels. Toptracer technology on the range adds interactive game options and accurate ball-tracking to practice sessions. It's a revitalized local gem that gives Okaloosa County golfers a quality venue with modern amenities.",
     "lat": 30.7325305,
     "lng": -86.6204448,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "pensacola-golf-at-cypress-lakes-golf-club",
@@ -1609,7 +1564,8 @@
     "lat": 30.579174,
     "lng": -87.2717132,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "suncoast-golf-center",
@@ -1636,11 +1592,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"8AM-9PM\"], \"Tuesday\": [\"8AM-9PM\"], \"Wednesday\": [\"8AM-9PM\"], \"Thursday\": [\"8AM-9PM\"], \"Friday\": [\"8AM-9PM\"], \"Saturday\": [\"8AM-9PM\"], \"Sunday\": [\"8AM-7PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Suncoast+Golf+Center/@27.4027271,-82.54554739999999,14z/data=!4m8!1m2!2m1!1sSuncoast+Golf+Center!3m4!1s0x88c33e340795f463:0xc5e09e68b45ef241!8m2!3d27.4027271!4d-82.54554739999999",
-    "description": "Suncoast Golf Center in Sarasota is a well-lit evening range with Toptracer technology, mat hitting bays, on-site food, and a pro shop — a comprehensive practice package in one facility. Toptracer turns routine range sessions into interactive experiences with virtual course play and real-time ball-tracking data. The center is open Monday through Saturday until 9 PM, making it one of the more accessible evening golf venues in the Sarasota-Bradenton metro. It's a practical and entertaining destination for golfers who want more from their range time than just bucket-and-ball.",
+    "description": "Suncoast Golf Center in Sarasota is a well-lit evening range with Toptracer technology, mat hitting bays, on-site food, and a pro shop \u2014 a comprehensive practice package in one facility. Toptracer turns routine range sessions into interactive experiences with virtual course play and real-time ball-tracking data. The center is open Monday through Saturday until 9 PM, making it one of the more accessible evening golf venues in the Sarasota-Bradenton metro. It's a practical and entertaining destination for golfers who want more from their range time than just bucket-and-ball.",
     "lat": 27.4027271,
     "lng": -82.54554739999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "la-cita-golf-country-club",
@@ -1671,7 +1628,8 @@
     "lat": 28.5745202,
     "lng": -80.8115351,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "singleton-golf-driving-range",
@@ -1702,7 +1660,8 @@
     "lat": 28.6241065,
     "lng": -80.83873609999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "indian-hills-golf-course",
@@ -1733,7 +1692,8 @@
     "lat": 27.4320705,
     "lng": -80.32543299999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "palatka-golf-course",
@@ -1760,11 +1720,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-6PM\"], \"Tuesday\": [\"7AM-6PM\"], \"Wednesday\": [\"7AM-6PM\"], \"Thursday\": [\"7AM-6PM\"], \"Friday\": [\"7AM-6PM\"], \"Saturday\": [\"7AM-6PM\"], \"Sunday\": [\"7AM-6PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Palatka+Golf+Course/@29.6309254,-81.6487563,14z/data=!4m8!1m2!2m1!1sPalatka+Golf+Course!3m4!1s0x88e664329166e45d:0xbb30626e95379a4a!8m2!3d29.6309254!4d-81.6487563",
-    "description": "Palatka Golf Club is recognized as the most historic public golf course in Florida and has earned a national ranking among America's top 30 municipal courses by Links Magazine. The vintage layout offers an authentic, traditional golf experience at a price point that's rare in the current market — firmly establishing its reputation as one of the best golf values in the Southeast. On-site dining complements a round that takes players through decades of Florida golf history. Golfers who appreciate the character of a truly old-school course will find Palatka genuinely special.",
+    "description": "Palatka Golf Club is recognized as the most historic public golf course in Florida and has earned a national ranking among America's top 30 municipal courses by Links Magazine. The vintage layout offers an authentic, traditional golf experience at a price point that's rare in the current market \u2014 firmly establishing its reputation as one of the best golf values in the Southeast. On-site dining complements a round that takes players through decades of Florida golf history. Golfers who appreciate the character of a truly old-school course will find Palatka genuinely special.",
     "lat": 29.6309254,
     "lng": -81.6487563,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "green-chasers-driving-range-zephyrhills",
@@ -1795,7 +1756,8 @@
     "lat": 28.225603099999997,
     "lng": -82.2313995,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "dundee-road-golf-range",
@@ -1826,7 +1788,8 @@
     "lat": 28.022765,
     "lng": -81.68551529999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "waldorf-astoria-golf-club",
@@ -1857,7 +1820,8 @@
     "lat": 28.352427,
     "lng": -81.53299,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "kissimmee-bay-country-club",
@@ -1888,7 +1852,8 @@
     "lat": 28.3077661,
     "lng": -81.32778929999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "oak-hills-golf-club",
@@ -1919,7 +1884,8 @@
     "lat": 28.499425499999997,
     "lng": -82.5570341,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-club-at-westminster",
@@ -1950,7 +1916,8 @@
     "lat": 26.6047084,
     "lng": -81.73231299999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "cocoa-beach-country-club",
@@ -1981,7 +1948,8 @@
     "lat": 28.3128383,
     "lng": -80.6355951,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "eagle-lakes-golf-club",
@@ -2008,11 +1976,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-5PM\"], \"Tuesday\": [\"6:30AM-5PM\"], \"Wednesday\": [\"6:30AM-5PM\"], \"Thursday\": [\"6:30AM-5PM\"], \"Friday\": [\"6:30AM-5PM\"], \"Saturday\": [\"6:30AM-5PM\"], \"Sunday\": [\"6:30AM-5PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Eagle+Lakes+Golf+Club/@26.0096793,-81.62838239999999,14z/data=!4m8!1m2!2m1!1sEagle+Lakes+Golf+Club!3m4!1s0x88dafa40296e4f73:0xf7dbb2c7e41847ba!8m2!3d26.0096793!4d-81.62838239999999",
-    "description": "Eagle Lakes Golf Club in Naples is a daily-fee public course recently renovated with new Bimini Bermuda fairways, featuring a par-72 layout designed around 21 lakes with five tee options from 4,466 to 7,144 yards. The course provides abundant wildlife sightings — including the American Bald Eagle for which it is named — and an authentic Florida Everglades atmosphere that few other courses in the region can match. A full bar and restaurant on-site make it a complete stop for both golf and dining. PGA instruction from an on-site professional rounds out the practice and development offerings.",
+    "description": "Eagle Lakes Golf Club in Naples is a daily-fee public course recently renovated with new Bimini Bermuda fairways, featuring a par-72 layout designed around 21 lakes with five tee options from 4,466 to 7,144 yards. The course provides abundant wildlife sightings \u2014 including the American Bald Eagle for which it is named \u2014 and an authentic Florida Everglades atmosphere that few other courses in the region can match. A full bar and restaurant on-site make it a complete stop for both golf and dining. PGA instruction from an on-site professional rounds out the practice and development offerings.",
     "lat": 26.0096793,
     "lng": -81.62838239999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "costa-del-sol-golf-club",
@@ -2043,7 +2012,8 @@
     "lat": 25.8072004,
     "lng": -80.359371,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "hibiscus-golf-club",
@@ -2074,7 +2044,8 @@
     "lat": 26.1076661,
     "lng": -81.7383629,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-shores-of-north-river-golf-club",
@@ -2105,7 +2076,8 @@
     "lat": 27.2275475,
     "lng": -80.275792,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "magnolia-point-golf-and-country-club",
@@ -2136,7 +2108,8 @@
     "lat": 30.000228399999997,
     "lng": -81.70921179999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "topgolf-panama-city-beach",
@@ -2167,7 +2140,8 @@
     "lat": 30.215461299999998,
     "lng": -85.86820399999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "abacoa-golf-club",
@@ -2194,11 +2168,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-7PM\"], \"Tuesday\": [\"7AM-7PM\"], \"Wednesday\": [\"7AM-7PM\"], \"Thursday\": [\"7AM-7PM\"], \"Friday\": [\"7AM-7PM\"], \"Saturday\": [\"7AM-7PM\"], \"Sunday\": [\"7AM-7PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Abacoa+Golf+Club/@26.8885231,-80.11991479999999,14z/data=!4m8!1m2!2m1!1sAbacoa+Golf+Club!3m4!1s0x88ded5bd8312522d:0x615dd6bf8ce74e0c!8m2!3d26.8885231!4d-80.11991479999999",
-    "description": "Abacoa Golf Club in Jupiter was the final course designed by renowned architect Joe Lee before his passing, and it stands as a fitting capstone — a public course that consistently ranks among the finest in South Florida. The design incorporates sloping terrain, lakes, and strategic bunkering to create a layout that rewards course management over raw power. Grass tees, on-site dining, and a pro shop make it a complete golf destination in Palm Beach County's northern communities. For public golfers who want a genuinely great course without a private club price tag, Abacoa is a must-play.",
+    "description": "Abacoa Golf Club in Jupiter was the final course designed by renowned architect Joe Lee before his passing, and it stands as a fitting capstone \u2014 a public course that consistently ranks among the finest in South Florida. The design incorporates sloping terrain, lakes, and strategic bunkering to create a layout that rewards course management over raw power. Grass tees, on-site dining, and a pro shop make it a complete golf destination in Palm Beach County's northern communities. For public golfers who want a genuinely great course without a private club price tag, Abacoa is a must-play.",
     "lat": 26.8885231,
     "lng": -80.11991479999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "duran-golf-club",
@@ -2229,7 +2204,8 @@
     "lat": 28.2373726,
     "lng": -80.7360175,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "aqua-golf-driving-range-pro-shop",
@@ -2256,11 +2232,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"9AM-9:30PM\"], \"Tuesday\": [\"9AM-9:30PM\"], \"Wednesday\": [\"9AM-9:30PM\"], \"Thursday\": [\"9AM-9:30PM\"], \"Friday\": [\"9AM-9:30PM\"], \"Saturday\": [\"9AM-9:30PM\"], \"Sunday\": [\"9AM-9:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Aqua+Golf+Driving+Range+%26+Pro+Shop/@25.991111099999998,-80.1713889,14z/data=!4m8!1m2!2m1!1sAqua+Golf+Driving+Range+%26+Pro+Shop!3m4!1s0x88d9abf67e9896d9:0x5bbd0aa2e564be24!8m2!3d25.991111099999998!4d-80.1713889",
-    "description": "Aqua Golf Driving Range in Hallandale Beach has been voted the best range in South Florida, conveniently positioned between Hallandale and Aventura with evening lighting for extended practice sessions. The facility includes a short game center, pro shop with equipment available for sale, club rentals, and professional lessons — a comprehensive practice resource in one well-organized facility. No grass tees are offered, but the mat hitting surfaces are well-maintained and the overall setup is consistently praised for quality and value. It's a high-reputation range with a loyal following across Broward and Miami-Dade counties.",
+    "description": "Aqua Golf Driving Range in Hallandale Beach has been voted the best range in South Florida, conveniently positioned between Hallandale and Aventura with evening lighting for extended practice sessions. The facility includes a short game center, pro shop with equipment available for sale, club rentals, and professional lessons \u2014 a comprehensive practice resource in one well-organized facility. No grass tees are offered, but the mat hitting surfaces are well-maintained and the overall setup is consistently praised for quality and value. It's a high-reputation range with a loyal following across Broward and Miami-Dade counties.",
     "lat": 25.991111099999998,
     "lng": -80.1713889,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "lely-resort-golf-and-country-club",
@@ -2287,11 +2264,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-4PM\"], \"Tuesday\": [\"7AM-4PM\"], \"Wednesday\": [\"7AM-4PM\"], \"Thursday\": [\"7AM-4PM\"], \"Friday\": [\"7AM-4PM\"], \"Saturday\": [\"7AM-4PM\"], \"Sunday\": [\"7AM-4PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Lely+Resort+Golf+and+Country+Club/@26.0848451,-81.701262,14z/data=!4m8!1m2!2m1!1sLely+Resort+Golf+and+Country+Club!3m4!1s0x88dae4a813e820a3:0x8bf7a83cbbd74421!8m2!3d26.0848451!4d-81.701262",
-    "description": "Lely Resort Golf and Country Club in Naples features two championship courses — the Flamingo and Mustang — that are open to the public within a prestigious private resort community, making them among the area's best-kept golfing secrets. Grass tees and full dining services complement the high-quality course conditions that Lely Resort has become known for. Membership options unlock additional perks and preferred tee times, but public access keeps the courses broadly available. It's a premium golfing experience in Naples that delivers genuine value for the quality on offer.",
+    "description": "Lely Resort Golf and Country Club in Naples features two championship courses \u2014 the Flamingo and Mustang \u2014 that are open to the public within a prestigious private resort community, making them among the area's best-kept golfing secrets. Grass tees and full dining services complement the high-quality course conditions that Lely Resort has become known for. Membership options unlock additional perks and preferred tee times, but public access keeps the courses broadly available. It's a premium golfing experience in Naples that delivers genuine value for the quality on offer.",
     "lat": 26.0848451,
     "lng": -81.701262,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "lady-lake-golf-driving-range",
@@ -2318,11 +2296,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"8AM-4PM\"], \"Tuesday\": [\"9AM-4PM\"], \"Wednesday\": [\"8AM-4PM\"], \"Thursday\": [\"8AM-4PM\"], \"Friday\": [\"8AM-4PM\"], \"Saturday\": [\"8AM-4PM\"], \"Sunday\": [\"8AM-4PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Lady+Lake+Golf+Driving+Range/@28.920226399999997,-81.9389346,14z/data=!4m8!1m2!2m1!1sLady+Lake+Golf+Driving+Range!3m4!1s0x88e7c6bdb2def9af:0xfb220a8c9e3158ab!8m2!3d28.920226399999997!4d-81.9389346",
-    "description": "The Lady Lake Bob Johnson Legacy Driving Range is a volunteer-operated facility maintained by American Legion Post 347 and the Orange Blossom Gardens Lion Club, with all proceeds donated to local and charitable organizations. The mat-surface range offers a simple, community-supported practice experience at a price that rewards frequent visitors — every tenth bucket purchased earns a free one. Its charitable mission gives it a community character that few ranges can match. For golfers in The Villages corridor who want to practice while supporting local causes, this range is a uniquely meaningful choice.",
+    "description": "The Lady Lake Bob Johnson Legacy Driving Range is a volunteer-operated facility maintained by American Legion Post 347 and the Orange Blossom Gardens Lion Club, with all proceeds donated to local and charitable organizations. The mat-surface range offers a simple, community-supported practice experience at a price that rewards frequent visitors \u2014 every tenth bucket purchased earns a free one. Its charitable mission gives it a community character that few ranges can match. For golfers in The Villages corridor who want to practice while supporting local causes, this range is a uniquely meaningful choice.",
     "lat": 28.920226399999997,
     "lng": -81.9389346,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "citrus-springs-golf-and-country-club",
@@ -2353,7 +2332,8 @@
     "lat": 28.988578699999998,
     "lng": -82.4712677,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-country-club-at-lake-city-pro-shop",
@@ -2384,7 +2364,8 @@
     "lat": 30.195863,
     "lng": -82.691745,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "stonebrook-golf-club",
@@ -2411,11 +2392,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Sunday\": [\"6AM-6PM\"], \"Monday\": [\"6AM-6PM\"], \"Tuesday\": [\"6AM-6PM\"], \"Wednesday\": [\"6AM-6PM\"], \"Thursday\": [\"6AM-6PM\"], \"Friday\": [\"6AM-6PM\"], \"Saturday\": [\"6AM-6PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Stonebrook+Golf+Club/@30.6415157,-87.18979639999999,14z/data=!4m8!1m2!2m1!1sStonebrook+Golf+Club!3m4!1s0x8890ed1f3bf1e65f:0x136dc2d680adefa0!8m2!3d30.6415157!4d-87.18979639999999",
-    "description": "Stonebrook Golf Club is tucked away in Pace, Florida — a peaceful bedroom community in Santa Rosa County just north of Pensacola — offering a welcoming 18-hole course with on-site dining. The club has a neighborly character that reflects its small-town surroundings, appealing to golfers who prefer a relaxed, unhurried experience over a high-profile resort atmosphere. Local membership keeps the course well-used by a loyal community of regulars. It's a well-maintained Panhandle option that rewards those willing to venture slightly off the main golf trail.",
+    "description": "Stonebrook Golf Club is tucked away in Pace, Florida \u2014 a peaceful bedroom community in Santa Rosa County just north of Pensacola \u2014 offering a welcoming 18-hole course with on-site dining. The club has a neighborly character that reflects its small-town surroundings, appealing to golfers who prefer a relaxed, unhurried experience over a high-profile resort atmosphere. Local membership keeps the course well-used by a loyal community of regulars. It's a well-maintained Panhandle option that rewards those willing to venture slightly off the main golf trail.",
     "lat": 30.6415157,
     "lng": -87.18979639999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "john-prince-golf-learning-center",
@@ -2446,7 +2428,8 @@
     "lat": 26.606443199999998,
     "lng": -80.0885977,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "park-ridge-golf-course",
@@ -2477,7 +2460,8 @@
     "lat": 26.593071499999997,
     "lng": -80.193484,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "sailfish-sands-hitting-bays-restaurant",
@@ -2508,7 +2492,8 @@
     "lat": 27.179861,
     "lng": -80.2054595,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "the-lakes-golf-club-in-lady-lake",
@@ -2539,7 +2524,8 @@
     "lat": 28.948481599999997,
     "lng": -81.93093089999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "crandon-golf-at-key-biscayne",
@@ -2570,7 +2556,8 @@
     "lat": 25.716390699999998,
     "lng": -80.1592507,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "remington-golf-club",
@@ -2601,7 +2588,8 @@
     "lat": 28.2909965,
     "lng": -81.323478,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "tampa-bay-downs-golf-driving-range",
@@ -2632,7 +2620,8 @@
     "lat": 28.0448898,
     "lng": -82.6478224,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "waterford-golf-club",
@@ -2663,7 +2652,8 @@
     "lat": 27.126044,
     "lng": -82.4062168,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-groves-golf-and-country-club",
@@ -2694,7 +2684,8 @@
     "lat": 28.273023499999997,
     "lng": -82.4744832,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "buckhorn-springs-golf-and-country-club",
@@ -2725,7 +2716,8 @@
     "lat": 27.9052984,
     "lng": -82.2428319,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "forest-lake-golf-club",
@@ -2756,7 +2748,8 @@
     "lat": 28.5995909,
     "lng": -81.5351046,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "spruce-creek-country-club",
@@ -2783,11 +2776,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-5PM\"], \"Tuesday\": [\"7AM-5PM\"], \"Wednesday\": [\"7AM-5PM\"], \"Thursday\": [\"7AM-5PM\"], \"Friday\": [\"7AM-5PM\"], \"Saturday\": [\"7AM-5PM\"], \"Sunday\": [\"7AM-5PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Spruce+Creek+Country+Club/@29.0755886,-81.0487344,14z/data=!4m8!1m2!2m1!1sSpruce+Creek+Country+Club!3m4!1s0x88e7271e7d738f11:0x8fdaa0b0bdc59e06!8m2!3d29.0755886!4d-81.0487344",
-    "description": "Spruce Creek Country Club in Port Orange is a private residential community club built around the famous Spruce Creek Fly-In, one of the world's largest residential airpark communities. The course serves residents of this unique neighborhood with a well-maintained layout and active social programming. The aviation-themed culture of the surrounding community gives the club a distinctive identity unlike any other country club in Florida. For pilots who golf — or golfers who aspire to fly — Spruce Creek is a one-of-a-kind membership experience.",
+    "description": "Spruce Creek Country Club in Port Orange is a private residential community club built around the famous Spruce Creek Fly-In, one of the world's largest residential airpark communities. The course serves residents of this unique neighborhood with a well-maintained layout and active social programming. The aviation-themed culture of the surrounding community gives the club a distinctive identity unlike any other country club in Florida. For pilots who golf \u2014 or golfers who aspire to fly \u2014 Spruce Creek is a one-of-a-kind membership experience.",
     "lat": 29.0755886,
     "lng": -81.0487344,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "verandah-golf-club",
@@ -2814,11 +2808,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-5PM\"], \"Tuesday\": [\"7AM-5PM\"], \"Wednesday\": [\"7AM-5PM\"], \"Thursday\": [\"7AM-5PM\"], \"Friday\": [\"7AM-5PM\"], \"Saturday\": [\"7AM-5PM\"], \"Sunday\": [\"7AM-5PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Verandah+Golf+Club/@26.6899542,-81.7524509,14z/data=!4m8!1m2!2m1!1sVerandah+Golf+Club!3m4!1s0x88db6ee6936a5e6d:0x91536a04bd31878e!8m2!3d26.6899542!4d-81.7524509",
-    "description": "Verandah Golf Club in Fort Myers is a private residential community featuring two 18-hole championship courses — Old Orange and Whispering Oak — set within 1,400 acres of natural Florida preserve land along the Caloosahatchee River. The club's commitment to preservation gives golfers a genuinely scenic round through untouched natural habitat. Full dining, fitness, and social amenities complete a lifestyle offering that goes well beyond golf. Membership at Verandah is a compelling option for Southwest Florida residents who want championship golf in an environmentally thoughtful setting.",
+    "description": "Verandah Golf Club in Fort Myers is a private residential community featuring two 18-hole championship courses \u2014 Old Orange and Whispering Oak \u2014 set within 1,400 acres of natural Florida preserve land along the Caloosahatchee River. The club's commitment to preservation gives golfers a genuinely scenic round through untouched natural habitat. Full dining, fitness, and social amenities complete a lifestyle offering that goes well beyond golf. Membership at Verandah is a compelling option for Southwest Florida residents who want championship golf in an environmentally thoughtful setting.",
     "lat": 26.6899542,
     "lng": -81.7524509,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "wekiva-golf-club",
@@ -2849,7 +2844,8 @@
     "lat": 28.694935899999997,
     "lng": -81.450929,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "golf-hammock-golf-club",
@@ -2880,7 +2876,8 @@
     "lat": 27.477584,
     "lng": -81.50665389999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-yards",
@@ -2911,7 +2908,8 @@
     "lat": 30.214931699999998,
     "lng": -81.3901423,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "summertree-golf-club",
@@ -2942,7 +2940,8 @@
     "lat": 28.3291953,
     "lng": -82.62598129999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-golf-club-at-summerbrooke",
@@ -2973,7 +2972,8 @@
     "lat": 30.573748,
     "lng": -84.259458,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "green-valley-country-club",
@@ -3004,7 +3004,8 @@
     "lat": 28.561646699999997,
     "lng": -81.81442899999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-club-at-river-wilderness",
@@ -3035,7 +3036,8 @@
     "lat": 27.534927,
     "lng": -82.4368667,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "bay-point-golf-club",
@@ -3062,11 +3064,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Sunday\": [\"6AM-6PM\"], \"Monday\": [\"6AM-6PM\"], \"Tuesday\": [\"6AM-6PM\"], \"Wednesday\": [\"6AM-6PM\"], \"Thursday\": [\"6AM-6PM\"], \"Friday\": [\"6AM-6PM\"], \"Saturday\": [\"6AM-6PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Bay+Point+Golf+Club/@30.147423699999997,-85.72805439999999,14z/data=!4m8!1m2!2m1!1sBay+Point+Golf+Club!3m4!1s0x8893f27768aae099:0xc1046f57b7a25c3a!8m2!3d30.147423699999997!4d-85.72805439999999",
-    "description": "Bay Point Golf Club in Panama City Beach is one of the Panhandle's premier destination golf facilities, featuring two championship courses — the Meadows and the Nicklaus Design Lagoon Legend — set within the expansive Marriott Bay Point Resort complex. The courses offer varied challenges with water features, bunkers, and scenic views of the surrounding bay and resort landscape. Dining and full resort amenities are integrated throughout the property. It's a bucket-list destination for golfers visiting the Emerald Coast, combining world-class design with prime waterfront surroundings.",
+    "description": "Bay Point Golf Club in Panama City Beach is one of the Panhandle's premier destination golf facilities, featuring two championship courses \u2014 the Meadows and the Nicklaus Design Lagoon Legend \u2014 set within the expansive Marriott Bay Point Resort complex. The courses offer varied challenges with water features, bunkers, and scenic views of the surrounding bay and resort landscape. Dining and full resort amenities are integrated throughout the property. It's a bucket-list destination for golfers visiting the Emerald Coast, combining world-class design with prime waterfront surroundings.",
     "lat": 30.147423699999997,
     "lng": -85.72805439999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "disneys-palm-golf-course",
@@ -3097,7 +3100,8 @@
     "lat": 28.402554199999997,
     "lng": -81.5918195,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "panther-run-golf-club",
@@ -3128,7 +3132,8 @@
     "lat": 26.309113,
     "lng": -81.442842,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "twin-brooks-golf-course",
@@ -3159,7 +3164,8 @@
     "lat": 27.7468681,
     "lng": -82.6863174,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "stoneybrook-east-golf-club",
@@ -3190,7 +3196,8 @@
     "lat": 28.513102999999997,
     "lng": -81.18064059999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "inverness-golf-country-club",
@@ -3221,7 +3228,8 @@
     "lat": 28.816646499999997,
     "lng": -82.2898864,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "tpc-tampa-bay",
@@ -3252,7 +3260,8 @@
     "lat": 28.154799999999998,
     "lng": -82.52863099999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "fairwinds-golf-course",
@@ -3283,7 +3292,8 @@
     "lat": 27.504997699999997,
     "lng": -80.3573503,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "shalimar-pointe-golf-club",
@@ -3314,7 +3324,8 @@
     "lat": 30.4384832,
     "lng": -86.5527374,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "hammock-creek-golf-club",
@@ -3345,7 +3356,8 @@
     "lat": 27.1489677,
     "lng": -80.2871399,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "hilaman-golf-course",
@@ -3376,7 +3388,8 @@
     "lat": 30.419271499999997,
     "lng": -84.24710739999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-amelia-river-club",
@@ -3407,7 +3420,8 @@
     "lat": 30.601111099999997,
     "lng": -81.46611109999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "timber-pines-community-association",
@@ -3434,11 +3448,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"8AM-5PM\"], \"Tuesday\": [\"8AM-5PM\"], \"Wednesday\": [\"8AM-5PM\"], \"Thursday\": [\"8AM-5PM\"], \"Friday\": [\"8AM-5PM\"], \"Saturday\": [\"Closed\"], \"Sunday\": [\"Closed\"]}",
     "locationLink": "https://www.google.com/maps/place/Timber+Pines+Community+Association/@28.466838199999998,-82.608784,14z/data=!4m8!1m2!2m1!1sTimber+Pines+Community+Association!3m4!1s0x88c29e2b895936e7:0x25df50245f8c9ac!8m2!3d28.466838199999998!4d-82.608784",
-    "description": "Timber Pines in Spring Hill is a gated active-adult community with multiple golf courses serving its residents as part of a broader lifestyle amenity package. The community-focused golf program includes organized leagues, social events, and a variety of course options catering to different skill levels within the membership. Surrounding amenities — including fitness, pool, and entertainment facilities — make golf one part of a comprehensive resort-style lifestyle. It's a well-established community where the golf program is deeply integrated into daily resident life.",
+    "description": "Timber Pines in Spring Hill is a gated active-adult community with multiple golf courses serving its residents as part of a broader lifestyle amenity package. The community-focused golf program includes organized leagues, social events, and a variety of course options catering to different skill levels within the membership. Surrounding amenities \u2014 including fitness, pool, and entertainment facilities \u2014 make golf one part of a comprehensive resort-style lifestyle. It's a well-established community where the golf program is deeply integrated into daily resident life.",
     "lat": 28.466838199999998,
     "lng": -82.608784,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "heritage-palms-golf-country-club",
@@ -3469,7 +3484,8 @@
     "lat": 26.5909352,
     "lng": -81.82108769999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "brentwood-golf-course",
@@ -3500,7 +3516,8 @@
     "lat": 30.3680322,
     "lng": -81.6745218,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-preserve-at-turnbull-bay",
@@ -3531,7 +3548,8 @@
     "lat": 29.0576667,
     "lng": -80.97146599999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "osprey-point-golf-course",
@@ -3562,7 +3580,8 @@
     "lat": 26.367420499999998,
     "lng": -80.2441355,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "willowbrook-golf-course",
@@ -3593,7 +3612,8 @@
     "lat": 28.0674939,
     "lng": -81.7025728,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "clermont-national",
@@ -3624,7 +3644,8 @@
     "lat": 28.5563224,
     "lng": -81.7055847,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "rockledge-country-club",
@@ -3655,7 +3676,8 @@
     "lat": 28.3354252,
     "lng": -80.7436293,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "slammer-squire-golf-course",
@@ -3686,7 +3708,8 @@
     "lat": 29.990294499999997,
     "lng": -81.4713709,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "perdido-bay-golf-course",
@@ -3717,7 +3740,8 @@
     "lat": 30.327937,
     "lng": -87.423807,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "seminole-lake-country-club",
@@ -3748,7 +3772,8 @@
     "lat": 27.827935099999998,
     "lng": -82.7631457,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "north-shore-golf-club",
@@ -3779,7 +3804,8 @@
     "lat": 28.4017314,
     "lng": -81.22081179999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "oriole-golf-club",
@@ -3810,7 +3836,8 @@
     "lat": 26.245551,
     "lng": -80.227588,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "pelican-sound-golf-river-club",
@@ -3837,11 +3864,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-9PM\"], \"Tuesday\": [\"7AM-7PM\"], \"Wednesday\": [\"7AM-7PM\"], \"Thursday\": [\"7AM-7PM\"], \"Friday\": [\"7AM-7PM\"], \"Saturday\": [\"7AM-7PM\"], \"Sunday\": [\"7AM-7PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Pelican+Sound+Golf+%26+River+Club/@26.430745899999998,-81.8247811,14z/data=!4m8!1m2!2m1!1sPelican+Sound+Golf+%26+River+Club!3m4!1s0x88db16fc1bcbb259:0xbabe0ab7e77b5fd!8m2!3d26.430745899999998!4d-81.8247811",
-    "description": "Pelican Sound Golf and River Club in Estero is a private community club offering two championship courses — the River and Sound courses — set within a master-planned community along the Estero River corridor in Lee County. The club provides world-class practice facilities, dining, tennis, bocce, and a marina, creating a genuinely comprehensive resort-style lifestyle for its members. The golf program is supported by professional staff and an active competitive calendar. It's a standout private club in Southwest Florida for golfers who want both quality courses and a full-service community experience.",
+    "description": "Pelican Sound Golf and River Club in Estero is a private community club offering two championship courses \u2014 the River and Sound courses \u2014 set within a master-planned community along the Estero River corridor in Lee County. The club provides world-class practice facilities, dining, tennis, bocce, and a marina, creating a genuinely comprehensive resort-style lifestyle for its members. The golf program is supported by professional staff and an active competitive calendar. It's a standout private club in Southwest Florida for golfers who want both quality courses and a full-service community experience.",
     "lat": 26.430745899999998,
     "lng": -81.8247811,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-golf-club-at-north-hampton",
@@ -3872,7 +3900,8 @@
     "lat": 30.601680299999998,
     "lng": -81.556668,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "bonaventure-golf-club",
@@ -3903,7 +3932,8 @@
     "lat": 26.1200473,
     "lng": -80.3699796,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "twisted-oaks-golf-club",
@@ -3930,11 +3960,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-5:30PM\"], \"Tuesday\": [\"7AM-5:30PM\"], \"Wednesday\": [\"7AM-5:30PM\"], \"Thursday\": [\"7AM-5:30PM\"], \"Friday\": [\"7AM-5:30PM\"], \"Saturday\": [\"7AM-5:30PM\"], \"Sunday\": [\"7AM-5:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Twisted+Oaks+Golf+Club/@28.933875,-82.44670699999999,14z/data=!4m8!1m2!2m1!1sTwisted+Oaks+Golf+Club!3m4!1s0x88e86c27d66f71f1:0xc92b6fb59cb844cc!8m2!3d28.933875!4d-82.44670699999999",
-    "description": "Twisted Oaks Golf Club in Beverly Hills is a public course in Citrus County's Nature Coast region, named for the ancient live oaks that line many of its fairways and create a distinctly old-Florida atmosphere. The course is open to all and provides a genuine, character-rich round in a part of the state known for its unspoiled natural beauty. Its welcoming, community-focused management style makes it a comfortable option for golfers of all skill levels. It's a course that feels genuinely rooted in its landscape — a quality increasingly rare in Florida's more developed golf markets.",
+    "description": "Twisted Oaks Golf Club in Beverly Hills is a public course in Citrus County's Nature Coast region, named for the ancient live oaks that line many of its fairways and create a distinctly old-Florida atmosphere. The course is open to all and provides a genuine, character-rich round in a part of the state known for its unspoiled natural beauty. Its welcoming, community-focused management style makes it a comfortable option for golfers of all skill levels. It's a course that feels genuinely rooted in its landscape \u2014 a quality increasingly rare in Florida's more developed golf markets.",
     "lat": 28.933875,
     "lng": -82.44670699999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-preserve-golf-club-at-tara",
@@ -3965,7 +3996,8 @@
     "lat": 27.431894699999997,
     "lng": -82.4653927,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "sarasota-golf-practice-center",
@@ -3996,7 +4028,8 @@
     "lat": 28.8608604,
     "lng": -81.9601083,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "del-tura-golf-country-club",
@@ -4027,7 +4060,8 @@
     "lat": 26.7325603,
     "lng": -81.9158336,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "royal-st-cloud-golf-links",
@@ -4058,7 +4092,8 @@
     "lat": 28.20776,
     "lng": -81.27839999999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "arrowhead-golf-club",
@@ -4089,7 +4124,8 @@
     "lat": 26.264732,
     "lng": -81.71168,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "viera-east-golf-course",
@@ -4120,7 +4156,8 @@
     "lat": 28.277001199999997,
     "lng": -80.7260508,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "eagle-dunes-golf-club",
@@ -4151,7 +4188,8 @@
     "lat": 28.8501133,
     "lng": -81.55985439999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "stonegate-golf-club-at-solivita",
@@ -4178,11 +4216,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-5PM\"], \"Tuesday\": [\"7AM-5PM\"], \"Wednesday\": [\"7AM-5PM\"], \"Thursday\": [\"7AM-5PM\"], \"Friday\": [\"7AM-5PM\"], \"Saturday\": [\"7AM-5PM\"], \"Sunday\": [\"7AM-5PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Stonegate+Golf+Club+at+Solivita/@28.1360381,-81.48180239999999,14z/data=!4m8!1m2!2m1!1sStonegate+Golf+Club+at+Solivita!3m4!1s0x88dd9dd0f61df32f:0x765b77180793038f!8m2!3d28.1360381!4d-81.48180239999999",
-    "description": "Stonegate Golf Club at Solivita in Kissimmee is a private club serving the award-winning Solivita active adult community with two 18-hole courses — the Cypress and Palms — designed for both competitive play and leisurely rounds. The club is fully integrated into Solivita's resort-style lifestyle, with dining, social events, and an active competitive calendar keeping members engaged year-round. Its position within one of Central Florida's most celebrated retirement communities gives it an exceptionally vibrant membership culture. It's a top-tier active adult golf club that delivers quality and community in equal measure.",
+    "description": "Stonegate Golf Club at Solivita in Kissimmee is a private club serving the award-winning Solivita active adult community with two 18-hole courses \u2014 the Cypress and Palms \u2014 designed for both competitive play and leisurely rounds. The club is fully integrated into Solivita's resort-style lifestyle, with dining, social events, and an active competitive calendar keeping members engaged year-round. Its position within one of Central Florida's most celebrated retirement communities gives it an exceptionally vibrant membership culture. It's a top-tier active adult golf club that delivers quality and community in equal measure.",
     "lat": 28.1360381,
     "lng": -81.48180239999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "village-golf-club",
@@ -4209,11 +4248,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-5PM\"], \"Tuesday\": [\"6:30AM-5PM\"], \"Wednesday\": [\"6:30AM-5PM\"], \"Thursday\": [\"6:30AM-5PM\"], \"Friday\": [\"6:30AM-5PM\"], \"Saturday\": [\"6:30AM-5PM\"], \"Sunday\": [\"6:30AM-5PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Village+Golf+Club/@26.7164733,-80.22568559999999,14z/data=!4m8!1m2!2m1!1sVillage+Golf+Club!3m4!1s0x88d92ef33e526cbd:0x70aca53d1d57372d!8m2!3d26.7164733!4d-80.22568559999999",
-    "description": "Village Golf Club is a community-focused course serving residential golfers in its surrounding neighborhood with a welcoming, low-key atmosphere. The course provides a comfortable local golf option for members who value accessibility and community connection over luxury amenities. Organized events and league play build camaraderie among a tight-knit membership. It's a neighborly club that keeps things simple and genuine — a refreshing alternative to the more corporate golf experiences found elsewhere in Florida.",
+    "description": "Village Golf Club is a community-focused course serving residential golfers in its surrounding neighborhood with a welcoming, low-key atmosphere. The course provides a comfortable local golf option for members who value accessibility and community connection over luxury amenities. Organized events and league play build camaraderie among a tight-knit membership. It's a neighborly club that keeps things simple and genuine \u2014 a refreshing alternative to the more corporate golf experiences found elsewhere in Florida.",
     "lat": 26.7164733,
     "lng": -80.22568559999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "cove-cay-golf-club",
@@ -4244,7 +4284,8 @@
     "lat": 27.934406,
     "lng": -82.72237799999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "chi-chi-rodriguez-driving-range",
@@ -4275,7 +4316,8 @@
     "lat": 28.0300633,
     "lng": -82.70694209999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "julington-creek-golf-club",
@@ -4306,7 +4348,8 @@
     "lat": 30.11172,
     "lng": -81.6088329,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "tee-it-up-golf-driving-range",
@@ -4337,7 +4380,8 @@
     "lat": 28.654803899999997,
     "lng": -81.2155521,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "palm-harbor-golf-club",
@@ -4368,7 +4412,8 @@
     "lat": 29.569758999999998,
     "lng": -81.1987825,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "vista-plantation-golf-club",
@@ -4399,7 +4444,8 @@
     "lat": 27.6412321,
     "lng": -80.4666922,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-club-at-eaglebrooke",
@@ -4430,7 +4476,8 @@
     "lat": 27.936594,
     "lng": -81.941574,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "hyde-park-golf-club",
@@ -4461,7 +4508,8 @@
     "lat": 30.284891799999997,
     "lng": -81.7472863,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "st-johns-golf-country-club",
@@ -4492,7 +4540,8 @@
     "lat": 30.0537775,
     "lng": -81.5091415,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "north-palm-beach-country-club",
@@ -4523,7 +4572,8 @@
     "lat": 26.8266651,
     "lng": -80.0620926,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "winter-park-pines-golf-club",
@@ -4550,11 +4600,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-6PM\"], \"Tuesday\": [\"6:30AM-6PM\"], \"Wednesday\": [\"6:30AM-6PM\"], \"Thursday\": [\"6:30AM-6PM\"], \"Friday\": [\"6:30AM-6PM\"], \"Saturday\": [\"6:30AM-6PM\"], \"Sunday\": [\"6:30AM-6PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Winter+Park+Pines+Golf+Club/@28.5850278,-81.3110315,14z/data=!4m8!1m2!2m1!1sWinter+Park+Pines+Golf+Club!3m4!1s0x88e76f8bbe22d1ad:0x92350334ca0a1bef!8m2!3d28.5850278!4d-81.3110315",
-    "description": "Winter Park Pines Golf Club is a city-operated public course serving the residents of Winter Park with an 18-hole layout in a mature, tree-lined setting typical of one of Central Florida's most historic and charming communities. The city management model keeps pricing fair and access open for all residents, from beginners to seasoned players. The course's established surroundings — tall pines, established oaks — give it a character that newer courses in the region cannot replicate. It's a beloved community institution for Winter Park golfers who appreciate a quality round close to home.",
+    "description": "Winter Park Pines Golf Club is a city-operated public course serving the residents of Winter Park with an 18-hole layout in a mature, tree-lined setting typical of one of Central Florida's most historic and charming communities. The city management model keeps pricing fair and access open for all residents, from beginners to seasoned players. The course's established surroundings \u2014 tall pines, established oaks \u2014 give it a character that newer courses in the region cannot replicate. It's a beloved community institution for Winter Park golfers who appreciate a quality round close to home.",
     "lat": 28.5850278,
     "lng": -81.3110315,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-club-at-venetian-bay",
@@ -4585,7 +4636,8 @@
     "lat": 29.0212225,
     "lng": -81.0188538,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "casselberry-golf-club",
@@ -4616,7 +4668,8 @@
     "lat": 28.6663164,
     "lng": -81.32987279999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "east-bay-golf-club-iron-only",
@@ -4643,11 +4696,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:45AM-5PM\"], \"Tuesday\": [\"6:45AM-5PM\"], \"Wednesday\": [\"6:45AM-5PM\"], \"Thursday\": [\"6:45AM-5PM\"], \"Friday\": [\"6:45AM-5PM\"], \"Saturday\": [\"6:45AM-5PM\"], \"Sunday\": [\"6:45AM-5PM\"]}",
     "locationLink": "https://www.google.com/maps/place/East+Bay+Golf+Club/@27.909374399999997,-82.7674085,14z/data=!4m8!1m2!2m1!1sEast+Bay+Golf+Club!3m4!1s0x88c2fa8fe97984e9:0xbac9a39465e14214!8m2!3d27.909374399999997!4d-82.7674085",
-    "description": "East Bay Golf Club in Largo is a unique iron-only facility, requiring all golfers to play without woods or drivers — a format that places a premium on precision iron play, course management, and short-game skill. The policy creates a distinctly different atmosphere from a conventional course, attracting golfers who want to develop the precise ball-striking that ultimately separates good players from great ones. The layout is well suited to the iron-only format, with holes designed to reward accurate placement over raw distance. It's a genuinely distinctive Pinellas County course for golfers who want to sharpen the most important part of their game.",
+    "description": "East Bay Golf Club in Largo is a unique iron-only facility, requiring all golfers to play without woods or drivers \u2014 a format that places a premium on precision iron play, course management, and short-game skill. The policy creates a distinctly different atmosphere from a conventional course, attracting golfers who want to develop the precise ball-striking that ultimately separates good players from great ones. The layout is well suited to the iron-only format, with holes designed to reward accurate placement over raw distance. It's a genuinely distinctive Pinellas County course for golfers who want to sharpen the most important part of their game.",
     "lat": 27.909374399999997,
     "lng": -82.7674085,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "mangrove-bay-and-cypress-links-golf-courses",
@@ -4674,11 +4728,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-5PM\"], \"Tuesday\": [\"6:30AM-5PM\"], \"Wednesday\": [\"6:30AM-5PM\"], \"Thursday\": [\"6:30AM-5PM\"], \"Friday\": [\"6:30AM-5PM\"], \"Saturday\": [\"6:30AM-5PM\"], \"Sunday\": [\"6:30AM-5PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Mangrove+Bay+and+Cypress+Links+Golf+Courses/@27.833410699999998,-82.6272216,14z/data=!4m8!1m2!2m1!1sMangrove+Bay+and+Cypress+Links+Golf+Courses!3m4!1s0x88c2e6c91dd31447:0x1581b0ebb3fab0f2!8m2!3d27.833410699999998!4d-82.6272216",
-    "description": "St. Petersburg's Mangrove Bay and Cypress Links are a pair of publicly operated municipal golf facilities that together offer the city's golfers a comprehensive range of options — from the full 18-hole championship experience at Mangrove Bay to the more accessible executive format at Cypress Links. Both courses are managed by the city of St. Petersburg and benefit from the consistent maintenance standards and public pricing that municipal management provides. Scenic waterway surroundings add a natural Florida character to each round. They're essential community resources that make quality golf accessible to all of St. Pete's residents.",
+    "description": "St. Petersburg's Mangrove Bay and Cypress Links are a pair of publicly operated municipal golf facilities that together offer the city's golfers a comprehensive range of options \u2014 from the full 18-hole championship experience at Mangrove Bay to the more accessible executive format at Cypress Links. Both courses are managed by the city of St. Petersburg and benefit from the consistent maintenance standards and public pricing that municipal management provides. Scenic waterway surroundings add a natural Florida character to each round. They're essential community resources that make quality golf accessible to all of St. Pete's residents.",
     "lat": 27.833410699999998,
     "lng": -82.6272216,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "kings-ridge-golf-club",
@@ -4709,7 +4764,8 @@
     "lat": 28.508221799999998,
     "lng": -81.7197365,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "zellwood-station",
@@ -4740,7 +4796,8 @@
     "lat": 28.7246009,
     "lng": -81.5754576,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "king-bear-golf-course",
@@ -4767,11 +4824,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-5:30PM\"], \"Tuesday\": [\"6:30AM-5:30PM\"], \"Wednesday\": [\"6:30AM-5:30PM\"], \"Thursday\": [\"6:30AM-5:30PM\"], \"Friday\": [\"6:30AM-5:30PM\"], \"Saturday\": [\"6:30AM-5:30PM\"], \"Sunday\": [\"6:30AM-5:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/King+%26+Bear+Golf+Course/@29.960096399999998,-81.51944639999999,14z/data=!4m8!1m2!2m1!1sKing+%26+Bear+Golf+Course!3m4!1s0x88e42ca003a75a47:0xc865c82e3067ff3e!8m2!3d29.960096399999998!4d-81.51944639999999",
-    "description": "The King and Bear Golf Course in St. Augustine is a World Golf Village gem co-designed by legends Arnold Palmer and Jack Nicklaus — a collaboration that brings two of golf's greatest minds to bear on a single championship layout. The course celebrates both designers' signature philosophies, creating a round that feels both historically significant and strategically engaging. It is part of the World Golf Hall of Fame complex, adding a heritage dimension that makes a round here feel like a pilgrimage for serious golf fans. It's a bucket-list course for golfers who appreciate the history and artistry behind great course design.",
+    "description": "The King and Bear Golf Course in St. Augustine is a World Golf Village gem co-designed by legends Arnold Palmer and Jack Nicklaus \u2014 a collaboration that brings two of golf's greatest minds to bear on a single championship layout. The course celebrates both designers' signature philosophies, creating a round that feels both historically significant and strategically engaging. It is part of the World Golf Hall of Fame complex, adding a heritage dimension that makes a round here feel like a pilgrimage for serious golf fans. It's a bucket-list course for golfers who appreciate the history and artistry behind great course design.",
     "lat": 29.960096399999998,
     "lng": -81.51944639999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "deer-creek-golf-club",
@@ -4802,7 +4860,8 @@
     "lat": 26.320729999999998,
     "lng": -80.141914,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "diamond-hill-golf-club",
@@ -4833,7 +4892,8 @@
     "lat": 27.9649319,
     "lng": -82.24066239999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "disneys-magnolia-golf-course",
@@ -4864,7 +4924,8 @@
     "lat": 28.4042158,
     "lng": -81.5978727,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-river-club",
@@ -4895,7 +4956,8 @@
     "lat": 27.423320699999998,
     "lng": -82.4347763,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "tarpon-springs-golf-course",
@@ -4922,11 +4984,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-5:30PM\"], \"Tuesday\": [\"7AM-5:30PM\"], \"Wednesday\": [\"7AM-5:30PM\"], \"Thursday\": [\"7AM-5:30PM\"], \"Friday\": [\"7AM-5:30PM\"], \"Saturday\": [\"7AM-5:30PM\"], \"Sunday\": [\"7AM-5:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Tarpon+Springs+Golf+Course/@28.133181699999998,-82.75884599999999,14z/data=!4m8!1m2!2m1!1sTarpon+Springs+Golf+Course!3m4!1s0x88c28d1504993957:0x16f60bd1e3728e1d!8m2!3d28.133181699999998!4d-82.75884599999999",
-    "description": "Tarpon Springs Golf Course is a public facility serving Pinellas County's historic sponge-diving community with accessible 18-hole golf in a naturally scenic setting. The city of Tarpon Springs' management ensures consistent public pricing and welcoming access for residents and visitors alike. The course benefits from Tarpon Springs' unique cultural character — one of Florida's most distinctive towns — adding a sense of place to an already enjoyable round. It's a reliable, community-centered public course that fits naturally into one of the Gulf Coast's most charming destinations.",
+    "description": "Tarpon Springs Golf Course is a public facility serving Pinellas County's historic sponge-diving community with accessible 18-hole golf in a naturally scenic setting. The city of Tarpon Springs' management ensures consistent public pricing and welcoming access for residents and visitors alike. The course benefits from Tarpon Springs' unique cultural character \u2014 one of Florida's most distinctive towns \u2014 adding a sense of place to an already enjoyable round. It's a reliable, community-centered public course that fits naturally into one of the Gulf Coast's most charming destinations.",
     "lat": 28.133181699999998,
     "lng": -82.75884599999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "cape-royal-golf-club",
@@ -4957,7 +5020,8 @@
     "lat": 26.624264399999998,
     "lng": -82.03288909999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "windswept-dunes-golf-club",
@@ -4988,7 +5052,8 @@
     "lat": 30.487031799999997,
     "lng": -86.03177459999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "seven-springs-golf-and-country-club",
@@ -5019,7 +5084,8 @@
     "lat": 28.2109645,
     "lng": -82.658677,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "crescent-oaks-golf-club",
@@ -5050,7 +5116,8 @@
     "lat": 28.159418,
     "lng": -82.68852,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "topgolf-pompano-beach",
@@ -5081,7 +5148,8 @@
     "lat": 26.224594399999997,
     "lng": -80.15218809999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "cimarrone-golf-club",
@@ -5112,7 +5180,8 @@
     "lat": 30.060730999999997,
     "lng": -81.5447528,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "windsor-parke-golf-club",
@@ -5143,7 +5212,8 @@
     "lat": 30.2638324,
     "lng": -81.4596071,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "pine-lakes-golf-club",
@@ -5174,7 +5244,8 @@
     "lat": 29.537699,
     "lng": -81.2398762,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "lansbrook-golf-club",
@@ -5205,7 +5276,8 @@
     "lat": 28.1025119,
     "lng": -82.6982846,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "westchase-golf-club",
@@ -5236,7 +5308,8 @@
     "lat": 28.047852799999998,
     "lng": -82.61605279999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "plantation-palms-golf-club",
@@ -5267,7 +5340,8 @@
     "lat": 28.2060766,
     "lng": -82.4299499,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "black-bear-golf-club-toptracer-range-restaurant",
@@ -5298,7 +5372,8 @@
     "lat": 28.8846149,
     "lng": -81.54887769999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "the-golf-club-at-south-hampton",
@@ -5329,7 +5404,8 @@
     "lat": 30.0465965,
     "lng": -81.54713439999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "palmetto-golf-course",
@@ -5360,7 +5436,8 @@
     "lat": 25.628423599999998,
     "lng": -80.34412379999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "royal-st-augustine-golf-and-country-club-irons-only",
@@ -5391,7 +5468,8 @@
     "lat": 29.910541199999997,
     "lng": -81.35350919999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "bad-dog-driving-range-inc",
@@ -5422,7 +5500,8 @@
     "lat": 28.5186514,
     "lng": -81.2955724,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "rio-pinar-golf",
@@ -5449,11 +5528,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-9:30PM\"], \"Tuesday\": [\"6:30AM-9:30PM\"], \"Wednesday\": [\"6:30AM-9:30PM\"], \"Thursday\": [\"6:30AM-9:30PM\"], \"Friday\": [\"6:30AM-9:30PM\"], \"Saturday\": [\"6:30AM-9:30PM\"], \"Sunday\": [\"6:30AM-9:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Rio+Pinar+Golf/@28.5256391,-81.2656137,14z/data=!4m8!1m2!2m1!1sRio+Pinar+Golf!3m4!1s0x88e76433da73109d:0xc7467606f8baff9f!8m2!3d28.5256391!4d-81.2656137",
-    "description": "Rio Pinar Golf in Orlando is one of Central Florida's most storied courses, having hosted multiple PGA Tour events since its founding in 1957 as part of the region's golfing heritage. The full-facility operation includes a lighted, TrackMan-equipped driving range alongside on-site dining, creating a complete practice and dining destination on the east side of Orlando. The course's historical significance adds an intangible depth to the experience — golfers are playing and practicing where the legends of the game once competed. It's a Central Florida institution that combines history, technology, and hospitality in a single package.",
+    "description": "Rio Pinar Golf in Orlando is one of Central Florida's most storied courses, having hosted multiple PGA Tour events since its founding in 1957 as part of the region's golfing heritage. The full-facility operation includes a lighted, TrackMan-equipped driving range alongside on-site dining, creating a complete practice and dining destination on the east side of Orlando. The course's historical significance adds an intangible depth to the experience \u2014 golfers are playing and practicing where the legends of the game once competed. It's a Central Florida institution that combines history, technology, and hospitality in a single package.",
     "lat": 28.5256391,
     "lng": -81.2656137,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "summerfield-crossings-golf-club",
@@ -5484,7 +5564,8 @@
     "lat": 27.795907999999997,
     "lng": -82.3174588,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "lake-jovita-golf-country-club",
@@ -5515,7 +5596,8 @@
     "lat": 28.3457398,
     "lng": -82.2502238,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "disneys-lake-buena-vista-golf-course",
@@ -5546,7 +5628,8 @@
     "lat": 28.378919999999997,
     "lng": -81.5197443,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "space-coast-golf-club",
@@ -5577,7 +5660,8 @@
     "lat": 28.425694699999998,
     "lng": -80.67760559999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "palm-beach-national-golf-country-club",
@@ -5608,7 +5692,8 @@
     "lat": 26.626273599999998,
     "lng": -80.1650545,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "wentworth-golf-club",
@@ -5639,7 +5724,8 @@
     "lat": 28.1434464,
     "lng": -82.6992526,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "westchester-country-club",
@@ -5670,7 +5756,8 @@
     "lat": 26.4955169,
     "lng": -80.14574139999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "silverthorn-country-club",
@@ -5701,7 +5788,8 @@
     "lat": 28.500099499999997,
     "lng": -82.4860947,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "topgolf-saint-petersburg",
@@ -5732,7 +5820,8 @@
     "lat": 27.8892331,
     "lng": -82.66248139999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "shingle-creek-golf-club",
@@ -5759,11 +5848,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-6PM\"], \"Tuesday\": [\"7AM-6PM\"], \"Wednesday\": [\"7AM-6PM\"], \"Thursday\": [\"7AM-6PM\"], \"Friday\": [\"7AM-6PM\"], \"Saturday\": [\"7AM-6PM\"], \"Sunday\": [\"7AM-6PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Shingle+Creek+Golf+Club/@28.4269528,-81.4346472,14z/data=!4m8!1m2!2m1!1sShingle+Creek+Golf+Club!3m4!1s0x88e77e0cc65a19a7:0xc1019783a5f19159!8m2!3d28.4269528!4d-81.4346472",
-    "description": "Shingle Creek Golf Club in Orlando is an 18-hole championship course built alongside the headwaters of Shingle Creek — the northernmost tributary of the Florida Everglades — creating a course with genuine ecological significance and natural beauty. The layout was designed by David Harman and winds through cypress wetlands and natural Florida habitat, offering a round that feels connected to the land in a way that most Orlando resort courses do not. A full-service clubhouse and pro shop support a premium experience for both resort guests and local golfers. It's a distinctive, environmentally conscious course that stands apart from the region's more conventional resort offerings.",
+    "description": "Shingle Creek Golf Club in Orlando is an 18-hole championship course built alongside the headwaters of Shingle Creek \u2014 the northernmost tributary of the Florida Everglades \u2014 creating a course with genuine ecological significance and natural beauty. The layout was designed by David Harman and winds through cypress wetlands and natural Florida habitat, offering a round that feels connected to the land in a way that most Orlando resort courses do not. A full-service clubhouse and pro shop support a premium experience for both resort guests and local golfers. It's a distinctive, environmentally conscious course that stands apart from the region's more conventional resort offerings.",
     "lat": 28.4269528,
     "lng": -81.4346472,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "allgolf-at-cb-smith",
@@ -5794,7 +5884,8 @@
     "lat": 26.0161192,
     "lng": -80.31370369999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "highlands-reserve-golf-club",
@@ -5825,7 +5916,8 @@
     "lat": 28.3021276,
     "lng": -81.671545,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "evies-family-golf-center",
@@ -5856,7 +5948,8 @@
     "lat": 27.2994441,
     "lng": -82.47451219999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "the-eagles-golf-club",
@@ -5883,11 +5976,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"6:30AM-9PM\"], \"Tuesday\": [\"6:30AM-9PM\"], \"Wednesday\": [\"6:30AM-9PM\"], \"Thursday\": [\"6:30AM-9PM\"], \"Friday\": [\"6:30AM-9PM\"], \"Saturday\": [\"6:30AM-9PM\"], \"Sunday\": [\"6:30AM-9PM\"]}",
     "locationLink": "https://www.google.com/maps/place/The+Eagles+Golf+Club/@28.102289,-82.640749,14z/data=!4m8!1m2!2m1!1sThe+Eagles+Golf+Club!3m4!1s0x88c294acd69c3449:0xaca73fef196f0772!8m2!3d28.102289!4d-82.640749",
-    "description": "The Eagles Golf Club in Odessa is a semi-private facility in western Hillsborough County offering two 18-hole courses — the Forest and Lakes — set amid natural oak and pine terrain typical of Florida's upland interior. The dual-course format gives members variety and replayability, with each layout offering a distinct character and challenge. A full-service clubhouse and pro shop support a complete club experience. It's a well-regarded Hillsborough County club that punches above its weight in terms of course quality and membership experience.",
+    "description": "The Eagles Golf Club in Odessa is a semi-private facility in western Hillsborough County offering two 18-hole courses \u2014 the Forest and Lakes \u2014 set amid natural oak and pine terrain typical of Florida's upland interior. The dual-course format gives members variety and replayability, with each layout offering a distinct character and challenge. A full-service clubhouse and pro shop support a complete club experience. It's a well-regarded Hillsborough County club that punches above its weight in terms of course quality and membership experience.",
     "lat": 28.102289,
     "lng": -82.640749,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "celebration-golf-club",
@@ -5914,11 +6008,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-7PM\"], \"Tuesday\": [\"7AM-7PM\"], \"Wednesday\": [\"7AM-7PM\"], \"Thursday\": [\"7AM-7PM\"], \"Friday\": [\"7AM-7PM\"], \"Saturday\": [\"7AM-7PM\"], \"Sunday\": [\"7AM-7PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Celebration+Golf+Club/@28.323400399999997,-81.54211579999999,14z/data=!4m8!1m2!2m1!1sCelebration+Golf+Club!3m4!1s0x88dd7f341f058629:0xf005b2fc39ff33cc!8m2!3d28.323400399999997!4d-81.54211579999999",
-    "description": "Celebration Golf Club in Celebration is a public course designed by Robert Trent Jones Sr. and Robert Trent Jones Jr., set within Disney's iconic master-planned community just west of Walt Disney World. The course features classic Jones design elements — strategic water hazards, well-placed bunkers, and undulating greens — within a beautifully maintained community setting. Its public accessibility and world-class pedigree make it a popular choice for golfers visiting or living in the Kissimmee-Celebration area. It's a must-play for anyone who appreciates legendary design in a stunning Florida setting.",
+    "description": "Celebration Golf Club in Celebration is a public course designed by Robert Trent Jones Sr. and Robert Trent Jones Jr., set within Disney's iconic master-planned community just west of Walt Disney World. The course features classic Jones design elements \u2014 strategic water hazards, well-placed bunkers, and undulating greens \u2014 within a beautifully maintained community setting. Its public accessibility and world-class pedigree make it a popular choice for golfers visiting or living in the Kissimmee-Celebration area. It's a must-play for anyone who appreciates legendary design in a stunning Florida setting.",
     "lat": 28.323400399999997,
     "lng": -81.54211579999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "topgolf-fort-myers",
@@ -5949,7 +6044,8 @@
     "lat": 26.609073199999997,
     "lng": -81.804897,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "jacaranda-golf-club",
@@ -5980,7 +6076,8 @@
     "lat": 26.1116027,
     "lng": -80.27265109999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "miami-shores-country-club",
@@ -6011,7 +6108,8 @@
     "lat": 25.868177799999998,
     "lng": -80.1761989,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "dubsdread-golf-course",
@@ -6042,7 +6140,8 @@
     "lat": 28.5827337,
     "lng": -81.38705689999999,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "bigshots-golf-vero-beach",
@@ -6073,7 +6172,8 @@
     "lat": 27.6555881,
     "lng": -80.4016056,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "topgolf-lake-mary",
@@ -6104,7 +6204,8 @@
     "lat": 28.751487599999997,
     "lng": -81.3616206,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "falcons-fire-golf-course",
@@ -6135,7 +6236,8 @@
     "lat": 28.343780499999998,
     "lng": -81.50428769999999,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "southern-dunes-golf-and-country-club",
@@ -6162,11 +6264,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "",
     "locationLink": "https://www.google.com/maps/place/Southern+Dunes+Golf+and+Country+Club/@28.127923,-81.624577,14z/data=!4m8!1m2!2m1!1sSouthern+Dunes+Golf+and+Country+Club!3m4!1s0x88dd73e78b486389:0xb26bc5e06b0aab3a!8m2!3d28.127923!4d-81.624577",
-    "description": "Southern Dunes Golf and Country Club in Haines City is a semi-private facility consistently ranked among Florida's top public courses, featuring a dramatic links-style layout with significant elevation changes — a rarity in Central Florida. The Steve Smyers design incorporates dune-style mounding, deep bunkers, and wide fairways that create a visually stunning and strategically demanding round. On-site amenities and a welcoming clubhouse round out an experience that regularly draws golfers from across the state. It's a bucket-list course for serious Florida golfers who want to experience what the state's landscape is capable of at its most dramatic.",
+    "description": "Southern Dunes Golf and Country Club in Haines City is a semi-private facility consistently ranked among Florida's top public courses, featuring a dramatic links-style layout with significant elevation changes \u2014 a rarity in Central Florida. The Steve Smyers design incorporates dune-style mounding, deep bunkers, and wide fairways that create a visually stunning and strategically demanding round. On-site amenities and a welcoming clubhouse round out an experience that regularly draws golfers from across the state. It's a bucket-list course for serious Florida golfers who want to experience what the state's landscape is capable of at its most dramatic.",
     "lat": 28.127923,
     "lng": -81.624577,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "country_club"
   },
   {
     "slug": "topgolf-miami-doral",
@@ -6197,7 +6300,8 @@
     "lat": 25.7935297,
     "lng": -80.3890583,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "orange-lake-golf",
@@ -6228,7 +6332,8 @@
     "lat": 28.350009699999998,
     "lng": -81.6234324,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "drive-shack-orlando",
@@ -6255,11 +6360,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"3-11PM\"], \"Tuesday\": [\"3-11PM\"], \"Wednesday\": [\"3-11PM\"], \"Thursday\": [\"3-11PM\"], \"Friday\": [\"12-11PM\"], \"Saturday\": [\"10AM-11PM\"], \"Sunday\": [\"10AM-10PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Drive+Shack/@28.380368299999997,-81.2812225,14z/data=!4m8!1m2!2m1!1sDrive+Shack!3m4!1s0x88dd89db48b5cd47:0x3663908df0b9b777!8m2!3d28.380368299999997!4d-81.2812225",
-    "description": "Drive Shack in Orlando is a premier golf entertainment venue featuring multi-level hitting bays with proprietary technology that tracks ball flight and supports competitive golf games, alongside a full restaurant, craft cocktails, and a lively social atmosphere. The facility is designed for guests who want to experience the fun of the game without needing significant golf experience — a democratic, entertainment-first approach to the sport. Group events, corporate outings, and birthday parties are all expertly accommodated. It's one of the most polished and comprehensive golf entertainment destinations in Central Florida.",
+    "description": "Drive Shack in Orlando is a premier golf entertainment venue featuring multi-level hitting bays with proprietary technology that tracks ball flight and supports competitive golf games, alongside a full restaurant, craft cocktails, and a lively social atmosphere. The facility is designed for guests who want to experience the fun of the game without needing significant golf experience \u2014 a democratic, entertainment-first approach to the sport. Group events, corporate outings, and birthday parties are all expertly accommodated. It's one of the most polished and comprehensive golf entertainment destinations in Central Florida.",
     "lat": 28.380368299999997,
     "lng": -81.2812225,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "topgolf-miami-gardens",
@@ -6290,7 +6396,8 @@
     "lat": 25.9331094,
     "lng": -80.2092404,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "topgolf-jacksonville",
@@ -6321,7 +6428,8 @@
     "lat": 30.2632674,
     "lng": -81.5205175,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "topgolf-orlando",
@@ -6352,7 +6460,8 @@
     "lat": 28.435964,
     "lng": -81.4635345,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "topgolf-tampa",
@@ -6383,7 +6492,8 @@
     "lat": 27.9298601,
     "lng": -82.3342504,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "drive-shack-west-palm-beach",
@@ -6410,11 +6520,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"10AM-11PM\"], \"Tuesday\": [\"10AM-11PM\"], \"Wednesday\": [\"10AM-11PM\"], \"Thursday\": [\"10AM-11PM\"], \"Friday\": [\"10AM-12AM\"], \"Saturday\": [\"10AM-12AM\"], \"Sunday\": [\"10AM-11PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Drive+Shack/@26.690130699999997,-80.0775091,14z/data=!4m8!1m2!2m1!1sDrive+Shack!3m4!1s0x88d8d7b0f1e4ab47:0x5c7880935aa3eeec!8m2!3d26.690130699999997!4d-80.0775091",
-    "description": "Drive Shack in Orlando is a premier golf entertainment venue featuring multi-level hitting bays with proprietary technology that tracks ball flight and supports competitive golf games, alongside a full restaurant, craft cocktails, and a lively social atmosphere. The facility is designed for guests who want to experience the fun of the game without needing significant golf experience — a democratic, entertainment-first approach to the sport. Group events, corporate outings, and birthday parties are all expertly accommodated. It's one of the most polished and comprehensive golf entertainment destinations in Central Florida.",
+    "description": "Drive Shack in Orlando is a premier golf entertainment venue featuring multi-level hitting bays with proprietary technology that tracks ball flight and supports competitive golf games, alongside a full restaurant, craft cocktails, and a lively social atmosphere. The facility is designed for guests who want to experience the fun of the game without needing significant golf experience \u2014 a democratic, entertainment-first approach to the sport. Group events, corporate outings, and birthday parties are all expertly accommodated. It's one of the most polished and comprehensive golf entertainment destinations in Central Florida.",
     "lat": 26.690130699999997,
     "lng": -80.0775091,
     "techLevel": "high",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "entertainment_range"
   },
   {
     "slug": "sweet-swing-driving-range",
@@ -6445,7 +6556,8 @@
     "lat": 28.705401199999997,
     "lng": -82.5532932,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "eastwood-driving-range-golf-store",
@@ -6476,7 +6588,8 @@
     "lat": 26.619338199999998,
     "lng": -81.8204294,
     "techLevel": "low",
-    "category": "outdoor"
+    "category": "outdoor",
+    "venueType": "standalone_range"
   },
   {
     "slug": "hidden-fairway-golf-club",
@@ -6507,7 +6620,8 @@
     "lat": 27.951848899999998,
     "lng": -82.47686639999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-jacksonville-beach-fl",
@@ -6538,7 +6652,8 @@
     "lat": 30.257121599999998,
     "lng": -81.3936167,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-port-charlotte-fl",
@@ -6569,7 +6684,8 @@
     "lat": 27.010108499999998,
     "lng": -82.13614009999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "par-patrol-golf",
@@ -6596,11 +6712,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"Open 24 hours\"], \"Tuesday\": [\"Open 24 hours\"], \"Wednesday\": [\"Open 24 hours\"], \"Thursday\": [\"Open 24 hours\"], \"Friday\": [\"Open 24 hours\"], \"Saturday\": [\"Open 24 hours\"], \"Sunday\": [\"Open 24 hours\"]}",
     "locationLink": "https://www.google.com/maps/place/Par+Patrol+Golf/@27.020091599999997,-82.0462354,14z/data=!4m8!1m2!2m1!1sPar+Patrol+Golf!3m4!1s0x88dca9f25a42abe3:0x1bcd3a6c8e74d5fc!8m2!3d27.020091599999997!4d-82.0462354",
-    "description": "Par Patrol Golf in Punta Gorda is a 3,000-square-foot indoor golf entertainment venue built around three large simulator bays powered by ProTee VX technology, which delivers precise real-time feedback on club speed, ball speed, carry distance, and contact quality. Members enjoy 24/7 keycard access, while walk-in guests can visit during public hours seven days a week. The facility also hosts monthly competitions—long drive, closest to the pin, and putting challenges—giving golfers a fun competitive outlet. Four large-screen TVs, bumper pool, ping pong, and custom food and beverage packages make it a solid venue for group events and parties.",
+    "description": "Par Patrol Golf in Punta Gorda is a 3,000-square-foot indoor golf entertainment venue built around three large simulator bays powered by ProTee VX technology, which delivers precise real-time feedback on club speed, ball speed, carry distance, and contact quality. Members enjoy 24/7 keycard access, while walk-in guests can visit during public hours seven days a week. The facility also hosts monthly competitions\u2014long drive, closest to the pin, and putting challenges\u2014giving golfers a fun competitive outlet. Four large-screen TVs, bumper pool, ping pong, and custom food and beverage packages make it a solid venue for group events and parties.",
     "lat": 27.020091599999997,
     "lng": -82.0462354,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "dinks-drives",
@@ -6631,7 +6748,8 @@
     "lat": 28.229329399999997,
     "lng": -80.67751319999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "inclubgolf",
@@ -6662,7 +6780,8 @@
     "lat": 28.3714794,
     "lng": -81.2815262,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "swingback-vgolf",
@@ -6689,11 +6808,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-12AM\"], \"Tuesday\": [\"7AM-12AM\"], \"Wednesday\": [\"7AM-12AM\"], \"Thursday\": [\"7AM-12AM\"], \"Friday\": [\"7AM-12AM\"], \"Saturday\": [\"7AM-12AM\"], \"Sunday\": [\"7AM-12AM\"]}",
     "locationLink": "https://www.google.com/maps/place/Swingback+VGolf/@26.0438632,-80.2733689,14z/data=!4m8!1m2!2m1!1sSwingback+VGolf!3m4!1s0x88d9a93b84ce5383:0x268b9bf6b68923e1!8m2!3d26.0438632!4d-80.2733689",
-    "description": "Swingback VGolf in Hollywood offers a self-service indoor simulator model, giving members the freedom to book, unlock, and play a private bay on their own schedule without staff assistance. The concept prioritizes flexibility and privacy — golfers can pop in for a quick practice session or a leisurely virtual round without worrying about tee times or wait times. The simulators support both serious swing work and recreational play, making it a versatile option for a wide range of skill levels. It's a modern, low-barrier approach to indoor golf that fits easily into a busy lifestyle.",
+    "description": "Swingback VGolf in Hollywood offers a self-service indoor simulator model, giving members the freedom to book, unlock, and play a private bay on their own schedule without staff assistance. The concept prioritizes flexibility and privacy \u2014 golfers can pop in for a quick practice session or a leisurely virtual round without worrying about tee times or wait times. The simulators support both serious swing work and recreational play, making it a versatile option for a wide range of skill levels. It's a modern, low-barrier approach to indoor golf that fits easily into a busy lifestyle.",
     "lat": 26.0438632,
     "lng": -80.2733689,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-naples-fl",
@@ -6724,7 +6844,8 @@
     "lat": 26.270183799999998,
     "lng": -81.73826969999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "bogey-bay-llc",
@@ -6755,7 +6876,8 @@
     "lat": 27.264555299999998,
     "lng": -80.3934891,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "golfsim24",
@@ -6786,7 +6908,8 @@
     "lat": 29.138099,
     "lng": -80.992262,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-spring-hill-fl",
@@ -6817,7 +6940,8 @@
     "lat": 28.4651571,
     "lng": -82.619858,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-oldsmar-fl",
@@ -6848,7 +6972,8 @@
     "lat": 28.0420037,
     "lng": -82.6746125,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "fairways-indoor-golf",
@@ -6875,11 +7000,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7:30AM-9:30PM\"], \"Tuesday\": [\"7:30AM-9:30PM\"], \"Wednesday\": [\"7:30AM-9:30PM\"], \"Thursday\": [\"7:30AM-9:30PM\"], \"Friday\": [\"7:30AM-10:30PM\"], \"Saturday\": [\"7:30AM-9:30PM\"], \"Sunday\": [\"12:30-5:30PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Fairway%27s+Indoor+Golf/@29.0288057,-81.30396499999999,14z/data=!4m8!1m2!2m1!1sFairway%27s+Indoor+Golf!3m4!1s0x88e71bac3073489f:0x4d9fa53ba6a8acd0!8m2!3d29.0288057!4d-81.30396499999999",
-    "description": "Fairway's Indoor Golf in DeLand offers a peaceful indoor simulator experience designed for golfers who want focused, distraction-free practice time. The studio atmosphere is deliberately calming — a welcome contrast to busy multi-bay entertainment venues — making it equally suited to serious swing work and meditative solo rounds. Simulator technology allows players to explore virtual courses rain or shine, year-round. It's a well-regarded local option for Central Florida golfers who prioritize a thoughtful, unhurried practice environment.",
+    "description": "Fairway's Indoor Golf in DeLand offers a peaceful indoor simulator experience designed for golfers who want focused, distraction-free practice time. The studio atmosphere is deliberately calming \u2014 a welcome contrast to busy multi-bay entertainment venues \u2014 making it equally suited to serious swing work and meditative solo rounds. Simulator technology allows players to explore virtual courses rain or shine, year-round. It's a well-regarded local option for Central Florida golfers who prioritize a thoughtful, unhurried practice environment.",
     "lat": 29.0288057,
     "lng": -81.30396499999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "off-the-green-indoor-golf",
@@ -6906,11 +7032,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"Closed\"], \"Tuesday\": [\"1-10PM\"], \"Wednesday\": [\"1-10PM\"], \"Thursday\": [\"1-10PM\"], \"Friday\": [\"1-10PM\"], \"Saturday\": [\"1-10PM\"], \"Sunday\": [\"1-8PM\"]}",
     "locationLink": "https://www.google.com/maps/place/OFF+THE+GREEN+Indoor+Golf/@27.468232,-81.4396692,14z/data=!4m8!1m2!2m1!1sOFF+THE+GREEN+Indoor+Golf!3m4!1s0x88dc594de347e503:0xb17d9fad8d291f1b!8m2!3d27.468232!4d-81.4396692",
-    "description": "OFF THE GREEN Indoor Golf serves the Sebring area as a dedicated indoor practice and play facility that keeps golfers connected to the game regardless of Florida's unpredictable weather. The simulator setup delivers an immersive virtual golf experience with accurate ball-flight data, helping players translate indoor practice into on-course improvement. The tagline — \"Indoor Golf, Outdoor Results\" — captures the facility's practical, game-improvement philosophy. It's a solid choice for Highlands County golfers looking for a reliable year-round practice option.",
+    "description": "OFF THE GREEN Indoor Golf serves the Sebring area as a dedicated indoor practice and play facility that keeps golfers connected to the game regardless of Florida's unpredictable weather. The simulator setup delivers an immersive virtual golf experience with accurate ball-flight data, helping players translate indoor practice into on-course improvement. The tagline \u2014 \"Indoor Golf, Outdoor Results\" \u2014 captures the facility's practical, game-improvement philosophy. It's a solid choice for Highlands County golfers looking for a reliable year-round practice option.",
     "lat": 27.468232,
     "lng": -81.4396692,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "fore-indoor-golf-club",
@@ -6941,7 +7068,8 @@
     "lat": 27.515133499999997,
     "lng": -81.5171058,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "shoot-par-now-golf-academy",
@@ -6972,7 +7100,8 @@
     "lat": 27.263605199999997,
     "lng": -80.30220249999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-tips-golf",
@@ -6999,11 +7128,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"7AM-10PM\"], \"Tuesday\": [\"7AM-10PM\"], \"Wednesday\": [\"7AM-10PM\"], \"Thursday\": [\"7AM-12AM\"], \"Friday\": [\"7AM-12AM\"], \"Saturday\": [\"9AM-12AM\"], \"Sunday\": [\"9AM-10PM\"]}",
     "locationLink": "https://www.google.com/maps/place/The+Tips+Golf/@25.7668917,-80.1957967,14z/data=!4m8!1m2!2m1!1sThe+Tips+Golf!3m4!1s0x88d9b71d06a8bbd5:0x7dfb04da90c3778b!8m2!3d25.7668917!4d-80.1957967",
-    "description": "Located in Miami's Brickell financial district, The Tips Golf is an upscale indoor golf lounge that brings TrackMan iO simulator technology into a stylish, full-service venue. The facility pairs serious golf instruction and sim play with an elevated atmosphere — think craft cocktails and polished interiors without the stuffiness often associated with golf clubs. Private events and group bookings are well accommodated, making it popular for corporate outings and social gatherings. It's a premium experience that makes a strong case for golf as both sport and lifestyle in South Florida.",
+    "description": "Located in Miami's Brickell financial district, The Tips Golf is an upscale indoor golf lounge that brings TrackMan iO simulator technology into a stylish, full-service venue. The facility pairs serious golf instruction and sim play with an elevated atmosphere \u2014 think craft cocktails and polished interiors without the stuffiness often associated with golf clubs. Private events and group bookings are well accommodated, making it popular for corporate outings and social gatherings. It's a premium experience that makes a strong case for golf as both sport and lifestyle in South Florida.",
     "lat": 25.7668917,
     "lng": -80.1957967,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "lauderdale-links-golf-simulator",
@@ -7034,7 +7164,8 @@
     "lat": 26.1894888,
     "lng": -80.1056627,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-bradenton-fl",
@@ -7065,7 +7196,8 @@
     "lat": 27.46175,
     "lng": -82.583199,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "florida-golf-studio",
@@ -7096,7 +7228,8 @@
     "lat": 28.7357497,
     "lng": -81.3064265,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "sim-boss-golf-racing-simulation-lounge",
@@ -7127,7 +7260,8 @@
     "lat": 27.9626894,
     "lng": -81.9646485,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "swing-envy",
@@ -7158,7 +7292,8 @@
     "lat": 28.6212627,
     "lng": -81.4144623,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-miramar-beach-fl",
@@ -7189,7 +7324,8 @@
     "lat": 30.375459199999998,
     "lng": -86.25328379999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "cleveland-street-market",
@@ -7220,7 +7356,8 @@
     "lat": 27.9654718,
     "lng": -82.7928637,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-cave-golf-club",
@@ -7251,7 +7388,8 @@
     "lat": 26.4309586,
     "lng": -81.8005297,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "birdie-club-indoor-golf",
@@ -7282,7 +7420,8 @@
     "lat": 27.9126822,
     "lng": -82.5063955,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-greens-indoor-golf-bar",
@@ -7313,7 +7452,8 @@
     "lat": 28.4328801,
     "lng": -81.4709331,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "strokes-n-drivers-indoor-golf",
@@ -7344,7 +7484,8 @@
     "lat": 26.130027899999998,
     "lng": -80.14530189999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "coastal-indoor-golf",
@@ -7371,11 +7512,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"10AM-9PM\"], \"Tuesday\": [\"10AM-9PM\"], \"Wednesday\": [\"10AM-9PM\"], \"Thursday\": [\"10AM-9PM\"], \"Friday\": [\"10AM-10PM\"], \"Saturday\": [\"10AM-10PM\"], \"Sunday\": [\"Closed\"]}",
     "locationLink": "https://www.google.com/maps/place/Coastal+Indoor+Golf/@30.287641999999998,-81.40408099999999,14z/data=!4m8!1m2!2m1!1sCoastal+Indoor+Golf!3m4!1s0x88e449a1ba6f2fe3:0x663870200108cdc5!8m2!3d30.287641999999998!4d-81.40408099999999",
-    "description": "Coastal Indoor Golf in Jacksonville Beach is more than a simulator venue — it's a full retail golf shop with TrackMan-powered bays, creating a unique combination of equipment retail and high-tech practice under one roof. The facility runs golf leagues and offers both hourly rentals and membership options, giving players maximum flexibility. Its beach-town location adds a laid-back coastal energy to what is otherwise a serious, technology-forward golf environment. For golfers in the Jacksonville Beach area, it's a standout local resource for both gear and game improvement.",
+    "description": "Coastal Indoor Golf in Jacksonville Beach is more than a simulator venue \u2014 it's a full retail golf shop with TrackMan-powered bays, creating a unique combination of equipment retail and high-tech practice under one roof. The facility runs golf leagues and offers both hourly rentals and membership options, giving players maximum flexibility. Its beach-town location adds a laid-back coastal energy to what is otherwise a serious, technology-forward golf environment. For golfers in the Jacksonville Beach area, it's a standout local resource for both gear and game improvement.",
     "lat": 30.287641999999998,
     "lng": -81.40408099999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "parfit-coconut-creek",
@@ -7402,11 +7544,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"10AM-10PM\"], \"Tuesday\": [\"10AM-10PM\"], \"Wednesday\": [\"10AM-10PM\"], \"Thursday\": [\"10AM-10PM\"], \"Friday\": [\"9AM-11PM\"], \"Saturday\": [\"9AM-11PM\"], \"Sunday\": [\"9AM-8PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Parfit+Coconut+Creek/@26.2844984,-80.1882476,14z/data=!4m8!1m2!2m1!1sParfit+Coconut+Creek!3m4!1s0x88d91bd58c1580d5:0x57bc166f90549901!8m2!3d26.2844984!4d-80.1882476",
-    "description": "Parfit Indoor Golf in Coconut Creek is part of the Parfit chain of indoor simulator venues that emphasizes fun, accessibility, and a social atmosphere — captured in its tagline \"The Fun Side of the Fairway.\" Membership options, leagues, and lessons cater to a wide range of commitment levels, from casual drop-in visitors to frequent members looking to build their game. The Coconut Creek location brings quality indoor golf to northern Broward County in a welcoming, well-designed environment. It's a polished local option for South Florida golfers who want regular, convenient indoor access.",
+    "description": "Parfit Indoor Golf in Coconut Creek is part of the Parfit chain of indoor simulator venues that emphasizes fun, accessibility, and a social atmosphere \u2014 captured in its tagline \"The Fun Side of the Fairway.\" Membership options, leagues, and lessons cater to a wide range of commitment levels, from casual drop-in visitors to frequent members looking to build their game. The Coconut Creek location brings quality indoor golf to northern Broward County in a welcoming, well-designed environment. It's a polished local option for South Florida golfers who want regular, convenient indoor access.",
     "lat": 26.2844984,
     "lng": -80.1882476,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "full-swing-pt-and-golf",
@@ -7437,7 +7580,8 @@
     "lat": 28.693378199999998,
     "lng": -81.3858068,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-par-pub",
@@ -7468,7 +7612,8 @@
     "lat": 27.8992078,
     "lng": -82.76285209999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "golf-garage",
@@ -7499,7 +7644,8 @@
     "lat": 28.0792391,
     "lng": -80.6345736,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "sim-u-golf",
@@ -7526,11 +7672,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"1-11PM\"], \"Tuesday\": [\"1-11PM\"], \"Wednesday\": [\"1-11PM\"], \"Thursday\": [\"1-11PM\"], \"Friday\": [\"1-11PM\"], \"Saturday\": [\"1-11PM\"], \"Sunday\": [\"1-8PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Sim-U-Golf/@26.2279512,-80.13856229999999,14z/data=!4m8!1m2!2m1!1sSim-U-Golf!3m4!1s0x88d903ed8ab1fd79:0x9a770d9fa467545b!8m2!3d26.2279512!4d-80.13856229999999",
-    "description": "Sim-U-Golf in Pompano Beach rents its TrackMan-powered simulator bays by the hour rather than per person, making it a cost-effective choice for groups who want to share the experience. With access to over 550 courses from around the world, there's enormous variety for both casual rounds and focused practice. The pricing model — roughly one hour per golfer for 18 holes — makes it easy to plan a session efficiently. It's a no-fuss, technology-forward option for South Florida golfers who want premium simulator access without a membership commitment.",
+    "description": "Sim-U-Golf in Pompano Beach rents its TrackMan-powered simulator bays by the hour rather than per person, making it a cost-effective choice for groups who want to share the experience. With access to over 550 courses from around the world, there's enormous variety for both casual rounds and focused practice. The pricing model \u2014 roughly one hour per golfer for 18 holes \u2014 makes it easy to plan a session efficiently. It's a no-fuss, technology-forward option for South Florida golfers who want premium simulator access without a membership commitment.",
     "lat": 26.2279512,
     "lng": -80.13856229999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "golf-metrics",
@@ -7561,7 +7708,8 @@
     "lat": 26.580496999999998,
     "lng": -81.8747558,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "flagstick-golf-performance",
@@ -7592,7 +7740,8 @@
     "lat": 26.4904551,
     "lng": -80.0892183,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "apollo-beach-racquet-fitness",
@@ -7623,7 +7772,8 @@
     "lat": 27.7760774,
     "lng": -82.4040406,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "4-majors-indoor-golf",
@@ -7654,7 +7804,8 @@
     "lat": 26.2728371,
     "lng": -80.2555752,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "parfit-naples",
@@ -7685,7 +7836,8 @@
     "lat": 26.1533165,
     "lng": -81.7206025,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "athletic-motion-golf-club",
@@ -7712,11 +7864,12 @@
     "businessStatus": "OPERATIONAL",
     "workingHours": "{\"Monday\": [\"8AM-8PM\"], \"Tuesday\": [\"8AM-8PM\"], \"Wednesday\": [\"8AM-8PM\"], \"Thursday\": [\"8AM-8PM\"], \"Friday\": [\"8AM-8PM\"], \"Saturday\": [\"8AM-8PM\"], \"Sunday\": [\"8AM-8PM\"]}",
     "locationLink": "https://www.google.com/maps/place/Athletic+Motion+Golf+Club/@28.5475867,-81.5886452,14z/data=!4m8!1m2!2m1!1sAthletic+Motion+Golf+Club!3m4!1s0x88e787143975f0f7:0x8895e0d2e76643d9!8m2!3d28.5475867!4d-81.5886452",
-    "description": "Athletic Motion Golf Club in Winter Garden brings TrackMan technology into an indoor training environment focused on the biomechanics of the golf swing — an approach grounded in athletic performance science rather than traditional instruction methods. The facility emphasizes the physical movement patterns underlying sound swing mechanics, appealing to golfers who want a science-based path to improvement. Its indoor format allows year-round training regardless of Central Florida's weather. For serious students of the game who want to understand the \"why\" behind their swing, Athletic Motion offers a compelling and distinctive coaching philosophy.",
+    "description": "Athletic Motion Golf Club in Winter Garden brings TrackMan technology into an indoor training environment focused on the biomechanics of the golf swing \u2014 an approach grounded in athletic performance science rather than traditional instruction methods. The facility emphasizes the physical movement patterns underlying sound swing mechanics, appealing to golfers who want a science-based path to improvement. Its indoor format allows year-round training regardless of Central Florida's weather. For serious students of the game who want to understand the \"why\" behind their swing, Athletic Motion offers a compelling and distinctive coaching philosophy.",
     "lat": 28.5475867,
     "lng": -81.5886452,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "apollos-bistro",
@@ -7747,7 +7900,8 @@
     "lat": 27.775927199999998,
     "lng": -82.4040509,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "one-degree-indoor-golf-center",
@@ -7778,7 +7932,8 @@
     "lat": 28.530695899999998,
     "lng": -81.73492159999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-boca-raton-fl-west-boca",
@@ -7809,7 +7964,8 @@
     "lat": 26.3323769,
     "lng": -80.15204969999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-fort-lauderdale-fl",
@@ -7840,7 +7996,8 @@
     "lat": 26.169704199999998,
     "lng": -80.10075169999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-melbourne-fl",
@@ -7871,7 +8028,8 @@
     "lat": 28.1237541,
     "lng": -80.6897035,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-north-naples-fl",
@@ -7902,7 +8060,8 @@
     "lat": 26.2930994,
     "lng": -81.80110289999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-orlando-lake-nona",
@@ -7933,7 +8092,8 @@
     "lat": 28.379137,
     "lng": -81.24197099999999,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-orlando-waterford-lakes",
@@ -7964,7 +8124,8 @@
     "lat": 28.554430099999998,
     "lng": -81.2079581,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-port-st-lucie-fl",
@@ -7995,7 +8156,8 @@
     "lat": 27.325897599999998,
     "lng": -80.4083532,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-st-augustine-fl",
@@ -8026,7 +8188,8 @@
     "lat": 29.961472599999997,
     "lng": -81.4943638,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   },
   {
     "slug": "the-back-nine-golf-tampa-carrollwood",
@@ -8057,6 +8220,7 @@
     "lat": 28.083979799999998,
     "lng": -82.5069458,
     "techLevel": "high",
-    "category": "indoor"
+    "category": "indoor",
+    "venueType": "indoor_simulator"
   }
 ]
