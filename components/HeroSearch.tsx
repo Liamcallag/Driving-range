@@ -10,8 +10,10 @@ export default function HeroSearch() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const q = query.trim();
-    const url = q ? `/?q=${encodeURIComponent(q)}#main-content` : '/#main-content';
-    router.push(url);
+    router.push(q ? `/?q=${encodeURIComponent(q)}` : '/');
+    setTimeout(() => {
+      document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
   }
 
   return (

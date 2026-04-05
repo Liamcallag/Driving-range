@@ -167,33 +167,6 @@ export default function DirectoryClient({ ranges, initialSearch = '' }: Director
   return (
     <div className="w-full">
 
-      {/* ── Search ── */}
-      <div className="relative mb-4">
-        <label htmlFor="range-search" className="sr-only">Search driving ranges by name or city</label>
-        <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-        </svg>
-        <input
-          id="range-search"
-          type="text"
-          placeholder="Search by name or city..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-10 pr-10 py-3 border border-slate-200 rounded-xl bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent shadow-sm text-sm"
-        />
-        {searchQuery && (
-          <button
-            onClick={() => setSearchQuery('')}
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
-            aria-label="Clear search"
-          >
-            <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path d="M18 6 6 18M6 6l12 12" />
-            </svg>
-          </button>
-        )}
-      </div>
-
       {/* ── Filter Panel ── */}
       <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-4 mb-4">
 
