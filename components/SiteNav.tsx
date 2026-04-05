@@ -41,7 +41,7 @@ export default function SiteNav() {
       aria-label="Main navigation"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         solid
-          ? 'bg-zinc-900 border-b border-zinc-800 shadow-sm'
+          ? 'bg-green-900 border-b border-green-800 shadow-sm'
           : 'bg-black/30 backdrop-blur-md border-b border-white/10'
       }`}
     >
@@ -67,8 +67,8 @@ export default function SiteNav() {
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'text-green-400 bg-white/10'
-                    : 'text-white/70 hover:text-green-400 hover:bg-white/5'
+                    ? 'text-white bg-white/20'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {label}
@@ -93,7 +93,7 @@ export default function SiteNav() {
       {/* Mobile dropdown */}
       {menuOpen && (
         <div
-          className="sm:hidden bg-zinc-900 border-t border-zinc-800 px-4 py-3 flex flex-col gap-1"
+          className="sm:hidden bg-green-900 border-t border-green-800 px-4 py-3 flex flex-col gap-1"
           onClick={(e) => e.stopPropagation()}
         >
           {NAV_LINKS.map(({ href, label }) => {
@@ -105,8 +105,8 @@ export default function SiteNav() {
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'text-green-400 bg-white/10'
-                    : 'text-white/70 hover:text-green-400 hover:bg-white/5'
+                    ? 'text-white bg-white/20'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {label}
