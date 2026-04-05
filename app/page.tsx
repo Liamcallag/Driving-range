@@ -46,17 +46,14 @@ export default function HomePage() {
           </p>
 
           {/* Stats bar */}
-          <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
+          <div className="mt-8 flex flex-wrap gap-6 max-w-2xl">
             {[
               { label: 'Total Ranges', value: total },
               { label: 'Outdoor', value: outdoorCount },
               { label: 'Indoor / Sim', value: indoorCount },
               { label: 'High-Tech', value: highTechCount },
             ].map((stat) => (
-              <div
-                key={stat.label}
-                className="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/20 text-center"
-              >
+              <div key={stat.label} className="text-center">
                 <div className="text-2xl font-bold text-white">{stat.value}</div>
                 <div className="text-white/60 text-xs mt-0.5">{stat.label}</div>
               </div>
