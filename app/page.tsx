@@ -32,6 +32,7 @@ export default function HomePage() {
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-14">
+          <div className="hero-animate hero-animate-1 w-10 h-1 bg-green-400 rounded-full mb-4" aria-hidden="true" />
           <h1 className="hero-animate hero-animate-1 text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
             Florida Driving Ranges
           </h1>
@@ -52,7 +53,7 @@ export default function HomePage() {
               <div key={stat.label} className="flex items-center gap-8">
                 {i > 0 && <div className="w-px h-8 bg-white/20" />}
                 <div>
-                  <div className="text-3xl font-bold text-white">{stat.value}</div>
+                  <div className="text-3xl font-bold text-green-400">{stat.value}</div>
                   <div className="text-white/55 text-xs font-medium tracking-wide mt-0.5">{stat.label}</div>
                 </div>
               </div>

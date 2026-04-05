@@ -35,7 +35,7 @@ export default function RangeCard({ range }: RangeCardProps) {
   ].filter(Boolean) as { label: string; icon: string }[];
 
   return (
-    <div className="bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md transition-shadow p-5 flex flex-col gap-3">
+    <div className="bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md hover:border-green-200 transition-all p-5 flex flex-col gap-3">
       {/* Header */}
       <div>
         <Link
@@ -95,7 +95,7 @@ export default function RangeCard({ range }: RangeCardProps) {
       <Link
         href={`/ranges/${range.slug}`}
         aria-label={`View details for ${range.name}`}
-        className="mt-1 text-center text-sm font-medium text-green-700 hover:text-green-800 border border-green-200 hover:border-green-300 rounded-lg py-1.5 transition-colors"
+        className="mt-1 text-center text-sm font-medium text-green-700 hover:text-white border border-green-200 hover:border-green-600 hover:bg-green-600 rounded-lg py-1.5 transition-colors"
       >
         View Details <span aria-hidden="true">→</span>
       </Link>
