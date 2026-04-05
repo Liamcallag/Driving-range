@@ -45,9 +45,9 @@ export default function HomePage() {
           {/* Stats bar */}
           <div className="hero-animate hero-animate-3 mt-8 grid grid-cols-4 gap-0 max-w-sm sm:max-w-2xl sm:flex sm:items-center sm:gap-8">
             {[
-              { label: 'Total Ranges', value: total },
+              { label: 'Total', value: total },
               { label: 'Outdoor', value: outdoorCount },
-              { label: 'Indoor / Sim', value: indoorCount },
+              { label: 'Indoor', value: indoorCount },
               { label: 'High-Tech', value: highTechCount },
             ].map((stat, i) => (
               <div key={stat.label} className="flex items-center sm:gap-8">
