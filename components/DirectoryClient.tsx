@@ -210,6 +210,11 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
               ]}
               value={filters.category}
               onChange={(v) => toggle('category', v)}
+              activeColors={{
+                all:     'bg-green-700 text-white border-green-700',
+                outdoor: 'bg-green-100 text-green-800 border-green-300',
+                indoor:  'bg-orange-100 text-orange-800 border-orange-300',
+              }}
             />
           </div>
 
@@ -224,6 +229,11 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
               ]}
               value={filters.techLevel}
               onChange={(v) => toggle('techLevel', v)}
+              activeColors={{
+                all:  'bg-green-700 text-white border-green-700',
+                high: 'bg-purple-100 text-purple-800 border-purple-300',
+                low:  'bg-amber-100 text-amber-800 border-amber-300',
+              }}
             />
           </div>
 
