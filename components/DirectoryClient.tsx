@@ -45,6 +45,7 @@ const EMPTY_FILTERS: Filters = {
 
 interface DirectoryClientProps {
   ranges: Range[];
+  initialSearch?: string;
 }
 
 function FilterLabel({ children }: { children: React.ReactNode }) {
@@ -90,8 +91,8 @@ function SegmentGroup<T extends string>({
   );
 }
 
-export default function DirectoryClient({ ranges }: DirectoryClientProps) {
-  const [searchQuery, setSearchQuery] = useState('');
+export default function DirectoryClient({ ranges, initialSearch = '' }: DirectoryClientProps) {
+  const [searchQuery, setSearchQuery] = useState(initialSearch);
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [showMap, setShowMap] = useState(true);
   const [sort, setSort] = useState<'default' | 'name-asc' | 'name-desc' | 'city'>('default');

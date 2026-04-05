@@ -4,10 +4,13 @@ import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { CITY_PAGES } from '@/lib/cities';
 import DirectoryClient from '@/components/DirectoryClient';
+import HeroSearch from '@/components/HeroSearch';
 
 const ranges = rangesData as Range[];
 
-export default function HomePage() {
+export default async function HomePage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
+  const params = await searchParams;
+  const initialSearch = params?.q ?? '';
   const total = ranges.length;
   const indoorCount = ranges.filter((r) => r.category === 'indoor').length;
   const outdoorCount = ranges.filter((r) => r.category === 'outdoor').length;
@@ -45,8 +48,13 @@ export default function HomePage() {
             <span className="font-semibold text-white">{total} ranges</span> statewide.
           </p>
 
+          {/* Hero search */}
+          <div className="hero-animate hero-animate-4">
+            <HeroSearch />
+          </div>
+
           {/* Stats bar */}
-          <div className="hero-animate hero-animate-4 mt-8 flex flex-wrap items-center gap-8 max-w-2xl">
+          <div className="hero-animate hero-animate-4 mt-6 flex flex-wrap items-center gap-8 max-w-2xl">
             {[
               { label: 'Total Ranges', value: total },
               { label: 'Outdoor', value: outdoorCount },
@@ -67,7 +75,7 @@ export default function HomePage() {
 
       {/* ── Directory ── */}
       <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <DirectoryClient ranges={ranges} />
+        <DirectoryClient ranges={ranges} initialSearch={initialSearch} />
       </main>
 
       {/* ── Browse by City ── */}
