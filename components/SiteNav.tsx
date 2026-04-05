@@ -14,9 +14,18 @@ const NAV_LINKS = [
 
 export default function SiteNav() {
   const pathname = usePathname();
+  const isHome = pathname === '/';
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => { setMenuOpen(false); }, [pathname]);
+
+  useEffect(() => {
+    if (!isHome) return;
+    const onScroll = () => setScrolled(window.scrollY > 480);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [isHome]);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -25,17 +34,23 @@ export default function SiteNav() {
     return () => document.removeEventListener('click', handler);
   }, [menuOpen]);
 
+  const solid = !isHome || scrolled;
+
   return (
     <nav
       aria-label="Main navigation"
-      className="fixed top-0 inset-x-0 z-50 bg-slate-900 border-b border-slate-800 shadow-sm"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        solid
+          ? 'bg-green-900 border-b border-green-800 shadow-sm'
+          : 'bg-black/30 backdrop-blur-md border-b border-white/10'
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-16 flex items-center justify-between gap-4">
 
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-3 font-bold shrink-0 text-white"
+          className="flex items-center gap-3 font-bold shrink-0 text-white drop-shadow-sm"
         >
           <Image src="/images/logo.png" alt="" width={36} height={36} aria-hidden="true" />
           <span className="text-base sm:text-lg tracking-tight">Florida Driving Ranges</span>
@@ -52,8 +67,8 @@ export default function SiteNav() {
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'text-green-400 bg-white/10'
-                    : 'text-slate-300 hover:text-green-400 hover:bg-white/10'
+                    ? 'text-white bg-white/20'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {label}
@@ -78,7 +93,7 @@ export default function SiteNav() {
       {/* Mobile dropdown */}
       {menuOpen && (
         <div
-          className="sm:hidden bg-slate-900 border-t border-slate-800 px-4 py-3 flex flex-col gap-1"
+          className="sm:hidden bg-green-900 border-t border-green-800 px-4 py-3 flex flex-col gap-1"
           onClick={(e) => e.stopPropagation()}
         >
           {NAV_LINKS.map(({ href, label }) => {
@@ -90,8 +105,8 @@ export default function SiteNav() {
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'text-green-400 bg-white/10'
-                    : 'text-slate-300 hover:text-green-400 hover:bg-white/10'
+                    ? 'text-white bg-white/20'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {label}
