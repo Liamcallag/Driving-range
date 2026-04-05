@@ -28,14 +28,14 @@ export default function SiteNav() {
   return (
     <nav
       aria-label="Main navigation"
-      className="fixed top-0 inset-x-0 z-50 bg-green-900 border-b border-green-800"
+      className="fixed top-0 inset-x-0 z-50 bg-white border-b border-slate-200 shadow-sm"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-16 flex items-center justify-between gap-4">
 
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-3 font-bold shrink-0 text-white"
+          className="flex items-center gap-3 font-bold shrink-0 text-slate-800"
         >
           <Image src="/images/logo.png" alt="" width={36} height={36} aria-hidden="true" />
           <span className="text-base sm:text-lg tracking-tight">Florida Driving Ranges</span>
@@ -52,8 +52,8 @@ export default function SiteNav() {
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'bg-white/20 text-white'
-                    : 'text-white hover:text-green-300 hover:bg-white/10'
+                    ? 'text-green-700 bg-green-50'
+                    : 'text-slate-600 hover:text-green-700 hover:bg-green-50'
                 }`}
               >
                 {label}
@@ -69,16 +69,16 @@ export default function SiteNav() {
           aria-expanded={menuOpen}
           onClick={(e) => { e.stopPropagation(); setMenuOpen((o) => !o); }}
         >
-          <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`block w-5 h-0.5 transition-all duration-200 bg-slate-700 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-5 h-0.5 transition-all duration-200 bg-slate-700 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-5 h-0.5 transition-all duration-200 bg-slate-700 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </div>
 
       {/* Mobile dropdown */}
       {menuOpen && (
         <div
-          className="sm:hidden bg-green-900 border-t border-green-800 px-4 py-3 flex flex-col gap-1"
+          className="sm:hidden bg-white border-t border-slate-100 px-4 py-3 flex flex-col gap-1"
           onClick={(e) => e.stopPropagation()}
         >
           {NAV_LINKS.map(({ href, label }) => {
@@ -90,8 +90,8 @@ export default function SiteNav() {
                 aria-current={active ? 'page' : undefined}
                 className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                   active
-                    ? 'bg-white/20 text-white'
-                    : 'text-white/70 hover:text-white hover:bg-white/10'
+                    ? 'text-green-700 bg-green-50'
+                    : 'text-slate-600 hover:text-green-700 hover:bg-green-50'
                 }`}
               >
                 {label}

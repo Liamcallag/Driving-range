@@ -167,38 +167,30 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
     <div className="w-full">
 
       {/* ── Search ── */}
-      <div className="mb-4 max-w-2xl">
+      <div className="relative mb-4">
         <label htmlFor="range-search" className="sr-only">Search driving ranges by name or city</label>
-        <div className="flex rounded-2xl shadow-md overflow-hidden border-2 border-green-500 bg-white">
-          <div className="relative flex-1">
-            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-500" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+        <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+        </svg>
+        <input
+          id="range-search"
+          type="text"
+          placeholder="Search by name or city..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full pl-12 pr-10 py-4 border-2 border-green-500 rounded-xl bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-green-600 shadow-sm text-base"
+        />
+        {searchQuery && (
+          <button
+            onClick={() => setSearchQuery('')}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
+            aria-label="Clear search"
+          >
+            <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path d="M18 6 6 18M6 6l12 12" />
             </svg>
-            <input
-              id="range-search"
-              type="text"
-              placeholder="Search by name or city..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-11 pr-4 py-4 bg-white text-slate-800 placeholder-slate-400 focus:outline-none text-base font-medium"
-            />
-          </div>
-          {searchQuery ? (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="px-4 bg-green-600 hover:bg-green-700 text-white transition-colors"
-              aria-label="Clear search"
-            >
-              <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                <path d="M18 6 6 18M6 6l12 12" />
-              </svg>
-            </button>
-          ) : (
-            <div className="px-5 flex items-center bg-green-600 text-white text-sm font-semibold select-none">
-              Search
-            </div>
-          )}
-        </div>
+          </button>
+        )}
       </div>
 
       {/* ── Filter Panel ── */}

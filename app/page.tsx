@@ -17,7 +17,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-slate-50">
 
       {/* ── Hero ── */}
-      <header className="relative min-h-[540px] flex items-end overflow-hidden">
+      <header className="relative min-h-[580px] flex items-center overflow-hidden">
         {/* Background photo */}
         <Image
           src="/images/hero-range.jpg"
@@ -27,11 +27,11 @@ export default function HomePage() {
           priority
           sizes="100vw"
         />
-        {/* Gradient overlay — darkens bottom for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/25" />
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-40">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
           <h1 className="hero-animate hero-animate-1 text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
             Florida Driving Ranges
           </h1>
