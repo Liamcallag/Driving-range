@@ -186,7 +186,7 @@ export default async function RangePage({ params }: PageProps) {
                 {range.city}, Florida{range.address ? ` · ${range.address}` : ''}
               </p>
               <div className="flex flex-wrap gap-2 mt-3 items-center">
-                <span className={`text-sm font-medium px-3 py-1 rounded-full ${isIndoor ? 'bg-blue-100 text-blue-800' : 'bg-green-100 text-green-800'}`}>
+                <span className={`text-sm font-medium px-3 py-1 rounded-full ${isIndoor ? 'bg-orange-100 text-orange-800' : 'bg-green-100 text-green-800'}`}>
                   {isIndoor ? 'Indoor' : 'Outdoor'}
                 </span>
                 <span className={`text-sm font-medium px-3 py-1 rounded-full ${range.techLevel === 'high' ? 'bg-purple-100 text-purple-800' : 'bg-amber-100 text-amber-800'}`}>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Suspense } from 'react';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { CITY_PAGES } from '@/lib/cities';
@@ -64,7 +65,9 @@ export default function HomePage() {
 
       {/* ── Directory ── */}
       <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <DirectoryClient ranges={ranges} />
+        <Suspense>
+          <DirectoryClient ranges={ranges} />
+        </Suspense>
       </main>
 
       {/* ── Browse by City ── */}

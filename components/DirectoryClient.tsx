@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Range } from '@/lib/types';
 import { getCities, getOpenStatus } from '@/lib/utils';
@@ -91,10 +92,50 @@ function SegmentGroup<T extends string>({
 }
 
 export default function DirectoryClient({ ranges }: DirectoryClientProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const [searchQuery, setSearchQuery] = useState(() => searchParams.get('q') ?? '');
+  const [filters, setFilters] = useState<Filters>(() => ({
+    ...EMPTY_FILTERS,
+    category: (searchParams.get('type') as Filters['category']) ?? 'all',
+    techLevel: (searchParams.get('tech') as Filters['techLevel']) ?? 'all',
+    city: searchParams.get('city') ?? '',
+    openNow: searchParams.get('open') === '1',
+    foodBar: searchParams.get('foodBar') === '1',
+    grassTees: searchParams.get('grassTees') === '1',
+    mats: searchParams.get('mats') === '1',
+    lighting: searchParams.get('lighting') === '1',
+    roofCover: searchParams.get('roofCover') === '1',
+    trackman: searchParams.get('trackman') === '1',
+    toptracer: searchParams.get('toptracer') === '1',
+  }));
   const [showMap, setShowMap] = useState(true);
   const [sort, setSort] = useState<'default' | 'name-asc' | 'name-desc' | 'city'>('default');
+
+  // Sync filters to URL so back button restores state
+  const syncToUrl = useCallback((query: string, f: Filters) => {
+    const params = new URLSearchParams();
+    if (query) params.set('q', query);
+    if (f.category !== 'all') params.set('type', f.category);
+    if (f.techLevel !== 'all') params.set('tech', f.techLevel);
+    if (f.city) params.set('city', f.city);
+    if (f.openNow) params.set('open', '1');
+    if (f.foodBar) params.set('foodBar', '1');
+    if (f.grassTees) params.set('grassTees', '1');
+    if (f.mats) params.set('mats', '1');
+    if (f.lighting) params.set('lighting', '1');
+    if (f.roofCover) params.set('roofCover', '1');
+    if (f.trackman) params.set('trackman', '1');
+    if (f.toptracer) params.set('toptracer', '1');
+    const qs = params.toString();
+    router.replace(`${pathname}${qs ? `?${qs}` : ''}`, { scroll: false });
+  }, [router, pathname]);
+
+  useEffect(() => {
+    syncToUrl(searchQuery, filters);
+  }, [searchQuery, filters, syncToUrl]);
 
   const cities = useMemo(() => getCities(ranges), [ranges]);
 
