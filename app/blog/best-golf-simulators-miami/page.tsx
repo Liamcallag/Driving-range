@@ -65,12 +65,17 @@ export default function BestGolfSimulatorsMiami() {
             <Link href="/ranges/the-tips-golf" className="text-green-700 hover:text-green-800 font-medium">View The Tips Golf listing →</Link>
           </p>
 
-          <h2>Entertainment Golf in Miami</h2>
+          <h3>Topgolf Miami — Doral &amp; Miami Gardens</h3>
           <p>
-            Beyond dedicated simulator studios, Miami has two Topgolf locations — in Doral and Miami Gardens — which offer a different kind of indoor golf experience. Topgolf uses its own ball-tracking technology across large multi-bay facilities with food, drinks, and a social atmosphere. They're excellent for groups and casual players but are distinct from the practice-focused environment of a dedicated simulator venue.
+            Miami has two Topgolf locations — one in Doral and one in Miami Gardens — which offer a different kind of tech-powered golf experience. Topgolf uses its own ball-tracking technology across large multi-level facilities with food, drinks, and a social atmosphere. The gamified bay format makes them ideal for groups, corporate events, and casual players who want to combine golf with entertainment.
           </p>
           <p>
-            If you're organising a group outing or corporate event, Topgolf's scale and full-service setup is hard to beat in the Miami market. For serious practice, The Tips Golf is the stronger choice.
+            These venues are distinct from dedicated practice simulators — the focus is on fun and socialising rather than serious improvement. But if you're looking for a high-energy group outing with golf as the centrepiece, Topgolf is the biggest and most complete option in the Miami market.
+          </p>
+          <p>
+            <Link href="/ranges/topgolf-miami-doral" className="text-green-700 hover:text-green-800 font-medium">View Topgolf Miami Doral listing →</Link>
+            {' · '}
+            <Link href="/ranges/topgolf-miami-gardens" className="text-green-700 hover:text-green-800 font-medium">View Topgolf Miami Gardens listing →</Link>
           </p>
 
           <h2>Tips for Golf Simulator Sessions in Miami</h2>

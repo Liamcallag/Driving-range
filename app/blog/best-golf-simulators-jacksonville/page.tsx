@@ -56,26 +56,31 @@ export default function BestGolfSimulatorsJacksonville() {
 
           <h3>Coastal Indoor Golf — Jacksonville Beach</h3>
           <p>
-            Coastal Indoor Golf is one of Jacksonville's well-established indoor simulator venues, located at Jacksonville Beach. It offers simulator bays in a focused environment suited to golfers who want quality practice time. Its beach location makes it a convenient option for golfers in the eastern parts of Jacksonville and for visitors staying near the coast.
+            Coastal Indoor Golf is Jacksonville's most established dedicated indoor simulator venue, located at Jacksonville Beach. It offers simulator bays in a focused environment suited to golfers who want quality practice time. Its beach location makes it a convenient option for golfers in the eastern parts of the city and for visitors staying near the coast. If serious practice is the goal, this is the strongest purpose-built option in the Jacksonville area.
           </p>
           <p>
             <Link href="/ranges/coastal-indoor-golf" className="text-green-700 hover:text-green-800 font-medium">View Coastal Indoor Golf listing →</Link>
           </p>
 
-          <h3>The Back Nine Golf — Jacksonville Beach</h3>
+          <h3>The Back Nine Golf — Jacksonville Beach &amp; St. Augustine</h3>
           <p>
-            The Back Nine Golf has brought its popular simulator-and-social concept to Jacksonville Beach. The venue offers bookable simulator bays alongside food and drinks in a relaxed atmosphere — a solid choice for groups or anyone who wants to combine a round of virtual golf with a social evening. It's open late, making it a good option when outdoor ranges aren't practical.
+            The Back Nine Golf is a growing Florida chain with two locations serving the greater Jacksonville area — one at Jacksonville Beach and one in St. Augustine to the south. Both venues offer the same format: bookable simulator bays in a relaxed social atmosphere with food and drinks, open late and well-suited to groups and casual outings.
+          </p>
+          <p>
+            The Jacksonville Beach location is convenient for the east side of the city. The St. Augustine location serves golfers based in Florida's historic coastal city and is also popular with tourists looking for an evening activity. Both are a better fit for social outings than serious practice sessions.
           </p>
           <p>
             <Link href="/ranges/the-back-nine-golf-jacksonville-beach-fl" className="text-green-700 hover:text-green-800 font-medium">View The Back Nine Golf Jacksonville Beach listing →</Link>
+            {' · '}
+            <Link href="/ranges/the-back-nine-golf-st-augustine-fl" className="text-green-700 hover:text-green-800 font-medium">View The Back Nine Golf St. Augustine listing →</Link>
           </p>
 
-          <h3>The Back Nine Golf — St. Augustine</h3>
+          <h3>Topgolf — Jacksonville</h3>
           <p>
-            For golfers based south of Jacksonville, The Back Nine Golf in St. Augustine offers the same simulator experience in Florida's historic coastal city. St. Augustine is a popular tourist destination and the venue serves both local residents and visitors looking for an evening activity. Open late and bookable online, it's a convenient option for the southern end of the Jacksonville metro area.
+            Topgolf Jacksonville offers the chain's signature multi-level bay experience with food, drinks, and gamified ball-tracking technology. It's the largest-scale golf entertainment venue in the Jacksonville area and is well-suited to corporate events, group outings, and casual players. Like all Topgolf locations, it's more entertainment than practice — but for a high-energy group session it's hard to beat in terms of scale and atmosphere.
           </p>
           <p>
-            <Link href="/ranges/the-back-nine-golf-st-augustine-fl" className="text-green-700 hover:text-green-800 font-medium">View The Back Nine Golf St. Augustine listing →</Link>
+            <Link href="/ranges/topgolf-jacksonville" className="text-green-700 hover:text-green-800 font-medium">View Topgolf Jacksonville listing →</Link>
           </p>
 
           <h2>Tips for Golf Simulator Sessions in Jacksonville</h2>
