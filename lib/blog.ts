@@ -149,7 +149,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'golf-simulator-technology-explained',
     title: 'Golf Simulator Technology Explained: Top 5 Systems Compared',
-    description: 'Not all golf simulators are the same. Here is a breakdown of the top 5 golf simulator technologies — TrackMan, Foresight, FlightScope, Uneekor, and TopTracer — and what sets them apart.',
+    description: 'Not all golf simulators are the same. Here is a breakdown of the top 5 golf simulator technologies — TrackMan, Foresight, FlightScope, Uneekor, and SkyTrak — and what sets them apart.',
     date: '2026-04-09',
     category: 'Technology',
     readTime: 7,

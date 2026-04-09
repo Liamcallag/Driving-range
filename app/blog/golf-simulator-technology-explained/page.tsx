@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Golf Simulator Technology Explained: TrackMan, Foresight, FlightScope & More | Florida Driving Ranges',
-  description: 'Not all golf simulators are the same. Here is a breakdown of the top 5 golf simulator technologies — TrackMan, Foresight, FlightScope, Uneekor, and TopTracer — and what sets them apart.',
+  description: 'Not all golf simulators are the same. Here is a breakdown of the top 5 golf simulator technologies — TrackMan, Foresight, FlightScope, Uneekor, and SkyTrak — and what sets them apart.',
   openGraph: {
     title: 'Golf Simulator Technology Explained: Top 5 Systems Compared',
-    description: 'Not all golf simulators are the same. Here is a breakdown of the top 5 golf simulator technologies and what sets them apart.',
+    description: 'Not all golf simulators are the same. Here is a breakdown of the top 5 golf simulator technologies — TrackMan, Foresight, FlightScope, Uneekor, and SkyTrak — and what sets them apart.',
     url: 'https://floridadrivingranges.com/blog/golf-simulator-technology-explained',
     siteName: 'Florida Driving Ranges',
     type: 'article',
@@ -108,19 +108,19 @@ export default function GolfSimulatorTechnologyExplained() {
           <p><strong>Technology:</strong> Overhead high-speed cameras</p>
           <p><strong>Where you'll find it in Florida:</strong> Newer indoor simulator studios</p>
 
-          <h2>5. TopTracer Range</h2>
+          <h2>5. SkyTrak</h2>
           <p>
-            TopTracer is different from the other four systems on this list. Rather than being a full golf simulator, TopTracer Range is a driving range overlay technology — it tracks your ball flight at an outdoor range and displays the data on a screen at your bay. You're hitting real balls into a real range, not a screen.
+            SkyTrak is a camera-based launch monitor that has become one of the most widely used simulator systems in commercial venues and home setups alike. Developed by SkyTrak Golf, it uses a single high-speed camera positioned at ball level to capture impact data and calculate ball flight. Its combination of solid accuracy and competitive pricing has made it one of the most accessible true simulator systems on the market.
           </p>
           <p>
-            TopTracer is best known through its use at Topgolf venues, but it's also installed at many traditional outdoor ranges worldwide as a way to add technology and engagement to a standard range experience. It shows ball speed, carry distance, height, and landing position on a virtual map of the range.
+            SkyTrak measures ball speed, launch angle, backspin, sidespin, and side angle — enough data to produce realistic and consistent ball flight simulations. It integrates with popular simulator software including The Golf Club, WGT, and E6 Connect, allowing players to play virtual versions of real courses.
           </p>
           <p>
-            TopTracer is excellent for making range sessions more engaging and for tracking basic performance metrics. However, it doesn't offer the same depth of data as a full launch monitor system, and it doesn't allow you to play virtual courses. It's a range enhancement tool rather than a true simulator.
+            In commercial settings, SkyTrak is a common choice for venues that want to offer a genuine simulator experience without the cost of a TrackMan or Foresight setup. It's particularly popular in smaller independent simulator venues and entertainment-focused facilities where cost efficiency matters.
           </p>
-          <p><strong>Best for:</strong> Outdoor range engagement, casual data, entertainment venues</p>
-          <p><strong>Technology:</strong> Camera-based ball tracking</p>
-          <p><strong>Where you'll find it in Florida:</strong> Topgolf venues and TopTracer-equipped outdoor ranges</p>
+          <p><strong>Best for:</strong> Commercial venues, home simulators, accessible price point</p>
+          <p><strong>Technology:</strong> High-speed camera</p>
+          <p><strong>Where you'll find it in Florida:</strong> Independent indoor simulator venues across the state</p>
 
           <h2>Which System Is Best?</h2>
           <p>
@@ -130,7 +130,7 @@ export default function GolfSimulatorTechnologyExplained() {
             <li><strong>For the most accurate ball flight data</strong> — TrackMan</li>
             <li><strong>For the most accurate spin and impact data</strong> — Foresight GCQuad</li>
             <li><strong>For a balance of accuracy and price</strong> — FlightScope or Uneekor</li>
-            <li><strong>For a social entertainment experience</strong> — TopTracer Range / Topgolf</li>
+            <li><strong>For an accessible entry point</strong> — SkyTrak</li>
           </ul>
           <p>
             For most golfers visiting a simulator venue in Florida, the specific system matters less than the quality of the facility and the experience it provides. Any of the top four systems will give you accurate, useful data for improving your game.
