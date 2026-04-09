@@ -117,10 +117,10 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'best-golf-simulators-miami',
     title: 'Best Golf Simulators in Miami, FL',
-    description: 'Looking for a golf simulator in Miami? Here are the best indoor golf simulator venues across the Miami metro area — perfect for year-round play in any weather.',
+    description: 'Looking for a golf simulator in Miami? Here is what the Miami area currently offers for indoor golf — and where to look nearby for more options.',
     date: '2026-04-09',
     category: 'Guides',
-    readTime: 4,
+    readTime: 3,
   },
   {
     slug: 'best-golf-simulators-jacksonville',

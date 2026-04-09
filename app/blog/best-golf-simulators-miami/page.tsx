@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Best Golf Simulators in Miami, FL | Florida Driving Ranges',
-  description: 'Looking for a golf simulator in Miami? Here are the best indoor golf simulator venues across the Miami metro area — perfect for year-round play in any weather.',
+  description: 'Looking for a golf simulator in Miami? Here is what the Miami area currently offers for indoor golf — and where to look nearby for more options.',
   openGraph: {
     title: 'Best Golf Simulators in Miami, FL',
-    description: 'Looking for a golf simulator in Miami? Here are the best indoor golf simulator venues across the Miami metro area.',
+    description: 'Looking for a golf simulator in Miami? Here is what the Miami area currently offers for indoor golf — and where to look nearby for more options.',
     url: 'https://floridadrivingranges.com/blog/best-golf-simulators-miami',
     siteName: 'Florida Driving Ranges',
     type: 'article',
@@ -65,18 +65,14 @@ export default function BestGolfSimulatorsMiami() {
             <Link href="/ranges/the-tips-golf" className="text-green-700 hover:text-green-800 font-medium">View The Tips Golf listing →</Link>
           </p>
 
-          <h3>Topgolf Miami — Doral &amp; Miami Gardens</h3>
+          <h2>Miami's Simulator Scene Is Limited — But Growing</h2>
           <p>
-            Miami has two Topgolf locations — one in Doral and one in Miami Gardens — which offer a different kind of tech-powered golf experience. Topgolf uses its own ball-tracking technology across large multi-level facilities with food, drinks, and a social atmosphere. The gamified bay format makes them ideal for groups, corporate events, and casual players who want to combine golf with entertainment.
+            Honest answer: Miami's dedicated golf simulator scene is still developing. The Tips Golf is currently the standout option for anyone wanting a true simulator experience. If you need more variety or want to compare venues, Fort Lauderdale and Boca Raton to the north both have stronger indoor golf offerings and are worth the drive.
           </p>
-          <p>
-            These venues are distinct from dedicated practice simulators — the focus is on fun and socialising rather than serious improvement. But if you're looking for a high-energy group outing with golf as the centrepiece, Topgolf is the biggest and most complete option in the Miami market.
-          </p>
-          <p>
-            <Link href="/ranges/topgolf-miami-doral" className="text-green-700 hover:text-green-800 font-medium">View Topgolf Miami Doral listing →</Link>
-            {' · '}
-            <Link href="/ranges/topgolf-miami-gardens" className="text-green-700 hover:text-green-800 font-medium">View Topgolf Miami Gardens listing →</Link>
-          </p>
+          <ul>
+            <li><Link href="/blog/best-golf-simulators-palm-beach" className="text-green-700 hover:text-green-800 font-medium">Best golf simulators in Palm Beach County</Link> — Flagstick Golf Performance and The Back Nine Golf Boca Raton (open 24 hours)</li>
+            <li><Link href="/cities/fort-lauderdale" className="text-green-700 hover:text-green-800 font-medium">Fort Lauderdale indoor ranges</Link> — Strokes N Drivers, Sim-U-Golf, and more</li>
+          </ul>
 
           <h2>Tips for Golf Simulator Sessions in Miami</h2>
 
