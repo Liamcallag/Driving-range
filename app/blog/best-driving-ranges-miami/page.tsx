@@ -45,7 +45,7 @@ export default function BestDrivingRangesMiami() {
         </header>
 
         <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/grass-tees.jpg" alt="Golfer at a driving range in Miami, Florida" fill className="object-cover object-center" />
+          <Image src="/images/blog/best-ranges-miami.jpg" alt="Golfer swinging a driver at a golf course in South Florida with palm trees" fill className="object-cover object-center" />
         </div>
 
         <article className="blog-content">

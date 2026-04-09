@@ -45,7 +45,7 @@ export default function BestDrivingRangesTampa() {
         </header>
 
         <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/best-ranges-orlando.jpg" alt="Golfer at a driving range in the Tampa Bay area" fill className="object-cover object-center" />
+          <Image src="/images/blog/best-ranges-tampa.jpg" alt="Golfer hitting a shot on a coastal golf course in the Tampa Bay area" fill className="object-cover object-center" />
         </div>
 
         <article className="blog-content">

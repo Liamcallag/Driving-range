@@ -97,6 +97,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Locations',
     readTime: 6,
+    image: '/images/blog/best-ranges-tampa.jpg',
   },
   {
     slug: 'best-driving-ranges-miami',
@@ -105,6 +106,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Locations',
     readTime: 5,
+    image: '/images/blog/best-ranges-miami.jpg',
   },
   {
     slug: 'best-golf-simulators-tampa',
