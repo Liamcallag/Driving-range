@@ -90,6 +90,22 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: 6,
     image: '/images/blog/best-ranges-fort-lauderdale.jpg',
   },
+  {
+    slug: 'best-driving-ranges-tampa',
+    title: 'Best Driving Ranges in Tampa, FL',
+    description: 'Tampa has one of Florida\'s most varied driving range scenes — from high-tech indoor simulators to classic outdoor ranges across the greater Tampa Bay area.',
+    date: '2026-04-09',
+    category: 'Locations',
+    readTime: 6,
+  },
+  {
+    slug: 'best-driving-ranges-miami',
+    title: 'Best Driving Ranges in Miami, FL',
+    description: 'Miami\'s driving range scene spans the full metro area — from modern indoor simulator venues to traditional outdoor ranges in Doral, Miami Gardens, and beyond.',
+    date: '2026-04-09',
+    category: 'Locations',
+    readTime: 5,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
