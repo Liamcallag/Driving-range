@@ -138,6 +138,14 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Guides',
     readTime: 4,
   },
+  {
+    slug: 'best-golf-simulators-orlando',
+    title: 'Best Golf Simulators in Orlando, FL',
+    description: 'Looking for a golf simulator in Orlando? Here are the best indoor golf simulator venues across the Orlando area — from serious practice studios to bar-and-golf social venues.',
+    date: '2026-04-09',
+    category: 'Guides',
+    readTime: 6,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
