@@ -106,6 +106,38 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Locations',
     readTime: 5,
   },
+  {
+    slug: 'best-golf-simulators-tampa',
+    title: 'Best Golf Simulators in Tampa, FL',
+    description: 'Looking for a golf simulator in Tampa? Here are the best indoor golf simulator venues across the Tampa Bay area — from dedicated sim studios to bar-and-golf venues.',
+    date: '2026-04-09',
+    category: 'Guides',
+    readTime: 5,
+  },
+  {
+    slug: 'best-golf-simulators-miami',
+    title: 'Best Golf Simulators in Miami, FL',
+    description: 'Looking for a golf simulator in Miami? Here are the best indoor golf simulator venues across the Miami metro area — perfect for year-round play in any weather.',
+    date: '2026-04-09',
+    category: 'Guides',
+    readTime: 4,
+  },
+  {
+    slug: 'best-golf-simulators-jacksonville',
+    title: 'Best Golf Simulators in Jacksonville, FL',
+    description: 'Looking for a golf simulator in Jacksonville? Here are the best indoor golf simulator venues in Jacksonville and the surrounding area.',
+    date: '2026-04-09',
+    category: 'Guides',
+    readTime: 4,
+  },
+  {
+    slug: 'best-golf-simulators-palm-beach',
+    title: 'Best Golf Simulators in Palm Beach County, FL',
+    description: 'Looking for a golf simulator in Palm Beach County? Here are the best indoor golf simulator venues in the Palm Beach area — from Boca Raton to West Palm Beach.',
+    date: '2026-04-09',
+    category: 'Guides',
+    readTime: 4,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
