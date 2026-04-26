@@ -39,11 +39,7 @@ export default function SiteNav() {
   return (
     <nav
       aria-label="Main navigation"
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        solid
-          ? 'bg-green-900 border-b border-green-800 shadow-sm'
-          : 'bg-black/30 backdrop-blur-md border-b border-white/10'
-      }`}
+      className="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-green-700 border-b border-green-600 shadow-sm"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-20 flex items-center justify-between gap-4">
 
@@ -53,7 +49,7 @@ export default function SiteNav() {
           className="flex items-center gap-3 font-bold shrink-0 text-white drop-shadow-sm"
         >
           <Image src="/images/logo.png" alt="" width={36} height={36} aria-hidden="true" />
-          <span className="text-base sm:text-lg tracking-tight">Florida Driving Ranges</span>
+          <span className="text-lg sm:text-xl tracking-tight">Florida Driving Ranges</span>
         </Link>
 
         {/* Desktop nav links */}
@@ -65,10 +61,10 @@ export default function SiteNav() {
                 key={href}
                 href={href}
                 aria-current={active ? 'page' : undefined}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3 py-2 text-base font-medium transition-colors ${
                   active
-                    ? 'text-white bg-white/20'
-                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                    ? 'text-green-200'
+                    : 'text-white hover:text-green-200'
                 }`}
               >
                 {label}
@@ -103,10 +99,10 @@ export default function SiteNav() {
                 key={href}
                 href={href}
                 aria-current={active ? 'page' : undefined}
-                className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-3 py-2.5 text-base font-medium transition-colors ${
                   active
-                    ? 'text-white bg-white/20'
-                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                    ? 'text-green-200'
+                    : 'text-white hover:text-green-200'
                 }`}
               >
                 {label}
