@@ -45,7 +45,7 @@ export default function SiteNav() {
           : 'bg-black/30 backdrop-blur-md border-b border-white/10'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-16 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-20 flex items-center justify-between gap-4">
 
         {/* Logo */}
         <Link
