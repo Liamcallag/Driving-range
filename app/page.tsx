@@ -5,7 +5,6 @@ import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { CITY_PAGES } from '@/lib/cities';
 import DirectoryClient from '@/components/DirectoryClient';
-import HeroSearch from '@/components/HeroSearch';
 
 const ranges = rangesData as Range[];
 
@@ -40,7 +39,6 @@ export default function HomePage() {
           <p className="text-white/80 text-lg mb-8">
             Browse {total} driving ranges across Florida — outdoor, indoor, and high-tech.
           </p>
-          <HeroSearch />
           {/* Stats */}
           <div className="mt-10 flex items-center justify-center gap-8">
             {[
