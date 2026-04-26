@@ -19,7 +19,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-slate-50">
 
       {/* ── Hero ── */}
-      <header className="relative h-screen flex items-center justify-center overflow-hidden">
+      <header className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
         {/* Background photo */}
         <Image
           src="/images/hero-range.jpg"
@@ -34,7 +34,7 @@ export default function HomePage() {
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl sm:text-6xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6 text-balance">
             Find your perfect driving range
           </h1>
           <p className="text-white/80 text-lg mb-8">

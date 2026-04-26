@@ -426,7 +426,7 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
       )}
 
       {/* ── Split layout (desktop) ── */}
-      <div className="flex gap-6 items-start">
+      <div className="flex gap-6 items-stretch">
 
         {/* Left — scrollable card list */}
         <div className="w-full lg:w-[45%]">
