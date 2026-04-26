@@ -10,36 +10,23 @@ export default function HeroSearch() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const q = query.trim();
-    router.push(q ? `/?q=${encodeURIComponent(q)}` : '/');
-    setTimeout(() => {
-      document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
+    const qs = q ? `?q=${encodeURIComponent(q)}` : '';
+    router.push(`/${qs}#main-content`);
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-8 flex items-center gap-2 max-w-lg">
-      <div className="relative flex-1">
-        <svg
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/50"
-          aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"
-        >
-          <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-        </svg>
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by city or range name..."
-          aria-label="Search driving ranges"
-          className="w-full pl-11 pr-4 py-3.5 rounded-xl bg-white/15 backdrop-blur-sm border border-white/25 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/40 focus:bg-white/20 transition text-sm"
-        />
-      </div>
-      <button
-        type="submit"
-        className="px-5 py-3.5 bg-green-500 hover:bg-green-400 text-white font-semibold rounded-xl transition text-sm whitespace-nowrap shadow"
-      >
-        Search
-      </button>
+    <form onSubmit={handleSubmit} className="flex items-center bg-white rounded-full px-5 py-4 shadow-lg max-w-xl mx-auto">
+      <svg className="w-5 h-5 text-slate-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
+      </svg>
+      <input
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search by name or city..."
+        aria-label="Search driving ranges"
+        className="text-slate-700 text-base w-full outline-none placeholder-slate-400 bg-transparent"
+      />
     </form>
   );
 }

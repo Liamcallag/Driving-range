@@ -5,6 +5,7 @@ import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { CITY_PAGES } from '@/lib/cities';
 import DirectoryClient from '@/components/DirectoryClient';
+import HeroSearch from '@/components/HeroSearch';
 
 const ranges = rangesData as Range[];
 
@@ -18,7 +19,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-slate-50">
 
       {/* ── Hero ── */}
-      <header className="relative min-h-[580px] flex items-end overflow-hidden mt-20">
+      <header className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background photo */}
         <Image
           src="/images/hero-range.jpg"
@@ -29,33 +30,30 @@ export default function HomePage() {
           sizes="100vw"
         />
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
+        <div className="absolute inset-0 bg-black/50" />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-14">
-          <div className="hero-animate hero-animate-1 w-10 h-1 bg-green-400 rounded-full mb-4" aria-hidden="true" />
-          <h1 className="hero-animate hero-animate-1 text-4xl sm:text-5xl font-bold text-white leading-tight mb-3">
-            Florida Driving Ranges
+        <div className="relative z-10 w-full max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="text-4xl sm:text-6xl font-bold text-white leading-tight mb-6">
+            Find your perfect driving range
           </h1>
-          <p className="hero-animate hero-animate-2 text-white/75 text-lg leading-relaxed max-w-2xl">
-            Find the perfect driving range across Florida — from high-tech simulators and
-            TrackMan bays to scenic outdoor grass ranges. Browse all{' '}
-            <span className="font-semibold text-white">{total} ranges</span> statewide.
+          <p className="text-white/80 text-lg mb-8">
+            Browse {total} driving ranges across Florida — outdoor, indoor, and high-tech.
           </p>
-
-          {/* Stats bar */}
-          <div className="hero-animate hero-animate-3 mt-8 grid grid-cols-4 gap-0 max-w-sm sm:max-w-2xl sm:flex sm:items-center sm:gap-8">
+          <HeroSearch />
+          {/* Stats */}
+          <div className="mt-10 flex items-center justify-center gap-8">
             {[
               { label: 'Total', value: total },
               { label: 'Outdoor', value: outdoorCount },
               { label: 'Indoor', value: indoorCount },
               { label: 'High-Tech', value: highTechCount },
             ].map((stat, i) => (
-              <div key={stat.label} className="flex items-center sm:gap-8">
-                {i > 0 && <div className="hidden sm:block w-px h-8 bg-white/20" />}
-                <div className="px-2 sm:px-0 border-r border-white/20 last:border-0 sm:border-0 w-full">
-                  <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>
-                  <div className="text-white/55 text-xs font-medium tracking-wide mt-0.5 leading-tight">{stat.label}</div>
+              <div key={stat.label} className="flex items-center gap-8">
+                {i > 0 && <div className="w-px h-8 bg-white/20" />}
+                <div>
+                  <div className="text-2xl font-bold text-white">{stat.value}</div>
+                  <div className="text-white/60 text-xs font-medium tracking-wide">{stat.label}</div>
                 </div>
               </div>
             ))}

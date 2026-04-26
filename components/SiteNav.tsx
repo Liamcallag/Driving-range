@@ -39,7 +39,11 @@ export default function SiteNav() {
   return (
     <nav
       aria-label="Main navigation"
-      className="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-green-900 border-b border-green-800 shadow-sm"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        solid
+          ? 'bg-green-900 border-b border-green-800 shadow-sm'
+          : 'bg-transparent border-b border-transparent'
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-20 flex items-center justify-between gap-4">
 
