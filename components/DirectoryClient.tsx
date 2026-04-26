@@ -111,7 +111,6 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
     trackman: searchParams.get('trackman') === '1',
     toptracer: searchParams.get('toptracer') === '1',
   }));
-  const [showMap, setShowMap] = useState(true);
   const [sort, setSort] = useState<'default' | 'name-asc' | 'name-desc' | 'city'>('default');
 
   // Sync filters to URL so back button restores state
@@ -377,6 +376,11 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
         </div>
       )}
 
+      {/* ── Full-width map ── */}
+      <div className="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm" style={{ height: '480px' }}>
+        <MapComponent ranges={sorted} />
+      </div>
+
       {/* ── Results bar ── */}
       <div className="flex items-center justify-between mb-4">
         <p className="text-sm text-slate-500" aria-live="polite" aria-atomic="true">
@@ -401,58 +405,23 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
             <option value="name-desc">Name Z–A</option>
             <option value="city">City</option>
           </select>
-          {/* Map toggle — mobile only */}
-          <button
-            onClick={() => setShowMap((v) => !v)}
-            className={`lg:hidden inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-sm font-medium border transition-colors ${
-              showMap
-                ? 'bg-green-700 text-white border-green-700'
-                : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
-            }`}
-          >
-            <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13 6-3m-6 3V7m6 10 4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-            </svg>
-            {showMap ? 'Hide Map' : 'Show Map'}
-          </button>
         </div>
       </div>
 
-      {/* ── Mobile map ── */}
-      {showMap && (
-        <div className="lg:hidden mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm" style={{ height: '360px' }}>
-          <MapComponent ranges={sorted} />
+      {/* ── Grid ── */}
+      {filtered.length === 0 ? (
+        <div className="text-center py-20">
+          <p className="text-4xl mb-3" aria-hidden="true">⛳</p>
+          <p className="text-lg font-semibold text-slate-600">No ranges match your filters</p>
+          <p className="text-sm text-slate-400 mt-1">Try adjusting your search or clearing some filters</p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {sorted.map((range) => (
+            <RangeCard key={range.slug} range={range} />
+          ))}
         </div>
       )}
-
-      {/* ── Split layout (desktop) ── */}
-      <div className="flex gap-6 items-stretch">
-
-        {/* Left — scrollable card list */}
-        <div className="w-full lg:w-[45%]">
-          {filtered.length === 0 ? (
-            <div className="text-center py-20">
-              <p className="text-4xl mb-3" aria-hidden="true">⛳</p>
-              <p className="text-lg font-semibold text-slate-600">No ranges match your filters</p>
-              <p className="text-sm text-slate-400 mt-1">Try adjusting your search or clearing some filters</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4">
-              {sorted.map((range) => (
-                <RangeCard key={range.slug} range={range} />
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Right — sticky map (desktop only) */}
-        <div className="hidden lg:block lg:w-[55%]">
-          <div className="sticky top-24 rounded-xl overflow-hidden border border-slate-200 shadow-sm" style={{ height: 'calc(100vh - 7rem)' }}>
-            <MapComponent ranges={sorted} />
-          </div>
-        </div>
-
-      </div>
     </div>
   );
 }
