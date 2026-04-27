@@ -18,7 +18,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-slate-50">
 
       {/* ── Hero ── */}
-      <header className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
+      <header className="relative h-[300px] flex items-center justify-center overflow-hidden">
         {/* Background photo */}
         <Image
           src="/images/hero-range.jpg"
