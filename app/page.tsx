@@ -23,7 +23,6 @@ export default function HomePage() {
           outdoorCount={outdoorCount}
           indoorCount={indoorCount}
           highTechCount={highTechCount}
-          onSearch={() => {}}
         />
       </Suspense>
 

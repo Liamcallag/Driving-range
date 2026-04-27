@@ -7,7 +7,6 @@ interface Props {
   outdoorCount: number;
   indoorCount: number;
   highTechCount: number;
-  onSearch: (q: string) => void;
 }
 
 export default function HeroSearch({ total, outdoorCount, indoorCount, highTechCount }: Props) {
