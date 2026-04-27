@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import rangesData from '@/data/ranges.json';
@@ -17,30 +16,16 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50">
 
-      {/* ── Hero ── */}
-      <header className="relative h-[300px] flex items-center justify-center overflow-hidden">
-        {/* Background photo */}
-        <Image
-          src="/images/hero-range.jpg"
-          alt="Golfer at a driving range"
-          fill
-          className="object-cover object-[35%_center]"
-          priority
-          sizes="100vw"
-        />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-black/50" />
-
-        {/* Content */}
-        <div className="relative z-10 w-full max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6 text-balance">
-            Find your perfect driving range
+      {/* ── Header banner ── */}
+      <header className="bg-green-900 pt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+            Florida Driving Ranges
           </h1>
-          <p className="text-white/80 text-lg mb-8">
+          <p className="text-green-200 text-base mb-6">
             Browse {total} driving ranges across Florida — outdoor, indoor, and high-tech.
           </p>
-          {/* Stats */}
-          <div className="mt-10 flex items-center justify-center gap-8">
+          <div className="flex items-center gap-8">
             {[
               { label: 'Total', value: total },
               { label: 'Outdoor', value: outdoorCount },
@@ -48,10 +33,10 @@ export default function HomePage() {
               { label: 'High-Tech', value: highTechCount },
             ].map((stat, i) => (
               <div key={stat.label} className="flex items-center gap-8">
-                {i > 0 && <div className="w-px h-8 bg-white/20" />}
+                {i > 0 && <div className="w-px h-6 bg-green-700" />}
                 <div>
                   <div className="text-2xl font-bold text-white">{stat.value}</div>
-                  <div className="text-white/60 text-xs font-medium tracking-wide">{stat.label}</div>
+                  <div className="text-green-400 text-xs font-medium tracking-wide">{stat.label}</div>
                 </div>
               </div>
             ))}
