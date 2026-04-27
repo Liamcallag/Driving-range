@@ -1,6 +1,4 @@
-'use client';
-
-import { useState, Suspense } from 'react';
+import { Suspense } from 'react';
 import Link from 'next/link';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
@@ -16,8 +14,6 @@ export default function HomePage() {
   const outdoorCount = ranges.filter((r) => r.category === 'outdoor').length;
   const highTechCount = ranges.filter((r) => r.techLevel === 'high').length;
 
-  const [heroQuery, setHeroQuery] = useState('');
-
   return (
     <div className="min-h-screen bg-slate-50">
 
@@ -27,14 +23,14 @@ export default function HomePage() {
           outdoorCount={outdoorCount}
           indoorCount={indoorCount}
           highTechCount={highTechCount}
-          onSearch={setHeroQuery}
+          onSearch={() => {}}
         />
       </Suspense>
 
       {/* ── Directory ── */}
       <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <Suspense>
-          <DirectoryClient ranges={ranges} heroQuery={heroQuery} />
+          <DirectoryClient ranges={ranges} />
         </Suspense>
       </main>
 
