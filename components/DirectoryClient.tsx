@@ -206,179 +206,184 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
   return (
     <div className="w-full">
 
-      {/* ── Search ── */}
-      <div className="relative mb-4">
-        <label htmlFor="range-search" className="sr-only">Search driving ranges by name or city</label>
-        <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-        </svg>
-        <input
-          id="range-search"
-          type="text"
-          placeholder="Search by name or city..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full pl-12 pr-10 py-4 border-2 border-green-500 rounded-xl bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-green-600 shadow-sm text-base"
-        />
-        {searchQuery && (
-          <button
-            onClick={() => setSearchQuery('')}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
-            aria-label="Clear search"
-          >
-            <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path d="M18 6 6 18M6 6l12 12" />
-            </svg>
-          </button>
-        )}
-      </div>
+      {/* ── Hero: map left, filters right ── */}
+      <div className="flex flex-col lg:flex-row gap-4 mb-6" style={{ height: 'auto' }}>
 
-      {/* ── Filter Panel ── */}
-      <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-4 mb-4">
-
-        {/* Row 1: primary filters */}
-        <div className="flex flex-wrap gap-x-5 gap-y-3 items-end">
-
-          <div>
-            <FilterLabel>Type</FilterLabel>
-            <SegmentGroup
-              groupLabel="Filter by type"
-              options={[
-                { value: 'all', label: 'All' },
-                { value: 'outdoor', label: 'Outdoor' },
-                { value: 'indoor', label: 'Indoor' },
-              ]}
-              value={filters.category}
-              onChange={(v) => toggle('category', v)}
-              activeColors={{
-                all:     'bg-green-700 text-white border-green-700',
-                outdoor: 'bg-green-100 text-green-800 border-green-300',
-                indoor:  'bg-orange-100 text-orange-800 border-orange-300',
-              }}
-            />
-          </div>
-
-          <div>
-            <FilterLabel>Technology <span className="normal-case tracking-normal font-normal text-slate-300">— TrackMan, TopTracer or simulators</span></FilterLabel>
-            <SegmentGroup
-              groupLabel="Filter by technology level"
-              options={[
-                { value: 'all', label: 'All' },
-                { value: 'high', label: 'High-Tech' },
-                { value: 'low', label: 'Traditional' },
-              ]}
-              value={filters.techLevel}
-              onChange={(v) => toggle('techLevel', v)}
-              activeColors={{
-                all:  'bg-green-700 text-white border-green-700',
-                high: 'bg-purple-100 text-purple-800 border-purple-300',
-                low:  'bg-amber-100 text-amber-800 border-amber-300',
-              }}
-            />
-          </div>
-
-          <div>
-            <FilterLabel>City</FilterLabel>
-            <select
-              aria-label="Filter by city"
-              value={filters.city}
-              onChange={(e) => toggle('city', e.target.value)}
-              className="h-[34px] pl-3 pr-8 text-sm rounded-lg border border-slate-200 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-green-500 appearance-none"
-              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 10px center' }}
-            >
-              <option value="">All Cities</option>
-              {cities.map((city) => (
-                <option key={city} value={city}>{city}</option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <FilterLabel>Availability</FilterLabel>
-            <button
-              onClick={() => toggleBool('openNow')}
-              aria-pressed={filters.openNow}
-              className={`h-[34px] flex items-center gap-2 px-3 text-sm font-medium rounded-lg border transition-colors ${
-                filters.openNow
-                  ? 'bg-emerald-600 text-white border-emerald-600'
-                  : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
-              }`}
-            >
-              <span aria-hidden="true" className={`w-2 h-2 rounded-full ${filters.openNow ? 'bg-emerald-200' : 'bg-slate-300'}`} />
-              Open Now
-            </button>
-          </div>
-
-          {hasActiveFilters && (
-            <div className="ml-auto self-end">
-              <button
-                onClick={() => { setSearchQuery(''); setFilters(EMPTY_FILTERS); }}
-                className="h-[34px] flex items-center gap-1.5 px-3 text-sm text-slate-400 hover:text-slate-600 border border-slate-200 hover:border-slate-300 rounded-lg transition-colors"
-              >
-                <svg className="w-3.5 h-3.5" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path d="M18 6 6 18M6 6l12 12" />
-                </svg>
-                Clear all filters
-              </button>
-            </div>
-          )}
+        {/* Left — map */}
+        <div className="w-full lg:w-1/2 rounded-xl overflow-hidden border border-slate-200 shadow-sm" style={{ height: '480px' }}>
+          <MapComponent ranges={sorted} />
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-slate-100 my-3.5" />
+        {/* Right — search + filters */}
+        <div className="w-full lg:w-1/2 flex flex-col gap-3">
 
-        {/* Row 2: amenities */}
-        <div>
-          <FilterLabel>
-            Amenities
-            {activeAmenityCount > 0 && (
-              <span className="ml-2 inline-flex items-center justify-center w-4 h-4 text-[10px] font-bold bg-green-700 text-white rounded-full normal-case tracking-normal">
-                {activeAmenityCount}
-              </span>
+          {/* Search */}
+          <div className="relative">
+            <label htmlFor="range-search" className="sr-only">Search driving ranges by name or city</label>
+            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              id="range-search"
+              type="text"
+              placeholder="Search by name or city..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-12 pr-10 py-4 border-2 border-green-500 rounded-xl bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-green-600 shadow-sm text-base"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
+                aria-label="Clear search"
+              >
+                <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path d="M18 6 6 18M6 6l12 12" />
+                </svg>
+              </button>
             )}
-          </FilterLabel>
-          <div className="flex flex-wrap gap-2">
-            {amenities.map(({ key, label, icon }) => {
-              const active = !!filters[key];
-              return (
+          </div>
+
+          {/* Filter Panel */}
+          <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex-1">
+
+            <div className="flex flex-wrap gap-x-5 gap-y-3 items-end">
+              <div>
+                <FilterLabel>Type</FilterLabel>
+                <SegmentGroup
+                  groupLabel="Filter by type"
+                  options={[
+                    { value: 'all', label: 'All' },
+                    { value: 'outdoor', label: 'Outdoor' },
+                    { value: 'indoor', label: 'Indoor' },
+                  ]}
+                  value={filters.category}
+                  onChange={(v) => toggle('category', v)}
+                  activeColors={{
+                    all:     'bg-green-700 text-white border-green-700',
+                    outdoor: 'bg-green-100 text-green-800 border-green-300',
+                    indoor:  'bg-orange-100 text-orange-800 border-orange-300',
+                  }}
+                />
+              </div>
+
+              <div>
+                <FilterLabel>Technology <span className="normal-case tracking-normal font-normal text-slate-300">— TrackMan, TopTracer or simulators</span></FilterLabel>
+                <SegmentGroup
+                  groupLabel="Filter by technology level"
+                  options={[
+                    { value: 'all', label: 'All' },
+                    { value: 'high', label: 'High-Tech' },
+                    { value: 'low', label: 'Traditional' },
+                  ]}
+                  value={filters.techLevel}
+                  onChange={(v) => toggle('techLevel', v)}
+                  activeColors={{
+                    all:  'bg-green-700 text-white border-green-700',
+                    high: 'bg-purple-100 text-purple-800 border-purple-300',
+                    low:  'bg-amber-100 text-amber-800 border-amber-300',
+                  }}
+                />
+              </div>
+
+              <div>
+                <FilterLabel>City</FilterLabel>
+                <select
+                  aria-label="Filter by city"
+                  value={filters.city}
+                  onChange={(e) => toggle('city', e.target.value)}
+                  className="h-[34px] pl-3 pr-8 text-sm rounded-lg border border-slate-200 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-green-500 appearance-none"
+                  style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 10px center' }}
+                >
+                  <option value="">All Cities</option>
+                  {cities.map((city) => (
+                    <option key={city} value={city}>{city}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <FilterLabel>Availability</FilterLabel>
                 <button
-                  key={key}
-                  onClick={() => toggleBool(key)}
-                  aria-pressed={active}
-                  className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded-full border transition-colors ${
-                    active
-                      ? 'bg-green-700 text-white border-green-700'
-                      : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100 hover:border-slate-300'
+                  onClick={() => toggleBool('openNow')}
+                  aria-pressed={filters.openNow}
+                  className={`h-[34px] flex items-center gap-2 px-3 text-sm font-medium rounded-lg border transition-colors ${
+                    filters.openNow
+                      ? 'bg-emerald-600 text-white border-emerald-600'
+                      : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
                   }`}
                 >
-                  <span className="text-sm leading-none" aria-hidden="true">{icon}</span>
-                  {label}
+                  <span aria-hidden="true" className={`w-2 h-2 rounded-full ${filters.openNow ? 'bg-emerald-200' : 'bg-slate-300'}`} />
+                  Open Now
                 </button>
-              );
-            })}
+              </div>
+
+              {hasActiveFilters && (
+                <div className="ml-auto self-end">
+                  <button
+                    onClick={() => { setSearchQuery(''); setFilters(EMPTY_FILTERS); }}
+                    className="h-[34px] flex items-center gap-1.5 px-3 text-sm text-slate-400 hover:text-slate-600 border border-slate-200 hover:border-slate-300 rounded-lg transition-colors"
+                  >
+                    <svg className="w-3.5 h-3.5" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                      <path d="M18 6 6 18M6 6l12 12" />
+                    </svg>
+                    Clear all filters
+                  </button>
+                </div>
+              )}
+            </div>
+
+            <div className="border-t border-slate-100 my-3.5" />
+
+            <div>
+              <FilterLabel>
+                Amenities
+                {activeAmenityCount > 0 && (
+                  <span className="ml-2 inline-flex items-center justify-center w-4 h-4 text-[10px] font-bold bg-green-700 text-white rounded-full normal-case tracking-normal">
+                    {activeAmenityCount}
+                  </span>
+                )}
+              </FilterLabel>
+              <div className="flex flex-wrap gap-2">
+                {amenities.map(({ key, label, icon }) => {
+                  const active = !!filters[key];
+                  return (
+                    <button
+                      key={key}
+                      onClick={() => toggleBool(key)}
+                      aria-pressed={active}
+                      className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded-full border transition-colors ${
+                        active
+                          ? 'bg-green-700 text-white border-green-700'
+                          : 'bg-slate-50 text-slate-600 border-slate-200 hover:bg-slate-100 hover:border-slate-300'
+                      }`}
+                    >
+                      <span className="text-sm leading-none" aria-hidden="true">{icon}</span>
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      {/* ── Active filter chips ── */}
-      {activeChips.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-3" aria-label="Active filters">
-          {activeChips.map((chip) => (
-            <span key={chip.label} className="inline-flex items-center gap-1 px-2.5 py-1 bg-green-50 border border-green-200 text-green-800 text-xs font-medium rounded-full">
-              {chip.label}
-              <button onClick={chip.onRemove} aria-label={`Remove filter: ${chip.label}`} className="ml-0.5 hover:text-green-600">
-                <svg className="w-3 h-3" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                  <path d="M18 6 6 18M6 6l12 12" />
-                </svg>
-              </button>
-            </span>
-          ))}
-        </div>
-      )}
+          {/* Active chips */}
+          {activeChips.length > 0 && (
+            <div className="flex flex-wrap gap-2" aria-label="Active filters">
+              {activeChips.map((chip) => (
+                <span key={chip.label} className="inline-flex items-center gap-1 px-2.5 py-1 bg-green-50 border border-green-200 text-green-800 text-xs font-medium rounded-full">
+                  {chip.label}
+                  <button onClick={chip.onRemove} aria-label={`Remove filter: ${chip.label}`} className="ml-0.5 hover:text-green-600">
+                    <svg className="w-3 h-3" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                      <path d="M18 6 6 18M6 6l12 12" />
+                    </svg>
+                  </button>
+                </span>
+              ))}
+            </div>
+          )}
 
-      {/* ── Full-width map ── */}
-      <div className="mb-6 rounded-xl overflow-hidden border border-slate-200 shadow-sm" style={{ height: '480px' }}>
-        <MapComponent ranges={sorted} />
+        </div>
       </div>
 
       {/* ── Results bar ── */}
