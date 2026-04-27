@@ -1,9 +1,12 @@
+'use client';
+
+import { useState, Suspense } from 'react';
 import Link from 'next/link';
-import { Suspense } from 'react';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { CITY_PAGES } from '@/lib/cities';
 import DirectoryClient from '@/components/DirectoryClient';
+import HeroSearch from '@/components/HeroSearch';
 
 const ranges = rangesData as Range[];
 
@@ -13,22 +16,25 @@ export default function HomePage() {
   const outdoorCount = ranges.filter((r) => r.category === 'outdoor').length;
   const highTechCount = ranges.filter((r) => r.techLevel === 'high').length;
 
+  const [heroQuery, setHeroQuery] = useState('');
+
   return (
     <div className="min-h-screen bg-slate-50">
 
-      {/* ── Page title ── */}
-      <div className="bg-green-900 pt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <h1 className="text-white font-semibold text-lg">
-            {total} driving ranges across Florida
-          </h1>
-        </div>
-      </div>
+      <Suspense>
+        <HeroSearch
+          total={total}
+          outdoorCount={outdoorCount}
+          indoorCount={indoorCount}
+          highTechCount={highTechCount}
+          onSearch={setHeroQuery}
+        />
+      </Suspense>
 
       {/* ── Directory ── */}
       <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <Suspense>
-          <DirectoryClient ranges={ranges} />
+          <DirectoryClient ranges={ranges} heroQuery={heroQuery} />
         </Suspense>
       </main>
 

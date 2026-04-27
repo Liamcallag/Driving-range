@@ -46,6 +46,7 @@ const EMPTY_FILTERS: Filters = {
 
 interface DirectoryClientProps {
   ranges: Range[];
+  heroQuery?: string;
 }
 
 function FilterLabel({ children }: { children: React.ReactNode }) {
@@ -91,12 +92,12 @@ function SegmentGroup<T extends string>({
   );
 }
 
-export default function DirectoryClient({ ranges }: DirectoryClientProps) {
+export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryClientProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [searchQuery, setSearchQuery] = useState(() => searchParams.get('q') ?? '');
+  const [searchQuery, setSearchQuery] = useState(() => heroQuery || searchParams.get('q') ?? '');
   const [filters, setFilters] = useState<Filters>(() => ({
     ...EMPTY_FILTERS,
     category: (searchParams.get('type') as Filters['category']) ?? 'all',
@@ -112,6 +113,10 @@ export default function DirectoryClient({ ranges }: DirectoryClientProps) {
     toptracer: searchParams.get('toptracer') === '1',
   }));
   const [sort, setSort] = useState<'default' | 'name-asc' | 'name-desc' | 'city'>('default');
+
+  useEffect(() => {
+    setSearchQuery(heroQuery);
+  }, [heroQuery]);
 
   // Sync filters to URL so back button restores state
   const syncToUrl = useCallback((query: string, f: Filters) => {
