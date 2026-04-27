@@ -97,7 +97,7 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [searchQuery, setSearchQuery] = useState(() => heroQuery || searchParams.get('q') ?? '');
+  const [searchQuery, setSearchQuery] = useState(() => heroQuery || (searchParams.get('q') ?? ''));
   const [filters, setFilters] = useState<Filters>(() => ({
     ...EMPTY_FILTERS,
     category: (searchParams.get('type') as Filters['category']) ?? 'all',
