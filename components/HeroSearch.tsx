@@ -44,7 +44,7 @@ export default function HeroSearch({ total, outdoorCount, indoorCount, highTechC
   return (
     <header
       className={`relative overflow-hidden transition-all duration-500 ease-in-out ${
-        collapsed ? 'h-20' : 'h-[70vh] min-h-[480px]'
+        collapsed ? 'h-20' : 'h-screen'
       } flex items-center justify-center`}
     >
       {/* Background photo */}
