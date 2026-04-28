@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Florida Driving Ranges | Find Ranges Near You",
@@ -22,6 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-7ZTQNLH9ZQ" strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-7ZTQNLH9ZQ');
+        `}</Script>
+      </head>
       <body className="antialiased">
         <a
           href="#main-content"
