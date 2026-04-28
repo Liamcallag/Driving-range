@@ -42,7 +42,7 @@ export default function HeroSearch({ total, outdoorCount, indoorCount, highTechC
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div className="mt-12 flex items-center justify-center gap-8">
+        <div className="mt-12 flex items-center justify-center gap-8 absolute bottom-10 left-1/2 -translate-x-1/2">
           {[
             { label: 'Total', value: total },
             { label: 'Outdoor', value: outdoorCount },
