@@ -26,6 +26,7 @@ export default function HeroSearch({ total, outdoorCount, indoorCount, highTechC
       />
       <div className="absolute inset-0 bg-black/50" />
 
+      {/* Centered content */}
       <div className="relative z-10 w-full max-w-3xl mx-auto px-4 sm:px-6 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4 text-balance">
           Find your perfect driving range
@@ -42,22 +43,24 @@ export default function HeroSearch({ total, outdoorCount, indoorCount, highTechC
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div className="mt-12 flex items-center justify-center gap-8 absolute bottom-10 left-1/2 -translate-x-1/2">
-          {[
-            { label: 'Total', value: total },
-            { label: 'Outdoor', value: outdoorCount },
-            { label: 'Indoor', value: indoorCount },
-            { label: 'High-Tech', value: highTechCount },
-          ].map((stat, i) => (
-            <div key={stat.label} className="flex items-center gap-8">
-              {i > 0 && <div className="w-px h-8 bg-white/20" />}
-              <div>
-                <div className="text-2xl font-bold text-white">{stat.value}</div>
-                <div className="text-white/60 text-xs font-medium tracking-wide">{stat.label}</div>
-              </div>
+      </div>
+
+      {/* Stats pinned to bottom */}
+      <div className="absolute bottom-8 left-0 right-0 z-10 flex items-center justify-center gap-8">
+        {[
+          { label: 'Total', value: total },
+          { label: 'Outdoor', value: outdoorCount },
+          { label: 'Indoor', value: indoorCount },
+          { label: 'High-Tech', value: highTechCount },
+        ].map((stat, i) => (
+          <div key={stat.label} className="flex items-center gap-8">
+            {i > 0 && <div className="w-px h-8 bg-white/20" />}
+            <div className="text-center">
+              <div className="text-2xl font-bold text-white">{stat.value}</div>
+              <div className="text-white/60 text-xs font-medium tracking-wide">{stat.label}</div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </header>
   );
