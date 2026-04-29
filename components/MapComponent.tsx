@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -46,10 +47,24 @@ interface MapComponentProps {
 
 export default function MapComponent({ ranges, onRangeClick }: MapComponentProps) {
   const router = useRouter();
+  const [activated, setActivated] = useState(false);
 
   const rangesWithCoords = ranges.filter((r) => r.lat !== null && r.lng !== null);
 
   return (
+    <div className="relative h-full w-full">
+      {/* Tap-to-activate overlay — mobile only, dismissed on first tap */}
+      {!activated && (
+        <div
+          className="absolute inset-0 z-[1000] flex flex-col items-center justify-center gap-2 bg-black/30 md:hidden cursor-pointer"
+          onClick={() => setActivated(true)}
+        >
+          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5" />
+          </svg>
+          <span className="text-white text-sm font-medium drop-shadow">Tap to interact with map</span>
+        </div>
+      )}
     <MapContainer
       center={[27.8, -81.7]}
       zoom={7}
@@ -104,5 +119,6 @@ export default function MapComponent({ ranges, onRangeClick }: MapComponentProps
         </Marker>
       ))}
     </MapContainer>
+    </div>
   );
 }
