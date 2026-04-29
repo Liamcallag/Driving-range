@@ -46,7 +46,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-slate-50">
 
       {/* Hero */}
-      <div className="bg-green-900 pt-32 pb-16 px-4">
+      <div className="bg-slate-900 pt-32 pb-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-green-400 text-xs font-semibold uppercase tracking-widest mb-3">Get in touch</p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">
@@ -81,7 +81,7 @@ export default function ContactPage() {
         </div>
 
         {/* Direct email */}
-        <div className="bg-green-900 rounded-xl p-6 text-center">
+        <div className="bg-slate-900 rounded-xl p-6 text-center">
           <p className="text-green-100/70 text-sm mb-2">Prefer to write your own email?</p>
           <a
             href={`mailto:${CONTACT_EMAIL}`}
