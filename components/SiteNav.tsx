@@ -41,7 +41,7 @@ export default function SiteNav() {
         aria-label="Main navigation"
         className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
           solid
-            ? 'bg-slate-900 border-b border-slate-800 shadow-sm'
+            ? 'bg-white border-b border-slate-200 shadow-sm'
             : 'bg-transparent border-b border-transparent'
         }`}
       >
@@ -50,7 +50,9 @@ export default function SiteNav() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-3 font-bold shrink-0 text-white drop-shadow-sm"
+            className={`flex items-center gap-3 font-bold shrink-0 drop-shadow-sm transition-colors ${
+              solid ? 'text-slate-800' : 'text-white'
+            }`}
           >
             <Image src="/images/logo.png" alt="" width={36} height={36} aria-hidden="true" />
             <span className="text-lg sm:text-xl tracking-tight">Florida Driving Ranges</span>
@@ -66,9 +68,9 @@ export default function SiteNav() {
                   href={href}
                   aria-current={active ? 'page' : undefined}
                   className={`px-3 py-2 text-base font-medium transition-colors ${
-                    active
-                      ? 'text-green-400'
-                      : 'text-white hover:text-green-400'
+                    solid
+                      ? active ? 'text-green-700' : 'text-slate-600 hover:text-green-700'
+                      : active ? 'text-green-400' : 'text-white hover:text-green-400'
                   }`}
                 >
                   {label}
@@ -84,9 +86,9 @@ export default function SiteNav() {
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((o) => !o)}
           >
-            <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-            <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? 'opacity-0' : ''}`} />
-            <span className={`block w-5 h-0.5 transition-all duration-200 bg-white ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            <span className={`block w-5 h-0.5 transition-all duration-200 ${solid ? 'bg-slate-700' : 'bg-white'} ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`block w-5 h-0.5 transition-all duration-200 ${solid ? 'bg-slate-700' : 'bg-white'} ${menuOpen ? 'opacity-0' : ''}`} />
+            <span className={`block w-5 h-0.5 transition-all duration-200 ${solid ? 'bg-slate-700' : 'bg-white'} ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
         </div>
       </nav>
