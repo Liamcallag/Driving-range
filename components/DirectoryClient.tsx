@@ -213,12 +213,13 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
     <div className="w-full">
 
       {/* ── Hero: map left, filters right ── */}
-      {/* Mobile order: search (1) → map (2) → filters (3) */}
-      {/* Desktop: 2-col grid, map spans both rows on left */}
       <div className="flex flex-col gap-4 mb-6 lg:grid lg:grid-cols-2 lg:items-start">
 
-        {/* Search — first on mobile, top-right on desktop */}
-        <div className="order-1 lg:order-2 relative">
+        {/* Right column: search + filters grouped together */}
+        <div className="order-1 lg:order-2 flex flex-col gap-3">
+
+        {/* Search */}
+        <div className="relative">
           <label htmlFor="range-search" className="sr-only">Search driving ranges by name or city</label>
           <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
             <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
@@ -244,13 +245,8 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
           )}
         </div>
 
-        {/* Map — second on mobile, left column spanning both rows on desktop */}
-        <div className="order-2 lg:order-1 lg:row-span-2 rounded-xl overflow-hidden border border-slate-200 shadow-sm h-[260px] lg:h-[480px]">
-          <MapComponent ranges={sorted} />
-        </div>
-
-        {/* Filter Panel — third on mobile, bottom-right on desktop */}
-        <div className="order-3 lg:order-3">
+        {/* Filter Panel */}
+        <div>
 
           {/* Mobile toggle button */}
           <button
@@ -416,7 +412,14 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
           )}
 
           </div>{/* end filter content */}
-        </div>{/* end filter panel wrapper */}
+        </div>{/* end filter panel */}
+        </div>{/* end right column */}
+
+        {/* Map — left column on desktop, below filters on mobile */}
+        <div className="order-2 lg:order-1 rounded-xl overflow-hidden border border-slate-200 shadow-sm h-[260px] lg:h-[480px]">
+          <MapComponent ranges={sorted} />
+        </div>
+
       </div>
 
       {/* ── Results bar ── */}
