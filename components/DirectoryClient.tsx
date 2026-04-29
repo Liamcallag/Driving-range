@@ -212,45 +212,44 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
     <div className="w-full">
 
       {/* ── Hero: map left, filters right ── */}
-      <div className="flex flex-col lg:flex-row gap-4 mb-6" style={{ height: 'auto' }}>
+      {/* Mobile order: search (1) → map (2) → filters (3) */}
+      {/* Desktop: 2-col grid, map spans both rows on left */}
+      <div className="flex flex-col gap-4 mb-6 lg:grid lg:grid-cols-2 lg:items-start">
 
-        {/* Left — map */}
-        <div className="w-full lg:w-1/2 rounded-xl overflow-hidden border border-slate-200 shadow-sm" style={{ height: '480px' }}>
+        {/* Search — first on mobile, top-right on desktop */}
+        <div className="order-1 lg:order-2 relative">
+          <label htmlFor="range-search" className="sr-only">Search driving ranges by name or city</label>
+          <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+          </svg>
+          <input
+            id="range-search"
+            type="text"
+            placeholder="Search by name or city..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full pl-12 pr-10 py-4 border-2 border-green-500 rounded-xl bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-green-600 shadow-sm text-base"
+          />
+          {searchQuery && (
+            <button
+              onClick={() => setSearchQuery('')}
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
+              aria-label="Clear search"
+            >
+              <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
+            </button>
+          )}
+        </div>
+
+        {/* Map — second on mobile, left column spanning both rows on desktop */}
+        <div className="order-2 lg:order-1 lg:row-span-2 rounded-xl overflow-hidden border border-slate-200 shadow-sm h-[260px] lg:h-[480px]">
           <MapComponent ranges={sorted} />
         </div>
 
-        {/* Right — search + filters */}
-        <div className="w-full lg:w-1/2 flex flex-col gap-3">
-
-          {/* Search */}
-          <div className="relative">
-            <label htmlFor="range-search" className="sr-only">Search driving ranges by name or city</label>
-            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-600" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-            </svg>
-            <input
-              id="range-search"
-              type="text"
-              placeholder="Search by name or city..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-10 py-4 border-2 border-green-500 rounded-xl bg-white text-slate-800 placeholder-slate-400 focus:outline-none focus:border-green-600 shadow-sm text-base"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
-                aria-label="Clear search"
-              >
-                <svg className="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  <path d="M18 6 6 18M6 6l12 12" />
-                </svg>
-              </button>
-            )}
-          </div>
-
-          {/* Filter Panel */}
-          <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-4 flex-1">
+        {/* Filter Panel — third on mobile, bottom-right on desktop */}
+        <div className="order-3 lg:order-3 bg-white border border-slate-200 rounded-xl shadow-sm p-4">
 
             <div className="flex flex-wrap gap-x-5 gap-y-3 items-end">
               <div>
@@ -370,11 +369,10 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
                 })}
               </div>
             </div>
-          </div>
 
           {/* Active chips */}
           {activeChips.length > 0 && (
-            <div className="flex flex-wrap gap-2" aria-label="Active filters">
+            <div className="flex flex-wrap gap-2 mt-3" aria-label="Active filters">
               {activeChips.map((chip) => (
                 <span key={chip.label} className="inline-flex items-center gap-1 px-2.5 py-1 bg-green-50 border border-green-200 text-green-800 text-xs font-medium rounded-full">
                   {chip.label}
