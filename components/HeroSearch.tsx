@@ -46,21 +46,20 @@ export default function HeroSearch({ total, outdoorCount, indoorCount, highTechC
       </div>
 
       {/* Stats pinned to bottom */}
-      <div className="absolute bottom-8 left-0 right-0 z-10 flex items-center justify-center gap-8">
-        {[
-          { label: 'Total', value: total },
-          { label: 'Outdoor', value: outdoorCount },
-          { label: 'Indoor', value: indoorCount },
-          { label: 'High-Tech', value: highTechCount },
-        ].map((stat, i) => (
-          <div key={stat.label} className="flex items-center gap-8">
-            {i > 0 && <div className="w-px h-8 bg-white/20" />}
-            <div className="text-center">
-              <div className="text-2xl font-bold text-white">{stat.value}</div>
-              <div className="text-white/60 text-xs font-medium tracking-wide">{stat.label}</div>
+      <div className="absolute bottom-6 left-0 right-0 z-10 px-4">
+        <div className="max-w-sm mx-auto grid grid-cols-4 divide-x divide-white/20">
+          {[
+            { label: 'Total', value: total },
+            { label: 'Outdoor', value: outdoorCount },
+            { label: 'Indoor', value: indoorCount },
+            { label: 'High-Tech', value: highTechCount },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center px-2">
+              <div className="text-xl sm:text-2xl font-bold text-white">{stat.value}</div>
+              <div className="text-white/60 text-[10px] sm:text-xs font-medium tracking-wide mt-0.5">{stat.label}</div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </header>
   );
