@@ -113,6 +113,7 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
     toptracer: searchParams.get('toptracer') === '1',
   }));
   const [sort, setSort] = useState<'default' | 'name-asc' | 'name-desc' | 'city'>('default');
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   useEffect(() => {
     setSearchQuery(heroQuery);
@@ -249,7 +250,35 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
         </div>
 
         {/* Filter Panel — third on mobile, bottom-right on desktop */}
-        <div className="order-3 lg:order-3 bg-white border border-slate-200 rounded-xl shadow-sm p-4">
+        <div className="order-3 lg:order-3">
+
+          {/* Mobile toggle button */}
+          <button
+            className="lg:hidden w-full flex items-center justify-between px-4 py-3 bg-white border border-slate-200 rounded-xl shadow-sm"
+            onClick={() => setFiltersOpen((o) => !o)}
+            aria-expanded={filtersOpen}
+          >
+            <span className="flex items-center gap-2 text-sm font-semibold text-slate-700">
+              <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 4h18M7 8h10M11 12h2M9 16h6" />
+              </svg>
+              Filters
+              {(hasActiveFilters ? activeChips.length : 0) > 0 && (
+                <span className="inline-flex items-center justify-center w-5 h-5 text-[11px] font-bold bg-green-700 text-white rounded-full">
+                  {activeChips.length}
+                </span>
+              )}
+            </span>
+            <svg
+              className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${filtersOpen ? 'rotate-180' : ''}`}
+              fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+
+          {/* Filter content */}
+          <div className={`bg-white border border-slate-200 rounded-xl shadow-sm p-4 mt-2 lg:mt-0 lg:block ${filtersOpen ? 'block' : 'hidden'}`}>
 
             <div className="flex flex-wrap gap-x-5 gap-y-3 items-end">
               <div>
@@ -386,7 +415,8 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
             </div>
           )}
 
-        </div>
+          </div>{/* end filter content */}
+        </div>{/* end filter panel wrapper */}
       </div>
 
       {/* ── Results bar ── */}
