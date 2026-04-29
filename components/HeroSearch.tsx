@@ -46,7 +46,7 @@ export default function HeroSearch({ total, outdoorCount, indoorCount, highTechC
       </div>
 
       {/* Stats pinned to bottom */}
-      <div className="absolute bottom-6 left-0 right-0 z-10 px-4">
+      <div className="absolute bottom-16 left-0 right-0 z-10 px-4">
         <div className="max-w-sm mx-auto grid grid-cols-4 divide-x divide-white/20">
           {[
             { label: 'Total', value: total },
