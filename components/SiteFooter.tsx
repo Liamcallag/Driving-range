@@ -40,6 +40,7 @@ export default function SiteFooter() {
         <div className="border-t border-green-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-green-100/50">
           <p>© 2026 Florida Driving Ranges · All rights reserved</p>
           <p>Data accurate as of 2026 · Hours subject to change</p>
+          <p>Also check out <a href="https://www.bodyburdenlab.com" className="underline hover:text-white transition-colors">Body Burden</a> — microplastic exposure calculator</p>
         </div>
 
       </div>
