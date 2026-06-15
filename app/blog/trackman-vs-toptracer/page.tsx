@@ -115,15 +115,15 @@ export default function TrackmanVsToptracer() {
 
           <h2>Find High-Tech Ranges in Florida</h2>
           <p>
-            Our site lets you filter by technology level to find ranges in Florida equipped with TrackMan, TopTracer, or other ball-tracking systems.
+            Dozens of Florida driving ranges feature TrackMan, TopTracer, or other ball-tracking systems. Find one near you with full details on technology, hours, and amenities.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <Link
-              href="/?tech=high"
+              href="/indoor-driving-ranges"
               className="inline-flex items-center justify-center px-5 py-2.5 bg-green-700 hover:bg-green-800 text-white rounded-lg text-sm font-medium transition-colors"
             >
-              Browse High-Tech Ranges
+              Find High-Tech Ranges Near You
             </Link>
             <Link
               href="/blog"
