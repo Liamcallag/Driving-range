@@ -159,3 +159,27 @@ export const CITY_PAGES: CityInfo[] = [
 export function getCityBySlug(slug: string): CityInfo | undefined {
   return CITY_PAGES.find((c) => c.slug === slug);
 }
+
+export const NEARBY_CITIES: Record<string, { slug: string; name: string }[]> = {
+  'orlando': [{ slug: 'kissimmee', name: 'Kissimmee' }, { slug: 'winter-haven', name: 'Winter Haven' }, { slug: 'lake-nona', name: 'Lake Nona' }],
+  'naples': [{ slug: 'fort-myers', name: 'Fort Myers' }, { slug: 'sarasota', name: 'Sarasota' }, { slug: 'cape-coral', name: 'Cape Coral' }],
+  'jacksonville': [{ slug: 'st-augustine', name: 'St. Augustine' }],
+  'port-st-lucie': [{ slug: 'west-palm-beach', name: 'West Palm Beach' }, { slug: 'boca-raton', name: 'Boca Raton' }],
+  'kissimmee': [{ slug: 'orlando', name: 'Orlando' }, { slug: 'winter-haven', name: 'Winter Haven' }, { slug: 'lake-nona', name: 'Lake Nona' }],
+  'st-augustine': [{ slug: 'jacksonville', name: 'Jacksonville' }],
+  'fort-myers': [{ slug: 'naples', name: 'Naples' }, { slug: 'cape-coral', name: 'Cape Coral' }, { slug: 'sarasota', name: 'Sarasota' }],
+  'tampa': [{ slug: 'clearwater', name: 'Clearwater' }, { slug: 'st-petersburg', name: 'St. Petersburg' }, { slug: 'sarasota', name: 'Sarasota' }],
+  'winter-haven': [{ slug: 'orlando', name: 'Orlando' }, { slug: 'kissimmee', name: 'Kissimmee' }],
+  'spring-hill': [{ slug: 'tampa', name: 'Tampa' }, { slug: 'clearwater', name: 'Clearwater' }],
+  'miami': [{ slug: 'fort-lauderdale', name: 'Fort Lauderdale' }, { slug: 'boca-raton', name: 'Boca Raton' }],
+  'fort-lauderdale': [{ slug: 'miami', name: 'Miami' }, { slug: 'boca-raton', name: 'Boca Raton' }, { slug: 'west-palm-beach', name: 'West Palm Beach' }],
+  'sarasota': [{ slug: 'tampa', name: 'Tampa' }, { slug: 'naples', name: 'Naples' }, { slug: 'fort-myers', name: 'Fort Myers' }],
+  'west-palm-beach': [{ slug: 'boca-raton', name: 'Boca Raton' }, { slug: 'fort-lauderdale', name: 'Fort Lauderdale' }, { slug: 'port-st-lucie', name: 'Port St. Lucie' }],
+  'tallahassee': [{ slug: 'pensacola', name: 'Pensacola' }],
+  'clearwater': [{ slug: 'tampa', name: 'Tampa' }, { slug: 'st-petersburg', name: 'St. Petersburg' }, { slug: 'spring-hill', name: 'Spring Hill' }],
+  'st-petersburg': [{ slug: 'tampa', name: 'Tampa' }, { slug: 'clearwater', name: 'Clearwater' }, { slug: 'sarasota', name: 'Sarasota' }],
+  'boca-raton': [{ slug: 'fort-lauderdale', name: 'Fort Lauderdale' }, { slug: 'west-palm-beach', name: 'West Palm Beach' }, { slug: 'miami', name: 'Miami' }],
+  'pensacola': [{ slug: 'tallahassee', name: 'Tallahassee' }],
+  'lake-nona': [{ slug: 'orlando', name: 'Orlando' }, { slug: 'kissimmee', name: 'Kissimmee' }],
+  'cape-coral': [{ slug: 'fort-myers', name: 'Fort Myers' }, { slug: 'naples', name: 'Naples' }],
+};
