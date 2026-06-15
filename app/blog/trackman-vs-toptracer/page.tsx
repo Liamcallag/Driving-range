@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TrackMan vs TopTracer: What\'s the Difference? | Florida Driving Ranges',
-  description: 'TrackMan and TopTracer are the two most common ball-tracking technologies at driving ranges. Here\'s how they differ and which one is right for you.',
+  title: 'TrackMan vs TopTracer (2026): Which Is Better at Driving Ranges?',
+  description: 'TrackMan costs $25,000+. TopTracer is everywhere. We break down the real differences in accuracy, cost, and which you\'ll find at Florida driving ranges.',
   openGraph: {
-    title: 'TrackMan vs TopTracer: What\'s the Difference?',
-    description: 'TrackMan and TopTracer are the two most common ball-tracking technologies at driving ranges. Here\'s how they differ and which one is right for you.',
+    title: 'TrackMan vs TopTracer (2026): Which Is Better at Driving Ranges?',
+    description: 'TrackMan costs $25,000+. TopTracer is everywhere. We break down the real differences in accuracy, cost, and which you\'ll find at Florida driving ranges.',
     url: 'https://floridadrivingranges.com/blog/trackman-vs-toptracer',
     siteName: 'Florida Driving Ranges',
     type: 'article',
