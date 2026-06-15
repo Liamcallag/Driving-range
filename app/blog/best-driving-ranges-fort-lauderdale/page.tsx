@@ -90,8 +90,8 @@ export default function BestDrivingRangesFortLauderdale() {
 
           <div className="not-prose my-8 flex flex-col sm:flex-row items-center justify-between gap-4 px-6 py-5 bg-green-700 rounded-xl">
             <div>
-              <p className="font-semibold text-white">See all Fort Lauderdale driving ranges</p>
-              <p className="text-sm text-white/70 mt-0.5">Outdoor · Indoor simulators · Hours & directions</p>
+              <p className="font-semibold" style={{ color: '#ffffff' }}>See all Fort Lauderdale driving ranges</p>
+              <p className="text-sm mt-0.5" style={{ color: 'rgba(255,255,255,0.7)' }}>Outdoor · Indoor simulators · Hours & directions</p>
             </div>
             <Link href="/cities/fort-lauderdale" className="shrink-0 inline-flex items-center justify-center px-5 py-2.5 bg-white hover:bg-green-50 text-green-800 rounded-full text-sm font-semibold transition-colors whitespace-nowrap">
               Browse all ranges →
