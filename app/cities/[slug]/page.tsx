@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
-import { CITY_PAGES, getCityBySlug, NEARBY_CITIES } from '@/lib/cities';
+import { CITY_PAGES, getCityBySlug, NEARBY_CITIES, CITY_BLOG_POSTS } from '@/lib/cities';
 import { SITE_URL } from '@/lib/config';
 import RangeCard from '@/components/RangeCard';
 
@@ -110,6 +110,24 @@ export default async function CityPage({ params }: PageProps) {
             ← Browse all Florida driving ranges
           </Link>
         </div>
+
+        {/* City Blog Posts */}
+        {CITY_BLOG_POSTS[slug] && (
+          <div className="mt-8 max-w-3xl">
+            <h2 className="text-lg font-bold text-slate-900 mb-3">Guides & Resources</h2>
+            <div className="flex flex-col gap-2">
+              {CITY_BLOG_POSTS[slug].map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="inline-flex items-center gap-2 px-4 py-3 bg-white border border-slate-200 hover:border-green-500 hover:text-green-700 rounded-lg text-sm font-medium text-slate-700 transition-colors"
+                >
+                  <span>📖</span> {post.label} →
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Nearby Cities */}
         {NEARBY_CITIES[slug] && (

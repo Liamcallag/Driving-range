@@ -160,6 +160,33 @@ export function getCityBySlug(slug: string): CityInfo | undefined {
   return CITY_PAGES.find((c) => c.slug === slug);
 }
 
+export const CITY_BLOG_POSTS: Record<string, { slug: string; label: string }[]> = {
+  'tampa': [
+    { slug: 'best-driving-ranges-tampa', label: 'Best Driving Ranges in Tampa' },
+    { slug: 'best-golf-simulators-tampa', label: 'Best Golf Simulators in Tampa' },
+  ],
+  'fort-lauderdale': [
+    { slug: 'best-driving-ranges-fort-lauderdale', label: 'Best Driving Ranges in Fort Lauderdale' },
+  ],
+  'miami': [
+    { slug: 'best-driving-ranges-miami', label: 'Best Driving Ranges in Miami' },
+    { slug: 'best-golf-simulators-miami', label: 'Best Golf Simulators in Miami' },
+  ],
+  'naples': [
+    { slug: 'best-driving-ranges-naples', label: 'Best Driving Ranges in Naples' },
+  ],
+  'orlando': [
+    { slug: 'best-driving-ranges-orlando', label: 'Best Driving Ranges in Orlando' },
+    { slug: 'best-golf-simulators-orlando', label: 'Best Golf Simulators in Orlando' },
+  ],
+  'west-palm-beach': [
+    { slug: 'best-golf-simulators-palm-beach', label: 'Best Golf Simulators in Palm Beach' },
+  ],
+  'jacksonville': [
+    { slug: 'best-golf-simulators-jacksonville', label: 'Best Golf Simulators in Jacksonville' },
+  ],
+};
+
 export const NEARBY_CITIES: Record<string, { slug: string; name: string }[]> = {
   'orlando': [{ slug: 'kissimmee', name: 'Kissimmee' }, { slug: 'winter-haven', name: 'Winter Haven' }, { slug: 'lake-nona', name: 'Lake Nona' }],
   'naples': [{ slug: 'fort-myers', name: 'Fort Myers' }, { slug: 'sarasota', name: 'Sarasota' }, { slug: 'cape-coral', name: 'Cape Coral' }],
