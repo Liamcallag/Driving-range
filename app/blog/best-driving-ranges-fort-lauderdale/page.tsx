@@ -88,11 +88,12 @@ export default function BestDrivingRangesFortLauderdale() {
             Sim-U-Golf in Pompano Beach is a no-frills simulator venue aimed at golfers who want straightforward access to technology without the bar-and-entertainment format. It offers hourly bookings and is well-positioned for golfers looking for a focused practice environment.
           </p>
 
-          <div className="my-6 p-4 bg-green-50 border-l-4 border-green-700 rounded">
-            <strong className="text-slate-900">Want to see all Fort Lauderdale ranges?</strong>
-            <p className="text-sm text-slate-600 mt-1">Browse the complete directory with locations, hours, and amenities.</p>
-            <Link href="/cities/fort-lauderdale" className="inline-block mt-2 text-sm font-medium text-green-700 hover:text-green-800">
-              View all Fort Lauderdale ranges →
+          <div className="my-8 p-6 bg-slate-900 rounded-xl text-white">
+            <p className="text-xs font-semibold uppercase tracking-widest text-green-400 mb-2">Directory</p>
+            <h3 className="text-lg font-bold mb-1">See all Fort Lauderdale driving ranges</h3>
+            <p className="text-sm text-slate-400 mb-4">Browse the complete directory with locations, hours, and amenities.</p>
+            <Link href="/cities/fort-lauderdale" className="inline-flex items-center justify-center px-5 py-2.5 bg-green-600 hover:bg-green-500 text-white rounded-lg text-sm font-medium transition-colors">
+              View Fort Lauderdale ranges →
             </Link>
           </div>
 
