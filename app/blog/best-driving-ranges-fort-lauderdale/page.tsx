@@ -14,9 +14,23 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Best Driving Ranges in Fort Lauderdale, FL',
+  description: 'The best driving ranges in Fort Lauderdale and Broward County — outdoor ranges, indoor simulators, and high-tech venues. Find open hours, locations, and tips.',
+  datePublished: '2026-04-01',
+  dateModified: '2026-04-01',
+  image: 'https://floridadrivingranges.com/images/blog/best-ranges-fort-lauderdale.jpg',
+  url: 'https://floridadrivingranges.com/blog/best-driving-ranges-fort-lauderdale',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function BestDrivingRangesFortLauderdale() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}
