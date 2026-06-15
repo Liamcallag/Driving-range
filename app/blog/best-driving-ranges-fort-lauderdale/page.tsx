@@ -88,14 +88,17 @@ export default function BestDrivingRangesFortLauderdale() {
             Sim-U-Golf in Pompano Beach is a no-frills simulator venue aimed at golfers who want straightforward access to technology without the bar-and-entertainment format. It offers hourly bookings and is well-positioned for golfers looking for a focused practice environment.
           </p>
 
-          <div className="my-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-6 bg-blue-50 border border-blue-100 rounded-xl">
-            <div>
-              <p className="font-bold text-slate-900">See all Fort Lauderdale driving ranges</p>
-              <p className="text-sm text-slate-500 mt-0.5">Outdoor ranges · Indoor simulators · Hours & directions</p>
+          <div className="my-8 rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900 to-green-900">
+            <div className="px-7 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-green-400 mb-1.5">Fort Lauderdale Directory</p>
+                <p className="text-xl font-bold text-white leading-snug">Find the right range for your game</p>
+                <p className="text-sm text-slate-400 mt-1">Outdoor · Indoor simulators · Hours & directions</p>
+              </div>
+              <Link href="/cities/fort-lauderdale" className="shrink-0 inline-flex items-center justify-center px-6 py-3 bg-white hover:bg-slate-100 text-slate-900 rounded-full text-sm font-semibold transition-colors whitespace-nowrap shadow-sm">
+                Browse all ranges →
+              </Link>
             </div>
-            <Link href="/cities/fort-lauderdale" className="shrink-0 inline-flex items-center justify-center px-5 py-2.5 bg-green-700 hover:bg-green-800 text-white rounded-full text-sm font-medium transition-colors whitespace-nowrap">
-              View all ranges →
-            </Link>
           </div>
 
           <h2>Outdoor Driving Ranges</h2>
