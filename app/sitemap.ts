@@ -10,8 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const rangeUrls = ranges.map((range) => ({
     url: `https://floridadrivingranges.com/ranges/${range.slug}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    changeFrequency: 'weekly' as const,
+    priority: 0.75,
   }));
 
   const cityUrls = CITY_PAGES.map((city) => ({
