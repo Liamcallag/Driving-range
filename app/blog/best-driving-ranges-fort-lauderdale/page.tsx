@@ -4,10 +4,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Best Driving Ranges in Fort Lauderdale, FL | Florida Driving Ranges',
-  description: 'Fort Lauderdale has a strong mix of outdoor ranges and indoor simulator venues across Broward County. Here are the best options for golfers in the Fort Lauderdale area.',
+  description: 'The best driving ranges in Fort Lauderdale and Broward County — outdoor ranges, indoor simulators, and high-tech venues. Find open hours, locations, and tips.',
   openGraph: {
     title: 'Best Driving Ranges in Fort Lauderdale, FL',
-    description: 'Fort Lauderdale has a strong mix of outdoor ranges and indoor simulator venues across Broward County. Here are the best options for golfers in the Fort Lauderdale area.',
+    description: 'The best driving ranges in Fort Lauderdale and Broward County — outdoor ranges, indoor simulators, and high-tech venues. Find open hours, locations, and tips.',
     url: 'https://floridadrivingranges.com/blog/best-driving-ranges-fort-lauderdale',
     siteName: 'Florida Driving Ranges',
     type: 'article',
@@ -87,6 +87,14 @@ export default function BestDrivingRangesFortLauderdale() {
           <p>
             Sim-U-Golf in Pompano Beach is a no-frills simulator venue aimed at golfers who want straightforward access to technology without the bar-and-entertainment format. It offers hourly bookings and is well-positioned for golfers looking for a focused practice environment.
           </p>
+
+          <div className="my-6 p-4 bg-green-50 border-l-4 border-green-700 rounded">
+            <strong className="text-slate-900">Want to see all Fort Lauderdale ranges?</strong>
+            <p className="text-sm text-slate-600 mt-1">Browse the complete directory with locations, hours, and amenities.</p>
+            <Link href="/cities/fort-lauderdale" className="inline-block mt-2 text-sm font-medium text-green-700 hover:text-green-800">
+              View all Fort Lauderdale ranges →
+            </Link>
+          </div>
 
           <h2>Outdoor Driving Ranges</h2>
           <p>
