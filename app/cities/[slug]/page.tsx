@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cityRanges = ranges.filter((r) => city.cities.includes(r.city));
 
   return {
-    title: `Driving Ranges in ${city.name}, FL | Florida Driving Ranges`,
-    description: `Find the best driving ranges in ${city.name}, Florida. Browse ${cityRanges.length} local ranges — outdoor, indoor, and high-tech facilities with hours, amenities, and directions.`,
+    title: `Best Driving Ranges in ${city.name}, FL | Florida Driving Ranges`,
+    description: `Find the best driving ranges in ${city.name}, FL. Browse ${cityRanges.length} local ranges — outdoor, indoor, and high-tech facilities with TrackMan, TopTracer, hours, and directions.`,
     openGraph: {
-      title: `Driving Ranges in ${city.name}, FL | Florida Driving Ranges`,
+      title: `Best Driving Ranges in ${city.name}, FL | Florida Driving Ranges`,
       description: `Find the best driving ranges in ${city.name}, Florida. Browse ${cityRanges.length} local ranges with hours, amenities, and directions.`,
       url: `${SITE_URL}/cities/${slug}`,
       siteName: 'Florida Driving Ranges',
@@ -63,7 +63,7 @@ export default async function CityPage({ params }: PageProps) {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-slate-900 leading-tight mb-3">
-            Driving Ranges in {city.name}, Florida
+            Best Driving Ranges in {city.name}, FL
           </h1>
 
           {/* Stats */}
