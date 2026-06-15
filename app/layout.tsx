@@ -5,8 +5,8 @@ import SiteFooter from "@/components/SiteFooter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Florida Driving Ranges | Find Ranges Near You",
-  description: "Find driving ranges across Florida. Search by city, filter by indoor/outdoor, high-tech features like TrackMan and TopTracer, and more.",
+  title: "Florida Driving Ranges | Find Driving Ranges Near You in Florida",
+  description: "Find driving ranges near you across Florida. Browse indoor simulators, outdoor ranges, and high-tech TrackMan & TopTracer facilities with open hours and directions.",
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' },
