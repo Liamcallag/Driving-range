@@ -14,9 +14,23 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Best Indoor Driving Ranges in Florida (2026)',
+  description: 'The best indoor driving ranges and golf simulator facilities in Florida — from TrackMan bays and upscale sim lounges to casual bar-and-golf venues across the state.',
+  datePublished: '2026-03-30',
+  dateModified: '2026-03-30',
+  image: 'https://floridadrivingranges.com/images/blog/best-indoor-ranges-florida.png',
+  url: 'https://floridadrivingranges.com/blog/best-indoor-driving-ranges-florida',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function BestIndoorDrivingRangesFlorida() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}

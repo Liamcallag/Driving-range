@@ -14,9 +14,23 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'How to Practice at a Driving Range (And Actually Improve)',
+  description: 'Most golfers waste their time at the driving range. Here\'s how to structure your practice sessions to see real improvement in your game.',
+  datePublished: '2026-03-26',
+  dateModified: '2026-03-26',
+  image: 'https://floridadrivingranges.com/images/blog/how-to-practice.jpg',
+  url: 'https://floridadrivingranges.com/blog/how-to-practice-at-a-driving-range',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function HowToPractice() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}

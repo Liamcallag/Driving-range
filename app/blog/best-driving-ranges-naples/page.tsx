@@ -14,9 +14,23 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Best Driving Ranges in Naples, FL',
+  description: 'Naples is one of Florida\'s premier golf destinations. Here are the best driving ranges in Naples for golfers of every level.',
+  datePublished: '2026-03-26',
+  dateModified: '2026-03-26',
+  image: 'https://floridadrivingranges.com/images/blog/best-ranges-naples.jpg',
+  url: 'https://floridadrivingranges.com/blog/best-driving-ranges-naples',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function BestDrivingRangesNaples() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}

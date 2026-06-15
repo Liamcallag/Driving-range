@@ -14,9 +14,23 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Golf Simulators in Florida: Everything You Need to Know',
+  description: 'Indoor golf simulators are becoming increasingly popular across Florida. Here\'s what to expect, how much they cost, and where to find the best ones.',
+  datePublished: '2026-03-26',
+  dateModified: '2026-03-26',
+  image: 'https://floridadrivingranges.com/images/blog/golf-simulator.png',
+  url: 'https://floridadrivingranges.com/blog/golf-simulators-florida',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function GolfSimulatorsFloridaPage() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}

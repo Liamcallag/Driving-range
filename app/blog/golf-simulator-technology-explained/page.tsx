@@ -13,9 +13,22 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Golf Simulator Technology Explained: Top 5 Systems Compared',
+  description: 'Not all golf simulators are the same. Here is a breakdown of the top 5 golf simulator technologies — TrackMan, Foresight, FlightScope, Uneekor, and SkyTrak — and what sets them apart.',
+  datePublished: '2026-04-09',
+  dateModified: '2026-04-09',
+  url: 'https://floridadrivingranges.com/blog/golf-simulator-technology-explained',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function GolfSimulatorTechnologyExplained() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}

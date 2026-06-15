@@ -13,9 +13,22 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Best Golf Simulators in Orlando, FL',
+  description: 'Looking for a golf simulator in Orlando? Here are the best indoor golf simulator venues across the Orlando area — from serious practice studios to bar-and-golf social venues.',
+  datePublished: '2026-04-09',
+  dateModified: '2026-04-09',
+  url: 'https://floridadrivingranges.com/blog/best-golf-simulators-orlando',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function BestGolfSimulatorsOrlando() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}

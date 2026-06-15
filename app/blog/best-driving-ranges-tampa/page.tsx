@@ -14,9 +14,23 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Best Driving Ranges in Tampa, FL',
+  description: 'Tampa has one of Florida\'s most varied driving range scenes — from high-tech indoor simulators to classic outdoor ranges across the greater Tampa Bay area.',
+  datePublished: '2026-04-09',
+  dateModified: '2026-04-09',
+  image: 'https://floridadrivingranges.com/images/blog/best-ranges-tampa.jpg',
+  url: 'https://floridadrivingranges.com/blog/best-driving-ranges-tampa',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function BestDrivingRangesTampa() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}

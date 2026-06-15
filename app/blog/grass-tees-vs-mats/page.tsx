@@ -14,9 +14,23 @@ export const metadata: Metadata = {
   },
 };
 
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Grass Tees vs Mats: Which is Better for Your Golf Game?',
+  description: 'Should you practice on grass tees or mats? We break down the pros and cons of each surface and which is better for your swing development.',
+  datePublished: '2026-03-26',
+  dateModified: '2026-03-26',
+  image: 'https://floridadrivingranges.com/images/blog/grass-tees.jpg',
+  url: 'https://floridadrivingranges.com/blog/grass-tees-vs-mats',
+  author: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+  publisher: { '@type': 'Organization', name: 'Florida Driving Ranges', url: 'https://floridadrivingranges.com' },
+};
+
 export default function GrassTeeVsMats() {
   return (
     <div className="min-h-screen bg-slate-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
 
         {/* Breadcrumb */}
