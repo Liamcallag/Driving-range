@@ -9,11 +9,11 @@ const ranges = rangesData as Range[];
 const indoorRanges = ranges.filter((r) => r.category === 'indoor');
 
 export const metadata: Metadata = {
-  title: 'Indoor Driving Ranges in Florida (2026) | Florida Driving Ranges',
-  description: `Find indoor driving ranges and golf simulator facilities across Florida. Browse ${indoorRanges.length} indoor ranges with hours, amenities, and directions.`,
+  title: 'Indoor Driving Ranges Near You in Florida (2026) | Florida Driving Ranges',
+  description: `Beat the Florida heat and afternoon rain. Find indoor driving ranges and golf simulators near you across Florida — ${indoorRanges.length} venues with hours, tech, and directions.`,
   openGraph: {
-    title: 'Indoor Driving Ranges in Florida (2026)',
-    description: `Find indoor driving ranges and golf simulator facilities across Florida. Browse ${indoorRanges.length} indoor ranges statewide.`,
+    title: 'Indoor Driving Ranges Near You in Florida (2026)',
+    description: `Beat the Florida heat and afternoon rain. Find indoor driving ranges and golf simulators near you across Florida — ${indoorRanges.length} venues statewide.`,
     url: `${SITE_URL}/indoor-driving-ranges`,
     siteName: 'Florida Driving Ranges',
     type: 'website',
@@ -42,7 +42,7 @@ export default function IndoorDrivingRangesPage() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-slate-900 leading-tight mb-3">
-            Indoor Driving Ranges in Florida
+            Indoor Driving Ranges in Florida (2026)
           </h1>
 
           {/* Stats */}
@@ -59,7 +59,7 @@ export default function IndoorDrivingRangesPage() {
           </div>
 
           <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
-            Florida's indoor driving range and golf simulator scene has grown significantly in recent years. Whether you're looking to beat the afternoon rain, practice year-round in a climate-controlled environment, or play virtual rounds on famous courses, these facilities offer a quality alternative to traditional outdoor ranges across the state.
+            Florida's afternoon thunderstorms and summer heat make indoor driving ranges an essential option for year-round golfers. Whether you want to beat the rain, practice in air-conditioned comfort, or play virtual rounds on famous courses using TrackMan or TopTracer technology, these facilities are open year-round across the state.
           </p>
         </div>
 
