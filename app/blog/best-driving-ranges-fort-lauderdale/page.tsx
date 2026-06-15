@@ -88,7 +88,7 @@ export default function BestDrivingRangesFortLauderdale() {
             Sim-U-Golf in Pompano Beach is a no-frills simulator venue aimed at golfers who want straightforward access to technology without the bar-and-entertainment format. It offers hourly bookings and is well-positioned for golfers looking for a focused practice environment.
           </p>
 
-          <div className="my-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-6 bg-slate-50 border border-slate-200 rounded-xl">
+          <div className="my-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-6 bg-blue-50 border border-blue-100 rounded-xl">
             <div>
               <p className="font-bold text-slate-900">See all Fort Lauderdale driving ranges</p>
               <p className="text-sm text-slate-500 mt-0.5">Outdoor ranges · Indoor simulators · Hours & directions</p>
