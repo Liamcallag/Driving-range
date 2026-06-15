@@ -66,7 +66,7 @@ export default function BestDrivingRangesFortLauderdale() {
 
           <h2>Fort Lauderdale's Range Scene</h2>
           <p>
-            Fort Lauderdale sits at the centre of Broward County's golf corridor, with driving ranges spread across a wide area from Deerfield Beach in the north to Hallandale Beach in the south. The region's dense urban layout has pushed many newer facilities indoors, and Fort Lauderdale now has one of the highest concentrations of indoor simulator venues in South Florida. That said, traditional outdoor ranges remain well-represented across the suburbs, offering grass tees, covered hitting areas, and a more classic practice experience.
+            Fort Lauderdale sits at the centre of Broward County's golf corridor, with driving ranges spread across a wide area from Deerfield Beach in the north to Hallandale Beach in the south. The region's dense urban layout has pushed many newer facilities indoors, and Fort Lauderdale now has one of the highest concentrations of <Link href="/indoor-driving-ranges" className="text-green-700 hover:text-green-800 font-medium">indoor simulator venues</Link> in South Florida. That said, traditional outdoor ranges remain well-represented across the suburbs, offering <Link href="/blog/grass-tees-vs-mats" className="text-green-700 hover:text-green-800 font-medium">grass tees</Link>, covered hitting areas, and a more classic practice experience.
           </p>
           <p>
             The county's year-round warm weather makes outdoor practice comfortable for most of the year, though Florida's afternoon summer storms make indoor options particularly valuable from June through September.
