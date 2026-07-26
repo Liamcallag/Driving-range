@@ -57,7 +57,7 @@ export default function GolfSimulatorTechnologyExplained() {
         </header>
 
         <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
-          <Image src="/images/blog/golf-simulator-technology.png" alt="Foresight Sports launch monitor with ball flight data on simulator screen" fill className="object-cover object-center" />
+          <Image src="/images/blog/golf-simulator-technology.png" alt="Foresight Sports launch monitor with ball flight data on simulator screen" fill className="object-cover object-top" />
         </div>
 
         <article className="blog-content">
