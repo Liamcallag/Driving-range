@@ -1,0 +1,28 @@
+#!/bin/sh
+# Block commits that include 0-byte image files (e.g. iCloud-offloaded files)
+
+EXTENSIONS="jpg jpeg png gif webp svg"
+ZERO_BYTE_FILES=""
+
+for ext in $EXTENSIONS; do
+  while IFS= read -r file; do
+    if [ -f "$file" ] && [ ! -s "$file" ]; then
+      ZERO_BYTE_FILES="$ZERO_BYTE_FILES\n  $file"
+    fi
+  done <<EOF
+$(git diff --cached --name-only --diff-filter=ACM | grep -i "\.$ext$")
+EOF
+done
+
+if [ -n "$ZERO_BYTE_FILES" ]; then
+  echo ""
+  echo "❌ Commit blocked: the following image files are 0 bytes (possibly iCloud-offloaded):"
+  printf "$ZERO_BYTE_FILES"
+  echo ""
+  echo ""
+  echo "Download them from iCloud first, then try again."
+  echo ""
+  exit 1
+fi
+
+exit 0
