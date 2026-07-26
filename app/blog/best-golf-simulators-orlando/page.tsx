@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -54,6 +55,10 @@ export default function BestGolfSimulatorsOrlando() {
             Orlando has one of the strongest indoor golf simulator scenes in Florida. With nine dedicated venues spread across the metro area — from Lake Mary to Lake Nona — the city offers serious practice options, social bar-and-golf experiences, and everything in between.
           </p>
         </header>
+
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/golf-simulators-orlando.jpg" alt="TrackMan golf simulator bay with course displayed on screen in Orlando" fill className="object-cover object-center" />
+        </div>
 
         <article className="blog-content">
 

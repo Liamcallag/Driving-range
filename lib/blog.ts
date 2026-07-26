@@ -115,6 +115,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Guides',
     readTime: 5,
+    image: '/images/blog/golf-simulators-tampa.jpg',
   },
   {
     slug: 'best-golf-simulators-miami',
@@ -123,6 +124,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Guides',
     readTime: 3,
+    image: '/images/blog/golf-simulators-miami.jpg',
   },
   {
     slug: 'best-golf-simulators-jacksonville',
@@ -139,6 +141,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Guides',
     readTime: 4,
+    image: '/images/blog/golf-simulators-palm-beach.jpg',
   },
   {
     slug: 'best-golf-simulators-orlando',
@@ -147,6 +150,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Guides',
     readTime: 6,
+    image: '/images/blog/golf-simulators-orlando.jpg',
   },
   {
     slug: 'golf-simulator-technology-explained',

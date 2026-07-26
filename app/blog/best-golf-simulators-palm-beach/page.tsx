@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -54,6 +55,10 @@ export default function BestGolfSimulatorsPalmBeach() {
             Palm Beach County is one of Florida's most golf-dense regions, and its indoor golf simulator scene reflects that. From Boca Raton to West Palm Beach, the county offers quality indoor golf options for players who want a climate-controlled alternative to outdoor practice.
           </p>
         </header>
+
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/golf-simulators-palm-beach.jpg" alt="Iron club head address position on a golf simulator mat in Palm Beach" fill className="object-cover object-center" />
+        </div>
 
         <article className="blog-content">
 

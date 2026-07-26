@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -54,6 +55,10 @@ export default function BestGolfSimulatorsTampa() {
             Tampa's indoor golf simulator scene has grown significantly in recent years. Whether you want a focused practice session, a social group outing, or a way to keep playing through Florida's stormy summer months, the Tampa Bay area has solid options at every price point.
           </p>
         </header>
+
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/golf-simulators-tampa.jpg" alt="Golfer hitting a shot at an indoor golf simulator venue in Tampa" fill className="object-cover object-center" />
+        </div>
 
         <article className="blog-content">
 

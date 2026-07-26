@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -54,6 +55,10 @@ export default function BestGolfSimulatorsMiami() {
             Miami's indoor golf simulator scene is growing to match the city's appetite for premium experiences. For golfers looking to practice year-round in a climate-controlled environment — or simply enjoy a different kind of night out — Miami's simulator venues are worth knowing about.
           </p>
         </header>
+
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/golf-simulators-miami.jpg" alt="Woman hitting a shot at an indoor golf simulator venue in Miami" fill className="object-cover object-center" />
+        </div>
 
         <article className="blog-content">
 
