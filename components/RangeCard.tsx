@@ -4,13 +4,13 @@ import Link from 'next/link';
 import { Range } from '@/lib/types';
 import { getOpenStatus } from '@/lib/utils';
 
-// Subtle palette — text-only, no fills or borders
+// Text-only palette — no fills or borders
 const COLOR = {
-  openText:   '#5a8a6a', // muted sage green
-  closedText: '#a05a4a', // muted terracotta
-  typeTag:    '#7a8fa0', // muted blue-gray
-  techTag:    '#2d7d7d', // deep teal
-  amenityTag: '#9e7d4a', // warm tan/amber
+  openText:   '#2E7D32', // clear green
+  closedText: '#C62828', // clear red
+  typeTag:    '#5A6B7A', // cool gray-blue
+  techTag:    '#1B5E5E', // deep teal
+  amenityTag: '#5C4A3D', // warm charcoal-brown
 };
 
 export default function RangeCard({ range }: { range: Range }) {
