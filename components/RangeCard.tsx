@@ -10,7 +10,7 @@ const COLOR = {
   closedText: '#C62828', // clear red
   typeTag:    '#5A6B7A', // cool gray-blue
   techTag:    '#1B5E5E', // deep teal
-  amenityTag: '#5C4A3D', // warm charcoal-brown
+  amenityTag: '#94a3b8', // plain gray (slate-400)
 };
 
 export default function RangeCard({ range }: { range: Range }) {
