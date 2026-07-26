@@ -133,6 +133,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Guides',
     readTime: 4,
+    image: '/images/blog/golf-simulators-jacksonville.jpg',
   },
   {
     slug: 'best-golf-simulators-palm-beach',

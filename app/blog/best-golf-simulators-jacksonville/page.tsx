@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -54,6 +55,10 @@ export default function BestGolfSimulatorsJacksonville() {
             Jacksonville is Florida's largest city by area, and its golf simulator scene has developed to match the city's sprawling population. From Jacksonville Beach to St. Augustine, indoor simulator venues offer a year-round alternative to outdoor practice across the greater Jacksonville area.
           </p>
         </header>
+
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/golf-simulators-jacksonville.jpg" alt="Golf ball on a tee inside an indoor simulator bay in Jacksonville" fill className="object-cover object-center" />
+        </div>
 
         <article className="blog-content">
 
