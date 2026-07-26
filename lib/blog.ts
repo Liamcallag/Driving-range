@@ -6,6 +6,7 @@ export interface BlogPost {
   category: 'Locations' | 'Tips' | 'Technology' | 'Guides';
   readTime: number;
   image?: string;
+  imagePosition?: string;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -161,6 +162,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Technology',
     readTime: 7,
     image: '/images/blog/golf-simulator-technology.png',
+    imagePosition: 'object-top',
   },
 ];
 

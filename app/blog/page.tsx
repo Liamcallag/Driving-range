@@ -71,7 +71,7 @@ export default function BlogIndexPage() {
                     >
                       {post.image ? (
                         <div className="w-full h-36 relative">
-                          <Image src={post.image} alt={post.title} fill className="object-cover object-center" />
+                          <Image src={post.image} alt={post.title} fill className={`object-cover ${post.imagePosition ?? 'object-center'}`} />
                         </div>
                       ) : (
                         <div className="w-full h-36 bg-gradient-to-br from-green-50 to-slate-100 flex items-center justify-center text-green-300 text-4xl">
