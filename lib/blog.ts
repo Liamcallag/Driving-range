@@ -160,6 +160,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-04-09',
     category: 'Technology',
     readTime: 7,
+    image: '/images/blog/golf-simulator-technology.png',
   },
 ];
 

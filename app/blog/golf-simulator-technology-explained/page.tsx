@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -54,6 +55,10 @@ export default function GolfSimulatorTechnologyExplained() {
             Walk into a golf simulator venue and you'll encounter names like TrackMan, Foresight, FlightScope, and Uneekor. They all track your ball — but they work very differently and vary significantly in accuracy, price, and purpose. Here's what you need to know.
           </p>
         </header>
+
+        <div className="w-full h-96 relative rounded-xl overflow-hidden mb-8">
+          <Image src="/images/blog/golf-simulator-technology.png" alt="Foresight Sports launch monitor with ball flight data on simulator screen" fill className="object-cover object-center" />
+        </div>
 
         <article className="blog-content">
 
