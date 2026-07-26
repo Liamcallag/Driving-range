@@ -4,101 +4,77 @@ import Link from 'next/link';
 import { Range } from '@/lib/types';
 import { getOpenStatus } from '@/lib/utils';
 
-interface RangeCardProps {
-  range: Range;
-}
-
-export default function RangeCard({ range }: RangeCardProps) {
+export default function RangeCard({ range }: { range: Range }) {
   const { isOpen, status } = getOpenStatus(range.workingHours);
-
   const isIndoor = range.category === 'indoor';
 
-  // Tee surface tags: only relevant for outdoor ranges; skip if Unknown or empty
-  const teeTags: { label: string; icon: string }[] = [];
-  if (!isIndoor) {
-    if (range.grass === 'Yes' || range.grass === 'Both') {
-      teeTags.push({ label: 'Grass Tees', icon: '🌿' });
-    }
-    if (range.grass === 'No' || range.grass === 'Both' || range.grass === 'Unknown' || range.grass === '') {
-      teeTags.push({ label: 'Mats', icon: '🟫' });
-    }
-  }
+  const typeTags = [
+    isIndoor ? 'Indoor' : 'Outdoor',
+    range.techLevel === 'high' ? 'High-Tech' : 'Traditional',
+  ];
 
-  const features = [
-    range.trackman === 'Yes' && { label: 'TrackMan', icon: '📡' },
-    range.toptracer === 'Yes' && { label: 'TopTracer', icon: '🎯' },
-    range.foodBar === 'Yes' && { label: 'Food & Bar', icon: '🍺' },
-    // Lighting and roof/cover only shown for outdoor ranges (indoor already has these)
-    !isIndoor && range.lighting === 'Yes' && { label: 'Night Lights', icon: '💡' },
-    !isIndoor && range.roof === 'Yes' && { label: 'Covered', icon: '🏠' },
-    ...teeTags,
-  ].filter(Boolean) as { label: string; icon: string }[];
+  const amenities = [
+    range.trackman === 'Yes' && 'TrackMan',
+    range.toptracer === 'Yes' && 'TopTracer',
+    range.foodBar === 'Yes' && 'Food & Bar',
+    !isIndoor && range.lighting === 'Yes' && 'Night Lights',
+    !isIndoor && range.roof === 'Yes' && 'Covered',
+    !isIndoor && (range.grass === 'Yes' || range.grass === 'Both') && 'Grass Tees',
+    !isIndoor && (range.grass === 'No' || range.grass === 'Unknown' || range.grass === '') && 'Mats',
+  ].filter(Boolean) as string[];
 
   return (
-    <div className="bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md hover:border-green-200 transition-all p-5 flex flex-col gap-3">
-      {/* Header */}
-      <div>
-        <Link
-          href={`/ranges/${range.slug}`}
-          className="text-base font-semibold text-slate-800 hover:text-green-700 transition-colors leading-snug line-clamp-2"
-        >
-          {range.name}
-        </Link>
-        <p className="text-sm text-slate-500 mt-0.5">{range.city}, FL</p>
-      </div>
+    <Link href={`/ranges/${range.slug}`} className="block group">
+      <div className="bg-white border border-slate-100 rounded-lg overflow-hidden hover:border-slate-300 hover:shadow-sm transition-all">
 
-      {/* Badges row */}
-      <div className="flex flex-wrap gap-1.5 items-center">
-        <span
-          className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-            isIndoor ? 'bg-orange-100 text-orange-800' : 'bg-green-100 text-green-800'
-          }`}
-        >
-          {isIndoor ? 'Indoor' : 'Outdoor'}
-        </span>
-        <span
-          className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-            range.techLevel === 'high'
-              ? 'bg-purple-100 text-purple-800'
-              : 'bg-amber-100 text-amber-800'
-          }`}
-        >
-          {range.techLevel === 'high' ? 'High-Tech' : 'Traditional'}
-        </span>
-        <span
-          className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-            isOpen ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'
-          }`}
-        >
-          {isOpen ? 'Open' : 'Closed'}
-        </span>
-      </div>
-
-      {/* Status */}
-      <p className="text-xs text-slate-500">{status}</p>
-
-      {/* Feature tags */}
-      {features.length > 0 && (
-        <div className="flex flex-wrap gap-1 mt-auto pt-2 border-t border-slate-50">
-          {features.map((f) => (
-            <span
-              key={f.label}
-              className="text-xs bg-slate-50 text-slate-600 px-2 py-0.5 rounded border border-slate-100"
-            >
-              <span aria-hidden="true">{f.icon} </span>{f.label}
-            </span>
-          ))}
+        {/* Image placeholder — swap for <Image> later */}
+        <div className="h-36 bg-slate-50 flex items-center justify-center border-b border-slate-100">
+          <svg className="w-6 h-6 text-slate-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5M4.5 3h15A1.5 1.5 0 0121 4.5v15A1.5 1.5 0 0119.5 21H4.5A1.5 1.5 0 013 19.5v-15A1.5 1.5 0 014.5 3z" />
+          </svg>
         </div>
-      )}
 
-      {/* View Details */}
-      <Link
-        href={`/ranges/${range.slug}`}
-        aria-label={`View details for ${range.name}`}
-        className="mt-1 text-center text-sm font-medium text-green-700 hover:text-white border border-green-200 hover:border-green-600 hover:bg-green-600 rounded-lg py-1.5 transition-colors"
-      >
-        View Details <span aria-hidden="true">→</span>
-      </Link>
-    </div>
+        {/* Body */}
+        <div className="px-4 pt-3 pb-4 flex flex-col gap-2">
+
+          {/* Name + city */}
+          <div>
+            <p className="text-sm font-semibold text-slate-900 group-hover:text-green-700 transition-colors leading-snug line-clamp-2">
+              {range.name}
+            </p>
+            <p className="text-xs text-slate-400 mt-0.5">{range.city}, FL</p>
+          </div>
+
+          {/* Status */}
+          <div className="flex items-center gap-1.5">
+            <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${isOpen ? 'bg-emerald-400' : 'bg-slate-300'}`} />
+            <span className="text-xs text-slate-500">{status}</span>
+          </div>
+
+          {/* Type tags — plain text, dot separated */}
+          <div className="flex items-center gap-1 text-xs text-slate-400">
+            {typeTags.map((tag, i) => (
+              <span key={tag} className="flex items-center gap-1">
+                {i > 0 && <span aria-hidden="true">·</span>}
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          {/* Amenity tags — plain text, wrapping */}
+          {amenities.length > 0 && (
+            <div className="flex flex-wrap items-center gap-1 text-xs text-slate-400">
+              {amenities.map((a, i) => (
+                <span key={a} className="flex items-center gap-1">
+                  {i > 0 && <span aria-hidden="true">·</span>}
+                  {a}
+                </span>
+              ))}
+            </div>
+          )}
+
+        </div>
+      </div>
+    </Link>
   );
 }
