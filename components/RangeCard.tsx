@@ -8,135 +8,97 @@ interface RangeCardProps {
   range: Range;
 }
 
-const SAND    = '#D9C4A3';
-const CHARCOAL = '#1A1A18';
-const GREEN   = '#1B3A2B';
-const TURF    = '#8FA680';
-const CLAY    = '#B5551B';
-
 export default function RangeCard({ range }: RangeCardProps) {
   const { isOpen, status } = getOpenStatus(range.workingHours);
+
   const isIndoor = range.category === 'indoor';
 
-  const teeTags: string[] = [];
+  // Tee surface tags: only relevant for outdoor ranges; skip if Unknown or empty
+  const teeTags: { label: string; icon: string }[] = [];
   if (!isIndoor) {
-    if (range.grass === 'Yes' || range.grass === 'Both') teeTags.push('Grass Tees');
-    if (range.grass === 'No' || range.grass === 'Both' || range.grass === 'Unknown' || range.grass === '') teeTags.push('Mats');
+    if (range.grass === 'Yes' || range.grass === 'Both') {
+      teeTags.push({ label: 'Grass Tees', icon: '🌿' });
+    }
+    if (range.grass === 'No' || range.grass === 'Both' || range.grass === 'Unknown' || range.grass === '') {
+      teeTags.push({ label: 'Mats', icon: '🟫' });
+    }
   }
 
   const features = [
-    range.trackman === 'Yes' && 'TrackMan',
-    range.toptracer === 'Yes' && 'TopTracer',
-    range.foodBar === 'Yes' && 'Food & Bar',
-    !isIndoor && range.lighting === 'Yes' && 'Night Lights',
-    !isIndoor && range.roof === 'Yes' && 'Covered',
+    range.trackman === 'Yes' && { label: 'TrackMan', icon: '📡' },
+    range.toptracer === 'Yes' && { label: 'TopTracer', icon: '🎯' },
+    range.foodBar === 'Yes' && { label: 'Food & Bar', icon: '🍺' },
+    // Lighting and roof/cover only shown for outdoor ranges (indoor already has these)
+    !isIndoor && range.lighting === 'Yes' && { label: 'Night Lights', icon: '💡' },
+    !isIndoor && range.roof === 'Yes' && { label: 'Covered', icon: '🏠' },
     ...teeTags,
-  ].filter(Boolean) as string[];
+  ].filter(Boolean) as { label: string; icon: string }[];
 
   return (
-    <div
-      style={{ backgroundColor: SAND }}
-      className="flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-    >
-      {/* Status strip */}
-      <div
-        style={{ backgroundColor: isOpen ? GREEN : CHARCOAL }}
-        className="flex items-center justify-between px-4 py-2.5"
-      >
+    <div className="bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md hover:border-green-200 transition-all p-5 flex flex-col gap-3">
+      {/* Header */}
+      <div>
+        <Link
+          href={`/ranges/${range.slug}`}
+          className="text-base font-semibold text-slate-800 hover:text-green-700 transition-colors leading-snug line-clamp-2"
+        >
+          {range.name}
+        </Link>
+        <p className="text-sm text-slate-500 mt-0.5">{range.city}, FL</p>
+      </div>
+
+      {/* Badges row */}
+      <div className="flex flex-wrap gap-1.5 items-center">
         <span
-          style={{ fontFamily: 'var(--font-inter, Inter, sans-serif)', color: isOpen ? TURF : SAND }}
-          className="text-xs font-bold uppercase tracking-widest"
+          className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+            isIndoor ? 'bg-orange-100 text-orange-800' : 'bg-green-100 text-green-800'
+          }`}
+        >
+          {isIndoor ? 'Indoor' : 'Outdoor'}
+        </span>
+        <span
+          className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+            range.techLevel === 'high'
+              ? 'bg-purple-100 text-purple-800'
+              : 'bg-amber-100 text-amber-800'
+          }`}
+        >
+          {range.techLevel === 'high' ? 'High-Tech' : 'Traditional'}
+        </span>
+        <span
+          className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+            isOpen ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'
+          }`}
         >
           {isOpen ? 'Open' : 'Closed'}
         </span>
-        <span
-          style={{ fontFamily: 'ui-monospace, SFMono-Regular, monospace', color: SAND }}
-          className="text-xs opacity-75"
-        >
-          {status}
-        </span>
       </div>
 
-      {/* Card body */}
-      <div className="p-5 flex flex-col gap-3 flex-1">
+      {/* Status */}
+      <p className="text-xs text-slate-500">{status}</p>
 
-        {/* Name + city */}
-        <div>
-          <Link
-            href={`/ranges/${range.slug}`}
-            style={{ fontFamily: 'var(--font-fraunces, Fraunces, serif)', color: GREEN }}
-            className="text-lg font-semibold leading-snug line-clamp-2 hover:opacity-75 transition-opacity"
-          >
-            {range.name}
-          </Link>
-          <p
-            style={{ fontFamily: 'var(--font-inter, Inter, sans-serif)', color: CHARCOAL }}
-            className="text-sm mt-0.5 opacity-55"
-          >
-            {range.city}, FL
-          </p>
+      {/* Feature tags */}
+      {features.length > 0 && (
+        <div className="flex flex-wrap gap-1 mt-auto pt-2 border-t border-slate-50">
+          {features.map((f) => (
+            <span
+              key={f.label}
+              className="text-xs bg-slate-50 text-slate-600 px-2 py-0.5 rounded border border-slate-100"
+            >
+              <span aria-hidden="true">{f.icon} </span>{f.label}
+            </span>
+          ))}
         </div>
+      )}
 
-        {/* Category + tech tags — square cornered, thin border */}
-        <div className="flex flex-wrap gap-1.5">
-          <span
-            style={{
-              fontFamily: 'var(--font-inter, Inter, sans-serif)',
-              color: GREEN,
-              borderColor: GREEN,
-            }}
-            className="text-xs font-medium px-2 py-0.5 border"
-          >
-            {isIndoor ? 'Indoor' : 'Outdoor'}
-          </span>
-          <span
-            style={{
-              fontFamily: 'var(--font-inter, Inter, sans-serif)',
-              color: CHARCOAL,
-              borderColor: TURF,
-            }}
-            className="text-xs font-medium px-2 py-0.5 border"
-          >
-            {range.techLevel === 'high' ? 'High-Tech' : 'Traditional'}
-          </span>
-        </div>
-
-        {/* Feature tags */}
-        {features.length > 0 && (
-          <div
-            className="flex flex-wrap gap-1 mt-auto pt-3 border-t"
-            style={{ borderColor: `${CHARCOAL}20` }}
-          >
-            {features.map((label) => (
-              <span
-                key={label}
-                style={{
-                  fontFamily: 'var(--font-inter, Inter, sans-serif)',
-                  color: CHARCOAL,
-                  borderColor: TURF,
-                }}
-                className="text-xs px-2 py-0.5 border opacity-70"
-              >
-                {label}
-              </span>
-            ))}
-          </div>
-        )}
-
-        {/* CTA */}
-        <Link
-          href={`/ranges/${range.slug}`}
-          aria-label={`View details for ${range.name}`}
-          style={{
-            fontFamily: 'var(--font-inter, Inter, sans-serif)',
-            backgroundColor: CLAY,
-            color: SAND,
-          }}
-          className="mt-1 text-center text-sm font-semibold py-2 px-4 hover:opacity-90 transition-opacity"
-        >
-          View Details →
-        </Link>
-      </div>
+      {/* View Details */}
+      <Link
+        href={`/ranges/${range.slug}`}
+        aria-label={`View details for ${range.name}`}
+        className="mt-1 text-center text-sm font-medium text-green-700 hover:text-white border border-green-200 hover:border-green-600 hover:bg-green-600 rounded-lg py-1.5 transition-colors"
+      >
+        View Details <span aria-hidden="true">→</span>
+      </Link>
     </div>
   );
 }

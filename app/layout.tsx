@@ -3,19 +3,6 @@ import "./globals.css";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import Script from "next/script";
-import { Fraunces, Inter } from "next/font/google";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-fraunces",
-  display: "swap",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Florida Driving Ranges | Find Driving Ranges Near You in Florida",
@@ -35,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en">
       <head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-7ZTQNLH9ZQ" strategy="afterInteractive" />
         <Script id="ga4" strategy="afterInteractive">{`
