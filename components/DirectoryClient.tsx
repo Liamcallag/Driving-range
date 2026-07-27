@@ -339,26 +339,47 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
                 <FilterLabel>
                   Amenities{activeAmenityCount > 0 && ` (${activeAmenityCount})`}
                 </FilterLabel>
-                <div className="flex flex-wrap gap-2">
-                  {amenities.map(({ key, label, isTech }) => {
-                    const active = !!filters[key];
-                    return (
-                      <button
-                        key={key}
-                        onClick={() => toggleBool(key)}
-                        aria-pressed={active}
-                        className="px-2.5 py-1 text-xs font-bold border transition-colors"
-                        style={active
-                          ? { backgroundColor: GREEN, color: 'white', borderColor: GREEN }
-                          : isTech
-                            ? { backgroundColor: GREEN_LIGHT, color: GREEN, borderColor: '#d0e4d8' }
+                <div className="flex flex-col gap-2">
+                  {/* Row 1: yellow amenities */}
+                  <div className="flex flex-wrap gap-2">
+                    {amenities.filter(({ isTech }) => !isTech).map(({ key, label }) => {
+                      const active = !!filters[key];
+                      return (
+                        <button
+                          key={key}
+                          onClick={() => toggleBool(key)}
+                          aria-pressed={active}
+                          className="px-2.5 py-1 text-xs font-bold border transition-colors"
+                          style={active
+                            ? { backgroundColor: GREEN, color: 'white', borderColor: GREEN }
                             : { backgroundColor: '#fdf4e7', color: '#7a5a2a', borderColor: '#e8d5a0' }
-                        }
-                      >
-                        {label}
-                      </button>
-                    );
-                  })}
+                          }
+                        >
+                          {label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                  {/* Row 2: tech (green) */}
+                  <div className="flex flex-wrap gap-2">
+                    {amenities.filter(({ isTech }) => isTech).map(({ key, label }) => {
+                      const active = !!filters[key];
+                      return (
+                        <button
+                          key={key}
+                          onClick={() => toggleBool(key)}
+                          aria-pressed={active}
+                          className="px-2.5 py-1 text-xs font-bold border transition-colors"
+                          style={active
+                            ? { backgroundColor: GREEN, color: 'white', borderColor: GREEN }
+                            : { backgroundColor: GREEN_LIGHT, color: GREEN, borderColor: '#d0e4d8' }
+                          }
+                        >
+                          {label}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
 
