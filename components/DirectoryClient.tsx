@@ -52,6 +52,14 @@ function FilterLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
+const ACTIVE_COLORS: Record<string, string> = {
+  all:        GREEN,
+  outdoor:    '#16a34a', // map green
+  indoor:     '#f97316', // map orange
+  high:       GREEN,
+  low:        GREEN,
+};
+
 function SegmentGroup<T extends string>({
   options, value, onChange, groupLabel,
 }: {
@@ -69,11 +77,8 @@ function SegmentGroup<T extends string>({
           aria-pressed={value === opt.value}
           className={`px-3 py-1.5 text-sm font-medium transition-colors whitespace-nowrap
             ${i > 0 ? 'border-l border-slate-200' : ''}
-            ${value === opt.value
-              ? 'text-white'
-              : 'bg-white text-slate-600 hover:bg-slate-50'
-            }`}
-          style={value === opt.value ? { backgroundColor: GREEN } : undefined}
+            ${value === opt.value ? 'text-white' : 'bg-white text-slate-600 hover:bg-slate-50'}`}
+          style={value === opt.value ? { backgroundColor: ACTIVE_COLORS[opt.value] ?? GREEN } : undefined}
         >
           {opt.label}
         </button>

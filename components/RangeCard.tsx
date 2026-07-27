@@ -4,13 +4,12 @@ import Link from 'next/link';
 import { Range } from '@/lib/types';
 import { getOpenStatus } from '@/lib/utils';
 
-// Text-only palette — no fills or borders
 const COLOR = {
-  openText:   '#2E7D32', // clear green
-  closedText: '#C62828', // clear red
-  typeTag:    '#5A6B7A', // cool gray-blue
-  techTag:    '#1B5E5E', // deep teal
-  amenityTag: '#5A6B7A', // same as typeTag
+  openText:   '#2E7D32',
+  closedText: '#C62828',
+  typeTag:    '#5A6B7A',
+  techTag:    '#1B3A2B', // same green as high-tech
+  amenityTag: '#5A6B7A',
 };
 
 export default function RangeCard({ range }: { range: Range }) {
@@ -43,7 +42,10 @@ export default function RangeCard({ range }: { range: Range }) {
 
   return (
     <Link href={`/ranges/${range.slug}`} className="block group">
-      <div className="bg-white border border-slate-100 rounded-lg overflow-hidden hover:border-slate-300 hover:shadow-sm transition-all">
+      <div
+        className="bg-white rounded-lg overflow-hidden hover:shadow-sm transition-all"
+        style={{ border: `1.5px solid ${isIndoor ? '#f97316' : '#16a34a'}` }}
+      >
 
         <div className="px-4 pt-3 pb-4 flex flex-col gap-2">
 
