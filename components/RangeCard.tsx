@@ -68,21 +68,44 @@ export default function RangeCard({ range }: { range: Range }) {
             </span>
           </div>
 
-          {/* All tags on one row: type tags + amenities */}
-          <div className="flex flex-nowrap items-center gap-1 text-xs overflow-hidden">
-            {typeTags.map((tag, i) => (
-              <span key={tag} className="flex items-center gap-1 flex-shrink-0" style={{ color: COLOR.typeTag }}>
-                {i > 0 && <span aria-hidden="true">·</span>}
-                {tag}
-              </span>
-            ))}
-            {allAmenities.map((a) => (
-              <span key={a.label} className="flex items-center gap-1 flex-shrink-0" style={{ color: a.color }}>
-                <span className="text-slate-200" aria-hidden="true">·</span>
-                {a.label}
-              </span>
-            ))}
-          </div>
+          {/* Type tags + (indoor: amenities inline / outdoor: amenities on next row) */}
+          {isIndoor ? (
+            <div className="flex flex-nowrap items-center gap-1 text-xs overflow-hidden">
+              {typeTags.map((tag, i) => (
+                <span key={tag} className="flex items-center gap-1 flex-shrink-0" style={{ color: COLOR.typeTag }}>
+                  {i > 0 && <span aria-hidden="true">·</span>}
+                  {tag}
+                </span>
+              ))}
+              {allAmenities.map((a) => (
+                <span key={a.label} className="flex items-center gap-1 flex-shrink-0" style={{ color: a.color }}>
+                  <span className="text-slate-200" aria-hidden="true">·</span>
+                  {a.label}
+                </span>
+              ))}
+            </div>
+          ) : (
+            <>
+              <div className="flex flex-nowrap items-center gap-1 text-xs overflow-hidden">
+                {typeTags.map((tag, i) => (
+                  <span key={tag} className="flex items-center gap-1 flex-shrink-0" style={{ color: COLOR.typeTag }}>
+                    {i > 0 && <span aria-hidden="true">·</span>}
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              {allAmenities.length > 0 && (
+                <div className="flex flex-nowrap items-center gap-1 text-xs overflow-hidden">
+                  {allAmenities.map((a, i) => (
+                    <span key={a.label} className="flex items-center gap-1 flex-shrink-0" style={{ color: a.color }}>
+                      {i > 0 && <span className="text-slate-200" aria-hidden="true">·</span>}
+                      {a.label}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </>
+          )}
 
         </div>
       </div>
