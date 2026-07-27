@@ -80,7 +80,7 @@ export default function RangeCard({ range }: { range: Range }) {
 
           {/* Amenity + tech tags — each colored by group, single row */}
           {allAmenities.length > 0 && (
-            <div className="flex flex-wrap items-center gap-1 text-xs">
+            <div className="flex flex-nowrap items-center gap-1 text-xs overflow-hidden">
               {allAmenities.map((a, i) => (
                 <span key={a.label} className="flex items-center gap-1" style={{ color: a.color }}>
                   {i > 0 && <span className="text-slate-200" aria-hidden="true">·</span>}
