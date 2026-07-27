@@ -192,19 +192,22 @@ export default async function RangePage({ params }: PageProps) {
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-8">
-          <span className="text-xs font-medium px-2.5 py-1 border border-slate-200 text-slate-500">
+          {/* Setting type — muted green tint */}
+          <span className="text-xs font-medium px-2.5 py-1" style={{ backgroundColor: '#eef4f0', color: '#2d5a3d' }}>
             {isIndoor ? 'Indoor' : 'Outdoor'}
           </span>
-          <span className="text-xs font-medium px-2.5 py-1 border border-slate-200 text-slate-500">
+          <span className="text-xs font-medium px-2.5 py-1" style={{ backgroundColor: '#eef4f0', color: '#2d5a3d' }}>
             {range.techLevel === 'high' ? 'High-Tech' : 'Traditional'}
           </span>
+          {/* Tech brand — teal tint */}
           {techTags.map((t) => (
-            <span key={t} className="text-xs font-medium px-2.5 py-1 border" style={{ color: '#1B5E5E', borderColor: '#cde0e0' }}>
+            <span key={t} className="text-xs font-semibold px-2.5 py-1" style={{ backgroundColor: '#e0f0f0', color: '#1B5E5E' }}>
               {t}
             </span>
           ))}
+          {/* Amenities — warm amber tint */}
           {amenityTags.map((t) => (
-            <span key={t} className="text-xs font-medium px-2.5 py-1 border border-slate-200 text-slate-500">
+            <span key={t} className="text-xs font-medium px-2.5 py-1" style={{ backgroundColor: '#fdf4e7', color: '#7a5a2a' }}>
               {t}
             </span>
           ))}
