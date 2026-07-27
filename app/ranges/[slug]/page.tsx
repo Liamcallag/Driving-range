@@ -201,13 +201,13 @@ export default async function RangePage({ params }: PageProps) {
           </span>
           {/* Tech brand — teal tint */}
           {techTags.map((t) => (
-            <span key={t} className="text-xs font-semibold px-2.5 py-1" style={{ backgroundColor: '#e0f0f0', color: '#1B5E5E' }}>
+            <span key={t} className="text-xs font-bold px-2.5 py-1" style={{ backgroundColor: '#e0f0f0', color: '#1B5E5E' }}>
               {t}
             </span>
           ))}
           {/* Amenities — warm amber tint */}
           {amenityTags.map((t) => (
-            <span key={t} className="text-xs font-medium px-2.5 py-1" style={{ backgroundColor: '#fdf4e7', color: '#7a5a2a' }}>
+            <span key={t} className="text-xs font-bold px-2.5 py-1" style={{ backgroundColor: '#fdf4e7', color: '#7a5a2a' }}>
               {t}
             </span>
           ))}
