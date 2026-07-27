@@ -116,7 +116,12 @@ function Divider() {
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="py-5 flex gap-8">
-      <span className="text-sm text-slate-400 w-24 flex-shrink-0 pt-0.5">{label}</span>
+      <span
+        className="text-xs font-semibold uppercase tracking-widest w-24 flex-shrink-0 pt-0.5"
+        style={{ color: '#1B3A2B' }}
+      >
+        {label}
+      </span>
       <div className="flex-1 min-w-0">{children}</div>
     </div>
   );
@@ -179,7 +184,7 @@ export default async function RangePage({ params }: PageProps) {
               {isOpen ? 'Open' : 'Closed'}
             </span>
           </div>
-          <h1 className="text-3xl font-bold text-slate-900 leading-tight">{range.name}</h1>
+          <h1 className="text-3xl font-bold leading-tight" style={{ color: '#1B3A2B' }}>{range.name}</h1>
           <p className="text-sm text-slate-400 mt-1">
             {range.city}, Florida{range.address ? ` · ${range.address}` : ''}
           </p>
@@ -216,7 +221,7 @@ export default async function RangePage({ params }: PageProps) {
               <>
                 <Divider />
                 <div className="py-5">
-                  <p className="text-sm text-slate-600 leading-relaxed">{range.description}</p>
+                  <p className="text-sm text-slate-800 leading-relaxed">{range.description}</p>
                 </div>
               </>
             )}
@@ -236,7 +241,7 @@ export default async function RangePage({ params }: PageProps) {
                           <span className={`w-24 flex-shrink-0 ${isToday ? 'font-semibold text-slate-900' : 'text-slate-600'}`}>
                             {day}
                           </span>
-                          <span className={isClosed ? 'text-slate-300' : isToday ? 'font-semibold text-slate-900' : 'text-slate-700'}>
+                          <span className={isClosed ? 'text-slate-300' : isToday ? 'font-bold text-slate-900' : 'text-slate-700 font-medium'}>
                             {dayHours}
                           </span>
                         </div>
@@ -253,7 +258,7 @@ export default async function RangePage({ params }: PageProps) {
               <>
                 <Divider />
                 <Row label="Location">
-                  <p className="text-sm text-slate-700">{range.address}</p>
+                  <p className="text-sm font-medium text-slate-800">{range.address}</p>
                 </Row>
               </>
             )}
@@ -263,7 +268,7 @@ export default async function RangePage({ params }: PageProps) {
               <>
                 <Divider />
                 <Row label="Phone">
-                  <a href={`tel:${range.phone}`} className="text-sm text-slate-700 hover:text-slate-900 transition-colors">
+                  <a href={`tel:${range.phone}`} className="text-sm font-medium text-slate-800 hover:text-slate-900 transition-colors">
                     {range.phone}
                   </a>
                 </Row>
@@ -279,7 +284,7 @@ export default async function RangePage({ params }: PageProps) {
           </div>
 
           {/* Right column — map + links */}
-          <div className="w-full lg:w-72 flex-shrink-0 space-y-4">
+          <div className="w-full lg:w-72 flex-shrink-0 space-y-3">
 
             {/* Map */}
             {hasMap && (
@@ -302,13 +307,14 @@ export default async function RangePage({ params }: PageProps) {
 
             {/* Website */}
             {range.website && (
-              <div className="border border-slate-100 px-3 py-3">
-                <p className="text-xs text-slate-400 mb-1">Website</p>
+              <div className="px-3 py-3" style={{ backgroundColor: '#f5f7f5', borderLeft: '3px solid #1B3A2B' }}>
+                <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: '#1B3A2B' }}>Website</p>
                 <a
                   href={range.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-green-700 hover:text-green-900 transition-colors"
+                  className="text-sm font-medium hover:opacity-70 transition-opacity"
+                  style={{ color: '#1B3A2B' }}
                 >
                   Visit website →
                 </a>
@@ -316,8 +322,8 @@ export default async function RangePage({ params }: PageProps) {
             )}
 
             {/* Claim listing */}
-            <div className="border border-slate-100 px-3 py-3">
-              <p className="text-xs font-medium text-slate-500 mb-0.5">Own this range?</p>
+            <div className="px-3 py-3 bg-slate-50">
+              <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-0.5">Own this range?</p>
               <p className="text-xs text-slate-400 mb-2 leading-relaxed">
                 Claim your listing to update hours, add photos, or correct information.
               </p>
