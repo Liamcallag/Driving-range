@@ -38,25 +38,22 @@ const reasons = [
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
-      <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 pt-28 pb-20">
 
-        {/* Header */}
-        <div className="mb-10">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: GREEN }}>
-            Get in touch
-          </p>
-          <h1 className="text-3xl font-bold leading-tight mb-3" style={{ color: GREEN }}>
-            Contact Us
-          </h1>
-          <p className="text-sm text-slate-500 leading-relaxed max-w-md">
+      {/* Dark hero */}
+      <div className="bg-slate-900 pt-32 pb-16 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-green-400 text-xs font-semibold uppercase tracking-widest mb-3">Get in touch</p>
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">Contact Us</h1>
+          <p className="text-base text-slate-400 leading-relaxed max-w-md mx-auto">
             Choose a reason below and we'll get back to you as soon as possible.
           </p>
         </div>
+      </div>
 
-        <div className="border-t border-slate-100 mb-8" />
+      <main id="main-content" className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
 
         {/* Contact cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
           {reasons.map((r) => (
             <a
               key={r.title}
@@ -78,12 +75,11 @@ export default function ContactPage() {
         </div>
 
         {/* Direct email */}
-        <div className="border-t border-slate-100 pt-6 text-center">
-          <p className="text-xs text-slate-400 mb-1">Prefer to write your own email?</p>
+        <div className="bg-slate-900 px-6 py-8 text-center">
+          <p className="text-slate-400 text-sm mb-2">Prefer to write your own email?</p>
           <a
             href={`mailto:${CONTACT_EMAIL}`}
-            className="text-sm font-semibold hover:opacity-70 transition-opacity"
-            style={{ color: GREEN }}
+            className="text-white font-bold text-base hover:text-green-400 transition-colors underline underline-offset-4"
           >
             {CONTACT_EMAIL}
           </a>
