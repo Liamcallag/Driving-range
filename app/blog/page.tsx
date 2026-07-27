@@ -57,7 +57,7 @@ export default function BlogIndexPage() {
               <section key={category}>
                 <div className="flex items-center gap-3 mb-6">
                   <h2 className="text-xl font-bold text-slate-900">{category}</h2>
-                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full border ${CATEGORY_COLORS[category]}`}>
+                  <span className={`text-xs font-semibold px-2.5 py-1 border ${CATEGORY_COLORS[category]}`}>
                     {posts.length} {posts.length === 1 ? 'article' : 'articles'}
                   </span>
                 </div>
@@ -67,7 +67,7 @@ export default function BlogIndexPage() {
                     <Link
                       key={post.slug}
                       href={`/blog/${post.slug}`}
-                      className="block bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-green-300 transition-all overflow-hidden group"
+                      className="block bg-white border border-slate-200 hover:border-slate-300 transition-all overflow-hidden group"
                     >
                       {post.image ? (
                         <div className="w-full h-36 relative">
