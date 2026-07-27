@@ -383,21 +383,6 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
                 </div>
               </div>
 
-              {/* Active chips */}
-              {activeChips.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-3" aria-label="Active filters">
-                  {activeChips.map((chip) => (
-                    <span key={chip.label} className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium border" style={{ backgroundColor: GREEN_LIGHT, borderColor: '#d0e4d8', color: GREEN }}>
-                      {chip.label}
-                      <button onClick={chip.onRemove} aria-label={`Remove filter: ${chip.label}`} className="ml-0.5 hover:opacity-70">
-                        <svg className="w-3 h-3" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                          <path d="M18 6 6 18M6 6l12 12" />
-                        </svg>
-                      </button>
-                    </span>
-                  ))}
-                </div>
-              )}
 
             </div>
           </div>
