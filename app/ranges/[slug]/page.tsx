@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { Metadata } from 'next';
+
+const RangeDetailMap = dynamic(() => import('@/components/RangeDetailMap'), { ssr: false });
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { getOpenStatus } from '@/lib/utils';
@@ -250,33 +253,41 @@ export default async function RangePage({ params }: PageProps) {
           </>
         )}
 
-        {/* Links */}
-        {(range.website || range.locationLink) && (
+        {/* Map */}
+        {range.lat && range.lng && (
           <>
             <Divider />
-            <Row label="Links">
+            <Row label="Map">
               <div className="flex flex-col gap-2">
-                {range.website && (
-                  <a
-                    href={range.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-green-700 hover:text-green-900 transition-colors"
-                  >
-                    Visit website →
-                  </a>
-                )}
+                <RangeDetailMap lat={range.lat as number} lng={range.lng as number} />
                 {range.locationLink && (
                   <a
                     href={range.locationLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-slate-500 hover:text-slate-700 transition-colors"
+                    className="text-xs text-slate-400 hover:text-slate-600 transition-colors"
                   >
                     Open in Google Maps →
                   </a>
                 )}
               </div>
+            </Row>
+          </>
+        )}
+
+        {/* Website */}
+        {range.website && (
+          <>
+            <Divider />
+            <Row label="Website">
+              <a
+                href={range.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-green-700 hover:text-green-900 transition-colors"
+              >
+                Visit website →
+              </a>
             </Row>
           </>
         )}
