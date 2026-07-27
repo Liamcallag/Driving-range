@@ -342,16 +342,15 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
                 <div className="flex flex-wrap gap-2">
                   {amenities.map(({ key, label }) => {
                     const active = !!filters[key];
-                    const isTech = key === 'trackman' || key === 'toptracer';
                     return (
                       <button
                         key={key}
                         onClick={() => toggleBool(key)}
                         aria-pressed={active}
-                        className="px-2.5 py-1 text-xs font-semibold border transition-colors"
+                        className="px-2.5 py-1 text-xs font-bold border transition-colors"
                         style={active
-                          ? { backgroundColor: isTech ? '#1B5E5E' : GREEN, color: 'white', borderColor: isTech ? '#1B5E5E' : GREEN }
-                          : { backgroundColor: isTech ? '#e0f0f0' : GREEN_LIGHT, color: isTech ? '#1B5E5E' : GREEN, borderColor: isTech ? '#c0dede' : '#d0e4d8' }
+                          ? { backgroundColor: GREEN, color: 'white', borderColor: GREEN }
+                          : { backgroundColor: '#fdf4e7', color: '#7a5a2a', borderColor: '#e8d5a0' }
                         }
                       >
                         {label}
@@ -422,7 +421,7 @@ export default function DirectoryClient({ ranges, heroQuery = '' }: DirectoryCli
           <p className="text-sm text-slate-400 mt-1">Try adjusting your search or clearing some filters</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
           {sorted.map((range) => (
             <RangeCard key={range.slug} range={range} />
           ))}

@@ -138,15 +138,15 @@ export default function ReviewSection({ slug }: { slug: string }) {
     : 0;
 
   return (
-    <div className="bg-white border border-slate-100 rounded-xl shadow-sm p-6">
+    <div>
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider">Reviews</h2>
+          <h2 className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#1B3A2B' }}>Reviews</h2>
           {reviews.length > 0 && (
-            <div className="flex items-center gap-2 mt-1">
+            <div className="flex items-center gap-2 mt-1.5">
               <StarDisplay rating={Math.round(avgRating)} />
-              <span className="text-sm text-slate-600">
+              <span className="text-sm text-slate-500">
                 {avgRating.toFixed(1)} · {reviews.length} review{reviews.length !== 1 ? 's' : ''}
               </span>
             </div>
@@ -155,7 +155,7 @@ export default function ReviewSection({ slug }: { slug: string }) {
         {!showForm && (
           <button
             onClick={() => { setShowForm(true); setTimeout(() => firstFieldRef.current?.focus(), 0); }}
-            className="text-sm font-medium bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg transition-colors"
+            className="text-xs font-medium border border-slate-200 hover:border-slate-300 text-slate-600 hover:text-slate-800 px-3 py-1.5 transition-colors"
           >
             Write a Review
           </button>
@@ -164,15 +164,15 @@ export default function ReviewSection({ slug }: { slug: string }) {
 
       {/* Success message */}
       {success && (
-        <div role="status" aria-live="polite" className="mb-4 px-4 py-3 bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm rounded-lg">
+        <div role="status" aria-live="polite" className="mb-4 px-3 py-2 bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm">
           Thanks for your review!
         </div>
       )}
 
       {/* Review Form */}
       {showForm && (
-        <form onSubmit={handleSubmit} aria-label="Leave a review" className="mb-6 p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-4">
-          <h3 className="text-sm font-semibold text-slate-700">Leave a Review</h3>
+        <form onSubmit={handleSubmit} aria-label="Leave a review" className="mb-6 p-4 bg-slate-50 border border-slate-200 space-y-4">
+          <h3 className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#1B3A2B' }}>Leave a Review</h3>
 
           <div>
             <label htmlFor="review-author" className="block text-xs font-medium text-slate-600 mb-1">Your Name <span className="text-red-400" aria-hidden="true">*</span></label>
@@ -184,7 +184,7 @@ export default function ReviewSection({ slug }: { slug: string }) {
               onChange={(e) => setAuthor(e.target.value)}
               placeholder="e.g. John D."
               maxLength={60}
-              className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-slate-200 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-green-700"
             />
           </div>
 
@@ -202,7 +202,7 @@ export default function ReviewSection({ slug }: { slug: string }) {
               placeholder="Share your experience..."
               rows={4}
               maxLength={1000}
-              className="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm bg-white focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
+              className="w-full px-3 py-2 border border-slate-200 text-sm bg-white focus:outline-none focus:ring-1 focus:ring-green-700 resize-none"
             />
             <p className="text-xs text-slate-400 text-right mt-0.5" aria-live="polite">{comment.length}/1000</p>
           </div>
@@ -213,14 +213,15 @@ export default function ReviewSection({ slug }: { slug: string }) {
             <button
               type="submit"
               disabled={submitting}
-              className="px-4 py-2 bg-green-700 hover:bg-green-800 text-white text-sm font-medium rounded-lg transition-colors disabled:opacity-50"
+              className="px-4 py-2 text-white text-xs font-medium transition-colors disabled:opacity-50"
+              style={{ backgroundColor: '#1B3A2B' }}
             >
               {submitting ? 'Submitting...' : 'Submit Review'}
             </button>
             <button
               type="button"
               onClick={() => { setShowForm(false); setError(''); setAuthor(''); setRating(0); setComment(''); }}
-              className="px-4 py-2 border border-slate-200 text-slate-600 text-sm font-medium rounded-lg hover:bg-slate-50 transition-colors"
+              className="px-4 py-2 border border-slate-200 text-slate-600 text-xs font-medium hover:bg-slate-50 transition-colors"
             >
               Cancel
             </button>
