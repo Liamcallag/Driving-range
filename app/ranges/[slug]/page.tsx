@@ -1,9 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { Metadata } from 'next';
-
-const RangeDetailMap = dynamic(() => import('@/components/RangeDetailMap'), { ssr: false });
+import RangeDetailMapWrapper from '@/components/RangeDetailMapWrapper';
 import rangesData from '@/data/ranges.json';
 import { Range } from '@/lib/types';
 import { getOpenStatus } from '@/lib/utils';
@@ -259,7 +257,7 @@ export default async function RangePage({ params }: PageProps) {
             <Divider />
             <Row label="Map">
               <div className="flex flex-col gap-2">
-                <RangeDetailMap lat={range.lat as number} lng={range.lng as number} />
+                <RangeDetailMapWrapper lat={range.lat as number} lng={range.lng as number} />
                 {range.locationLink && (
                   <a
                     href={range.locationLink}
