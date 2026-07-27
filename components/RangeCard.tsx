@@ -43,7 +43,7 @@ export default function RangeCard({ range }: { range: Range }) {
   return (
     <Link href={`/ranges/${range.slug}`} className="block group h-full">
       <div
-        className="bg-white rounded-lg overflow-hidden hover:shadow-sm transition-all h-full"
+        className="bg-white overflow-hidden hover:shadow-sm transition-all h-full"
         style={{ border: `1.5px solid ${isIndoor ? '#f97316' : '#16a34a'}` }}
       >
 
