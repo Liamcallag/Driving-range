@@ -48,9 +48,11 @@ function getStoredTokens(): Record<string, string> {
 }
 
 function saveToken(reviewId: string, token: string) {
-  const tokens = getStoredTokens();
-  tokens[reviewId] = token;
-  localStorage.setItem(TOKENS_KEY, JSON.stringify(tokens));
+  try {
+    const tokens = getStoredTokens();
+    tokens[reviewId] = token;
+    localStorage.setItem(TOKENS_KEY, JSON.stringify(tokens));
+  } catch { /* localStorage unavailable (e.g. Safari private mode) — token held in React state only */ }
 }
 
 export default function ReviewSection({ slug }: { slug: string }) {
